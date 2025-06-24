@@ -51,6 +51,7 @@ header nav {
     gap: 30px;
     align-items: center;
     background-color: var(--secondary-color);
+    justify-content: center;
 }
 
 header nav a {
