@@ -86,6 +86,7 @@ main {
 }
 
 aside {
+    width: 35%;
     background-color: var(--accent1-color);
     }
 
