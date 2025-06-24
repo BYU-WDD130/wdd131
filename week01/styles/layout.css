@@ -66,6 +66,7 @@ header nav a {
     margin: 0 1rem;
     color: var(--accent1-color);
     padding: 0 25px;
+    font-size: 1.25em;
     font-style: var(--heading-font);
     text-align: center;
     text-decoration: none;
