@@ -25,7 +25,7 @@ header {
     display: grid;
     align-items: cennter;
     justify-content: space-between;
-    padding: 1rem 12rem;
+    padding: 1rem 5rem;
     background-color: var(--primary-color);
     
 }
@@ -61,6 +61,7 @@ header nav a {
     padding: 0 25px;
     font-style: var(--heading-font);
     text-align: center;
+    text-decoration: none;
 }
 main {
     background-color: var(--accent-color);
