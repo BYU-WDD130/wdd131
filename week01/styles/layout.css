@@ -15,10 +15,17 @@
 }
 body {
     font-family: var(--body-font)
-    
+
 }
 
+
 header {
+    width: 100%;
+    max-height: 138px;
+    display: flex;
+    align-items: cennter;
+    justify-content: space-between;
+    padding: 1rem 12rem;
     background-color: var(--primary-color);
     
 }
