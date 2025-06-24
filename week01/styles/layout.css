@@ -72,7 +72,7 @@ header nav a {
     text-decoration: none;
 }
 
-box{
+.box{
     justify-items: center;
     display: wrap;
     width: 100%;
