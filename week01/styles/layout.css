@@ -73,7 +73,7 @@ header nav a {
 }
 
 box{
-    display: flex;
+    display: grid;
     width: 100%;
     height: 250px;
 }
