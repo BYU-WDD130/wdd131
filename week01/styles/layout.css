@@ -73,6 +73,7 @@ header nav a {
 }
 
 box{
+    justify-items: center;
     display: grid;
     width: 100%;
     height: 250px;
