@@ -72,6 +72,8 @@ header nav a {
     text-decoration: none;
 }
 main {
+    width: 65%;
+    height: inherit;
     background-color: var(--accent-color);
 }
 
