@@ -18,6 +18,13 @@ body {
 
 }
 
+container {
+    width: 1000px;
+    max-height: 100%;
+    margin: 0 auto;
+    display: grid;
+    padding: 2px;
+}
 
 header {
     width: 100%;
