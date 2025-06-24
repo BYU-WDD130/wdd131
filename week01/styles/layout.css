@@ -57,6 +57,7 @@ header nav {
 }
 
 header nav a {
+    margin: 0 1rem;
     color: var(--accent1-color);
     padding: 0 25px;
     font-style: var(--heading-font);
