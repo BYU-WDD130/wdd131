@@ -78,6 +78,7 @@ box{
     height: 250px;
 }
 main {
+    display: flex;
     width: 65%;
     height: 250px;
     background-color: var(--accent-color);
