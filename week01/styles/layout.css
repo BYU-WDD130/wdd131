@@ -27,7 +27,6 @@ body {
 }
 
 header {
-    width: 1000px;
     height: 110px;
     display: grid;
     align-items: cennter;
@@ -45,7 +44,7 @@ h1, h2, h3, h4, h5 {
 }
 
 header, main, footer{
-    max-width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0, 
     
