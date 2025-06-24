@@ -44,13 +44,20 @@ header, main, footer{
     
 }
 
-nav {
+header nav {
     display: flex;
-    flex-wrap: wrap;
+    padding: 0 25px;
+    margin: 0;
     gap: 30px;
+    align-items: center;
     background-color: var(--secondary-color);
 }
 
+header nav a {
+    padding: 0 25px;
+    font-style: var(--heading-font);
+    text-align: center;
+}
 main {
     background-color: var(--accent-color);
 }
