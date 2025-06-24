@@ -35,6 +35,9 @@ header {
     background-color: var(--primary-color);
     
 }
+.header-content {
+    height: 80px;
+}
 
 h1, h2, h5 {
     font-family: var(--heading-font);
