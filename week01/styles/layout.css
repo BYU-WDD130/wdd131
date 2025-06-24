@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    height: 110px;
+    height: 150px;
     display: grid;
     align-items: cennter;
     justify-content: space-between;
