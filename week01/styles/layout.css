@@ -45,8 +45,8 @@ header, main, footer{
 }
 
 header nav {
-    width: 1200px;
-    height: 120px;
+    max-width: 100%;
+    height: 80px;
     display: flex;
     padding: 0 25px;
     margin: 0;
@@ -57,6 +57,7 @@ header nav {
 }
 
 header nav a {
+    color: var(--accent1-color);
     padding: 0 25px;
     font-style: var(--heading-font);
     text-align: center;
