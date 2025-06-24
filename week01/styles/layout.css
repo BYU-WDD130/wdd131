@@ -3,6 +3,19 @@
     --secondary-color: #0a0908; 
     --accent-color: #b1a7a6;
     --accent1-color: #f5f3f4;
+
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font)
+    
 }
 
 header {
