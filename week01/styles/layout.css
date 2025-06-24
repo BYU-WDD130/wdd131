@@ -27,12 +27,11 @@ body {
 }
 
 header {
-    width: 100%;
-    max-height: 138px;
+    height: 150px;
     display: grid;
     align-items: cennter;
     justify-content: space-between;
-    padding: 1rem 5rem;
+   
     background-color: var(--primary-color);
     
 }
@@ -80,5 +79,5 @@ aside {
     }
 
 footer {
-    background-color: var (var(--primary-color));
+    background-color: var(--primary-color);
 }
