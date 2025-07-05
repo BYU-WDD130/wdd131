@@ -18,7 +18,7 @@ body {
 
 
     display: flex;
-    grid-template: auto ifr auto / auto 1fr auto;
+  /*  grid-template: auto ifr auto / auto 1fr auto;*/
     font-family: var(--body-font);
     font-weight: 400;
     background-color: var(--accent2-color);
