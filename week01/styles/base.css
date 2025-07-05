@@ -133,8 +133,10 @@ main{
 }
 
 .card img{
-    max-width: 100%;
+    width: 150px;
+    height: auto;
     border-radius: 5px;
+    padding: 2px;
 }
 
 /*
