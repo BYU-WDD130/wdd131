@@ -136,8 +136,8 @@ main{
     gap: 2rem;
 }
 
-.car{
-    background-color: var(--accent1-color);
+.card{
+    background-color: var(--accent-color);
     border-radius: 8px;
     padding: 1rem;
     
