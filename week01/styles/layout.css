@@ -14,7 +14,9 @@
     box-sizing: border-box;
 }
 body {
+    grid-template: auto ifr auto / auto 1fr auto;
     font-family: var(--body-font)
+    
 
 }
 
