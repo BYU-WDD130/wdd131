@@ -65,7 +65,7 @@ header {
 
 h1, h2, h5 {
     font-family: var(--heading-font);
-    font-weight: 350;
+    font-weight: 300;
     color: var(--accent1-color);
 
 }
