@@ -136,14 +136,14 @@ main{
     gap: 2rem;
 }
 
-.car{
+.card{
     background-color: var(--accent1-color);
     border-radius: 8px;
     padding: 1rem;
     
 }
 
-img{
+.card img{
     width: 150px;
     height: auto;
     border-radius: 5px;
