@@ -15,9 +15,14 @@
 }
 body {
     grid-template: auto ifr auto / auto 1fr auto;
-    font-family: var(--body-font)
+    font-family: var(--body-font);
+    font-weight: 400;
     
 
+}
+
+h1 {
+    font-weight: 100;
 }
 
 .container {
