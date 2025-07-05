@@ -109,7 +109,7 @@ nav a {
 .box{
     justify-items: center;
     display: flex;
-    width: 100%;
+    width: 450px;
     height: 250px;
 }
  
