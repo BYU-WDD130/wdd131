@@ -63,7 +63,7 @@ header {
     margin-bottom:1rem;
 }
 
-h1, h2, h5 {
+h1, h2, h3, h5 {
     font-family: var(--heading-font);
     font-weight: 300;
     color: var(--accent1-color);
