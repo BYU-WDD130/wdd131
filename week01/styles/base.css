@@ -29,7 +29,7 @@ h1 {
 }
 
 p {
-    color: car(--accent1-color);
+  color: var(--accent1-color);
 }
 .container {
     width: 900px;
