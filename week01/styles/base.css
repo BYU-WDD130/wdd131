@@ -128,7 +128,7 @@ main {
 
 
 main{
-    max-width: 900px;
+    max-width: 1000px;
     padding: 1rem;
     display: grid;
     gap: 2rem;
