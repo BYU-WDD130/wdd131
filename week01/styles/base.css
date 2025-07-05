@@ -15,10 +15,11 @@
     box-sizing: border-box;
 }
 body {
+    display: flex;
     grid-template: auto ifr auto / auto 1fr auto;
     font-family: var(--body-font);
     font-weight: 400;
-    background-color: ;
+    background-color: var(--accent2-color);
     
 
 }
@@ -33,7 +34,7 @@ h1 {
     margin: 0 auto;
     display: grid;
     padding: 2px;
-    background-color: var(--accent2-color);
+    
 }
 
 header {
