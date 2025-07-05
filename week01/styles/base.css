@@ -35,7 +35,7 @@ p {
 }
 .container {
     width: 1000px;
-    height: 850px;
+    height: 1000px;
     margin: 0 auto;
     display: grid;
     padding: 2px;
