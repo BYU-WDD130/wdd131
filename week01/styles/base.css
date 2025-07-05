@@ -134,7 +134,7 @@ main{
 
 .card img{
     width: 150px;
-    height: auto;
+    height: 150px;
     border-radius: 5px;
     padding: 2px;
 }
