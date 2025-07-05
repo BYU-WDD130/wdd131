@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #5e503f; 
-    --secondary-color: #0a0908; 
+    --primary-color: #003366; 
+    --secondary-color: #0059b3; 
     --accent-color: #b1a7a6;
     --accent1-color: #f5f3f4;
 
@@ -24,7 +24,7 @@ body {
 h1 {
     font-weight: 100;
 }
-
+/*
 .container {
     width: 1000px;
     max-height: 100%;
@@ -32,18 +32,26 @@ h1 {
     display: grid;
     padding: 2px;
 }
-
+*/
 header {
-    height: 150px;
-    display: grid;
-    align-items: cennter;
-    justify-content: space-between;
-   
+    color: white;
+    padding: 1rem;
+    text-align: center;
     background-color: var(--primary-color);
     
 }
+/*
 .header.contents {
     height: 80px;
+}
+
+*/
+
+#course-title{
+    display:block;
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-bottom:1rem;
 }
 
 h1, h2, h5 {
@@ -52,7 +60,7 @@ h1, h2, h5 {
     font-weight: 700;
 
 }
-
+/*
 header, main, footer{
     max-width: 1000px;
     margin: 0 auto;
@@ -60,7 +68,7 @@ header, main, footer{
     
 }
 
-header nav {
+nav {
     width: 1000px;
     height: 80px;
     display: flex;
@@ -71,38 +79,88 @@ header nav {
     background-color: var(--secondary-color);
     justify-content: center;
 }
+*/
 
-header nav a {
+nav {
+    display:flex;
+    justify-content: center;
+    gap:1.5rem;
+
+}
+
+nav a {
     margin: 0 1rem;
     color: var(--accent1-color);
-    padding: 0 25px;
+    padding: 0.5rem 1rem;
     font-size: 1.25em;
-    font-style: var(--heading-font);
-    text-align: center;
     text-decoration: none;
 }
 
+/*
 .box{
     justify-items: center;
     display: flex;
     width: 100%;
     height: 250px;
 }
+    */
+nav a:hover{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/*
 main {
     display: flex;
     width: 65%;
     height: 250px;
     background-color: var(--accent-color);
 }
+*/
 
+main{
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.car{
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    padding: 1rem;
+    
+}
+
+.card img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/*
 aside {
     width: 35%;
     background-color: var(--accent1-color);
     }
+
 
 footer {
     text-align: center;
     width: 100%;
     height: 90px;
     background-color: var(--primary-color);
+}
+    */
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
 }
