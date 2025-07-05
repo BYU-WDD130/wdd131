@@ -109,8 +109,8 @@ nav a {
 .box{
     justify-items: center;
     display: flex;
-    width: 450px;
-    height: 250px;
+    width: 1000px;
+    height: 450px;
 }
  
 nav a:hover{
