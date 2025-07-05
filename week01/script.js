@@ -1,1 +1,3 @@
-<span id="2025"></span>
+document.getElementById("currentyear").textContent = Date().getFullYear();
+
+document.getElementById("LastModified").textContent = "Last modified: " + document.lastModified;
