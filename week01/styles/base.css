@@ -105,14 +105,14 @@ nav a {
     text-decoration: none;
 }
 
-/*
+
 .box{
     justify-items: center;
     display: flex;
     width: 100%;
     height: 250px;
 }
-    */
+ 
 nav a:hover{
     background-color: var(--secondary-color);
     border-radius: 5px;
