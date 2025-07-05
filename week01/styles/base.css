@@ -136,7 +136,7 @@ main{
     gap: 2rem;
 }
 
-.card{
+.car{
     background-color: var(--accent1-color);
     border-radius: 8px;
     padding: 1rem;
