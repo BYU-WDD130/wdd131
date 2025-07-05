@@ -152,7 +152,7 @@ main{
 
 
 aside {
-    display: flex;
+    display: grid;
     width: 35%;
     background-color: var(--accent-color);
     align-items: center;
