@@ -31,7 +31,7 @@ p {
   color: var(--accent1-color);
 }
 .container {
-    width: 1000px;
+    width: 1150px;
     height: 1000px;
     margin: 0 auto;
     display: grid;
