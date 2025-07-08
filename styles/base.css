@@ -94,19 +94,13 @@ nav a:hover{
     border: 1px solid #fff;
 }
 
-
-main {
-
-    background-color: var(--accent-color);
-    gap: 1rem;
-}
-
-
 main{
     max-width: 750px;
     padding: 1rem;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
+    background-color: var(--accent-color);
+
 }
 
 .card{
