@@ -109,7 +109,7 @@ main{
 }
 
 .card{
-    display: flex;
+    display: box;
     background-color: var(--accent-color);
     border-radius: 8px;
     padding: 1rem;
