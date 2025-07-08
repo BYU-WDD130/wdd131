@@ -56,7 +56,7 @@ header {
 
 h1 {
      text-align: center;
-     place-items: center;
+     align-items: center;
 }
 
 h1, h2, h3, h5 {
