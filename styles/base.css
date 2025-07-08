@@ -113,7 +113,7 @@ main{
     background-color: var(--accent-color);
     border-radius: 8px;
     padding: 1rem;
- 
+    gap: 1rem;
     
 }
 
