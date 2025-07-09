@@ -3,18 +3,14 @@
       grid-template-columns:1fr 1fr;
       
     }
-}
-
-@media screen and (min-width:500px) {
     header {
         background-color:  black;
       
     }
-}
-
-@media screen and (min-width:500px) {
     h1 {
         color: white;
       
     }
+
 }
+
