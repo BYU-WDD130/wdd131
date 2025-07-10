@@ -1,0 +1,2 @@
+console.log("JavaScript is connected and running!");
+alert("Welcome to my WDD 131 - BOM Example!");
