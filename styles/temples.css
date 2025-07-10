@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #838996;
+    background-color: #35424a;
     color: #fff;
     padding: 1rem;
     text-align:center
@@ -80,7 +80,7 @@ figcaption {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #838996;
+    background-color: #35424a;
     color: #fff;
     margin-top: 1.5rem;
 }
