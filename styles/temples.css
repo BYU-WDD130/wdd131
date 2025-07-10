@@ -30,17 +30,20 @@ nav.ul{
     flex-wrap: wrap;
 }
 
-nav.a{
+nav a{
     color:#fff;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
     transition: background-color 0.3s ease;
 }
 
 nav.a:hover {
-    background-color: #1f2e38;
     border-radius: 5px;
+    border: 1px solid #fff;
 }
+
+
 main {
     display: grid;
     max-width: 900px;
