@@ -23,8 +23,10 @@ body {
 
 }
 
-h1 {
+h1 span{
+    color: #fff176;
     font-weight: 100;
+    margin-left: 10px;
 }
 
 p {
