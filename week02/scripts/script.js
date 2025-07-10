@@ -17,15 +17,18 @@ li.append(deleteButton);
 
 list.append(li);
 
+
+
 button.addEventListener('click', function() {
-    }
-
-  if (input.value.trim() !=== '') {}
-    alert('Please enter a chapter name.'); }
-
+   if (input.value.trim() !== '') {
+   }    
+});
+  
 deleteButton.addEventListener('click', function() {
-    list.removeChild(li);
-    input.focus();
- 
+  list.removeChild(li);
+  input.focus();
+
 });
 
+input.value = '';
+input.focus();
