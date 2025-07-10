@@ -22,7 +22,7 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-
+/*
 nav ul{
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ nav ul{
     gap: 1rem;
     flex-wrap: wrap;
 }
-
+*/
 nav a{
     color:#fff;
     text-decoration: none;
