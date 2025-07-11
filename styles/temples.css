@@ -13,7 +13,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #35424a;
     color: #fff;
     padding: 1rem;
