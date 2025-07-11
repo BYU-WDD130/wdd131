@@ -3,7 +3,7 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
 
 const hamburger = document.getElementById("hamburger");
-const navMenu = document.querySelector("nav a");
+const navMenu = document.querySelector("nav");
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("open");
