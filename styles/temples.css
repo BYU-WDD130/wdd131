@@ -23,7 +23,7 @@ header {
 header h1 {
     margin-bottom: 0.5rem;
 }
-
+/*
 .container-header{
     max-width: 960px;
     margin: 0 auto;
@@ -31,6 +31,7 @@ header h1 {
     align-items: center;
     justify-content: space-between;
 }
+    */
 /*
 nav ul{
     display: flex;
@@ -55,14 +56,14 @@ nav a{
     transition: background-color 0.3s ease;
 }
 */
-
+/*
 
 nav a:hover {
     border-radius: 5px;
     border: 1px solid #fff;
 }
 
-
+*/
 
 /*
 main {
