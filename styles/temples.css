@@ -22,12 +22,29 @@ body {
 }
 
 #menu::before {
-    content: "#";
+    content: "☰";
 }
 
 nav {
     background-color: #35424a;;
 }
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+
+}
+
+.navigation a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
 
 
 header {
