@@ -170,10 +170,19 @@ footer {
     margin-top: 1.5rem;
 }
 
-@media (max-width: 480px) {
-    nav ul {
-        gap: 10px;
+@media only screen and (min-width: 40px) {
+    .navifation {
+        display: flex;
+        
     }
-    main h2 {
-        font-size: 1.25rem;
+    .navigation li {
+        display:  block;
+        flex: 1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+        
+    }
+    #manu {
+        display: none;
     }
