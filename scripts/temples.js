@@ -11,5 +11,3 @@ hamburger.addEventListener("click", () => {
     hamburger.textContent = navMenu.classList.contains("open") ? "❌" : "☰";
 });
 
-menubutton.addEventListener("click", () => {
-    menuitem.classList.toggle("open");
