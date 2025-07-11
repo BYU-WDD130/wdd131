@@ -1,3 +1,23 @@
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    
+}
+    
+.gallery-item p {
+    font-size: 1.1rem;;
+}
+
+.gallery {
+    gap:25px;
+    padding: 10px 0;
+    
+}
+
+
+/*
 @media (min-width: 760px) {
     nav {
         justify-content: center;
@@ -6,3 +26,5 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+*/

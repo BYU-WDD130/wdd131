@@ -24,6 +24,13 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+.container-header{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 /*
 nav ul{
     display: flex;
@@ -33,6 +40,13 @@ nav ul{
     flex-wrap: wrap;
 }
 */
+
+nav ul{
+    display:flex;
+    gap: 20px;
+    list-style:none;
+}
+/*
 nav a{
     color:#fff;
     text-decoration: none;
@@ -40,6 +54,8 @@ nav a{
     font-size: 1.25rem;
     transition: background-color 0.3s ease;
 }
+*/
+
 
 nav a:hover {
     border-radius: 5px;
@@ -47,6 +63,8 @@ nav a:hover {
 }
 
 
+
+/*
 main {
     display: grid;
     max-width: 900px;
@@ -55,29 +73,49 @@ main {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
+*/
 
-main h1 {
+main {
+    max-width:960px;
+    margin: 20px auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+main h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.5rem;
 }
 
-figure {
-    background-color: #fff;
-    padding: 0.5rem;
-    border-radius: 5px;
-    text-align: center;
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+
 }
 
-figure img {
-    width: 100%;
+
+
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
     height: auto;
-    border-radius: 5px;
-}
+    border-radius: 8px;
+}    
 
-figcaption {
-    margin-top: 0.5rem;
-    font-style: italic;
+.gallery-item p {
+    margin-top: 8px;
+    color: green;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 footer {
@@ -87,3 +125,11 @@ footer {
     color: #fff;
     margin-top: 1.5rem;
 }
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 10px;
+    }
+    main h2 {
+        font-size: 1.25rem;
+    }
