@@ -172,7 +172,7 @@ nav a:hover {
 }
 
 
-/*
+
 main {
     display: grid;
     max-width: 900px;
@@ -181,7 +181,7 @@ main {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
-*/
+
 
 main {
     max-width:960px;
