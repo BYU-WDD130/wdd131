@@ -219,27 +219,78 @@ footer {
     margin-top: 1.5rem;
 }
 
-@media only screen and (min-width: 40px) {
+@media (min-width: 768px) {
     header {
         display: flex;
-        gap:25px;
-    
+        gap: 30px;
     }
-    .hamburger {
+
+    .menu-toggle,
+    .close-menu {
         display: none;
     }
 
-
-    .navigation li {
-        display:  block;
-        flex: 1 1 100%;
+    .mobile-nav {
+        position: static;
+        transform: none;
+        visibility: visible;
+        pointer-events: auto;
+        height: auto;
+        background: none;
+        display: block;
     }
-    .navigation a {
-        text-align: center;
-        
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 40px;
     }
 
-    #menu {
+    .nav-links li {
+        margin: 0;
+    }
+
+    .figure-container {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (min-width: 768px) {
+
+    header {
+        display: flex;
+        gap: 30px;
+    }
+
+    .menu-toggle,
+    .close-menu {
         display: none;
     }
+
+    .mobile-nav {
+        position: static;
+        transform: none;
+        visibility: visible;
+        pointer-events: auto;
+        height: auto;
+        background: none;
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 40px;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .figure-container {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
 }
