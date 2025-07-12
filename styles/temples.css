@@ -157,6 +157,18 @@ nav a:hover {
     font-size: 25px;
 }
 
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
 /*
 main {
     display: grid;
