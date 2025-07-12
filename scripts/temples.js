@@ -5,16 +5,14 @@ document.getElementById("LastModified").textContent = "Last Modified: " + docume
 
 
 
+ const openMenu = document.getElementById('open-menu');
+    const closeMenu = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    openMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('show');
+    });
 
-/*
-
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.querySelector("nav ul");
-
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-
-    hamburger.textContent = navMenu.classList.contains("open") ? "❌" : "☰";
-});
-*/
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('show');
+    });
