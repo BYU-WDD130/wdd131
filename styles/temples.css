@@ -29,7 +29,7 @@ body {
     content: "✖";
 }
 header {
-    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     background-color: #35424a;
     color: #fff;
