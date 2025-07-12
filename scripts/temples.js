@@ -4,15 +4,12 @@ document.getElementById("LastModified").textContent = "Last Modified: " + docume
 
 
 
+const menuButton = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
 
- const openMenu = document.getElementById('open-menu');
-    const closeMenu = document.getElementById('close-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
+menuButton.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
 
-    openMenu.addEventListener('click', () => {
-      mobileMenu.classList.add('show');
-    });
-
-    closeMenu.addEventListener('click', () => {
-      mobileMenu.classList.remove('show');
-    });
+    const isOpen = navMenu.classList.contains("show");
+    menuButton.textContent = isOpen ? "❌" : "☰";
+});
