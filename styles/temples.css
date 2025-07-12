@@ -206,7 +206,6 @@ main h2 {
 }
 
 
-
 .gallery-item{
     display: flex;
     flex-direction: column;
@@ -243,7 +242,7 @@ footer {
     .menu-toggle,
     .close-menu {
         display: none;
-    }
+}
 
     .mobile-nav {
         position: static;
@@ -266,9 +265,7 @@ footer {
         margin: 0;
     }
 
-    .figure-container {
-        grid-template-columns: repeat(2, 1fr)
-    }
+
 }
 
 @media (min-width: 768px) {
@@ -302,10 +299,6 @@ footer {
 
     .nav-links li {
         margin: 0;
-    }
-
-    .figure-container {
-        grid-template-columns: repeat(2, 1fr)
     }
 
 }
