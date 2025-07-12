@@ -31,7 +31,6 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-color: #35424a;
     color: #fff;
@@ -235,8 +234,8 @@ footer {
 
 @media (min-width: 768px) {
     header {
-        display: flex;
-        gap: 30px;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .menu-toggle,
