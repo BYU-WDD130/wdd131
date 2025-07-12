@@ -31,10 +31,12 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #35424a;
     color: #fff;
     padding: 1rem;
+    align-items: center;
    
 }
 
@@ -232,7 +234,7 @@ footer {
     margin-top: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     header {
         flex-direction: row;
         justify-content: space-between;
