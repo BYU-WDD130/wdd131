@@ -9,9 +9,11 @@ footer {
 	margin: 0 auto;
 }
 
-marquee {
-	padding: 1rem;
-	background-color: #eee;
+.baneer {
+    padding: 1rem;
+    background-color: #eee;
+    text-align: center;
+    font-weight: bold;
 }
 
 h1 {
