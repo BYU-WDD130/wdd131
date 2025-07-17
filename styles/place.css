@@ -158,10 +158,10 @@ footer {
     }
 
     .weather {
-
         position: static;
         border-radius: 5px;
         text-align: center;
+        padding: 1rem;
 
     }
      
@@ -169,6 +169,8 @@ footer {
         position: static;
         border-radius: 5px;
         text-align: center;
+        padding: 1rem;
+
     }
 
     section h2 {
@@ -186,25 +188,12 @@ footer {
     }
 
     }
-    .weather-icon-mobile {
-        display: inline;
-    }
-    .weather h2 .icon::after {
-        content: "";
-    }
 
     .icon-mobile {
         display: block;
     }
 
-    .icon-mobile img {
-        width: 100%;
-        height: auto;
-    }
-    .weather-list li {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
+    
     .weather h2 .icon::after {
         display: none;
     }
