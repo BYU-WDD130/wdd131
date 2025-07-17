@@ -6,8 +6,9 @@ document.addEventListener("DOMContentLoaded", () =>{
     const speedMph = parseFloat(document.getElementById("wind").textContent);
     const windChillElem = document.getElementById("windchill");
 
-    if (tem <= 50 & wind > 3) {
-        windChillElem.textContent = '${calculateWindChill(temp, wind)}°F';
+    if (tem <= 50 && wind > 3) {
+        const shill = calculateWindChill(temp, speed);
+        windChillElem.textContent = '${chill}°F';
     } else {
         windChillElem.textContent = "N/A";
     }
