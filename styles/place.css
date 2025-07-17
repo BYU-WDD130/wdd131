@@ -43,8 +43,7 @@ section h2 {
     color: var(--main-bg);
     font-weight: 900;
     position: relative;
-    background-color: green;
-    border: 1rem solid blueviolet;
+    background-color: blueviolet;
     border-radius: 0.5rem;
     height: 2.5rem;
     width: 10rem;
