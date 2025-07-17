@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Dery henriquez</title>
+
+    <meta name= "description" content="Welcome to my WDD 131 - Dynamic Web Fundamentals portfolio. Here, I showcase my project to practice how to manage a responsive media gallery..">
+    <meta name="author" content="Dery Henriquez">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\place.css">
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1> your place </h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="styles/images/hero-large.webp">
+                <source media="(min-width: 600px)" srcset="styles/images/hero-medium.webp">
+                <img src="styles/images/hero-small.webp" alt="A collection of beautiful places from around the world" width="500" height="250">
+            </picture>
+        </section>
+
+        <section class="wether">
+            <h2> Wether <span class="icon"></span></h2>
+            <div class="wether-box">
+                <p><strong>Temperature:</strong><span id="temp">45</span>°F</p>
+                <p><strong>Wind Speed:</strong> <span id="wind">10</span>mph</p>
+                <p><strong>Humidity:</strong> <span id="humidity">50</span>%</p>
+                <img class="weather-icon-mobile" src="styles/images/weather-icon.png" alt="Weather Icon">
+            </div>
+        </section>
+    </main>
+<footer> 
+     <p> &copy; <span id="currentyear"></span> Dery Henriquez. New Jersey. </p> 
+   <p id="LastModified"></p>
+
+</footer> 
+
+</body>

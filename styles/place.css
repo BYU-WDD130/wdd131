@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #003366; 
+    --accent-color: rgb(0,0,0);
+    --font-main: "Roboto", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.wether {
+    padding: 1rem;
+    text-align: center;
+}
+
+.wether h2 {
+    position: relative;
+}
+
+.wether h2 .icon::after {
+    content: "🌤️";
+    margin-left: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .weather-icon-mobile {
+        display: inline;
+    }
+    .weather h2 .icon::after {
+        content: "";
+    }
+}
