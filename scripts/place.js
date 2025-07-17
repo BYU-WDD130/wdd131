@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     if (tempF <= 50 && speedMph > 3) {
         const shill = calculateWindChill(tempF, speedMph);
-        windChillElem.textContent = `${calculateWindChill} °F`;
+        windChillElem.textContent = `${windChillElem} °F`;
  }
      else {
         windChillElem.textContent = "N/A";
