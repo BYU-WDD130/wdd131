@@ -9,6 +9,9 @@
 
 }
 body {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
     font-family: "Roboto", sans-serif;
     background-color: #f4f4f9;
     color:#333;
@@ -37,14 +40,16 @@ header {
 }
 
 main {
-    display: grid;
+    display: block;
     position: inherit;
     max-width: 1500px;
     margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 0.2rem;
  
 }
+
 
 
 
