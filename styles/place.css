@@ -54,7 +54,7 @@ section h2 {
 
 .wether {
     position:absolute;
-    position: relative;
+
     top: 2rem;
     left: 1.5rem;
     background-color:azure;
@@ -66,7 +66,7 @@ section h2 {
 
 .about {
     position:absolute;
-    position: relative;
+
     top: 2rem;
     left: 1.5rem;
     background-color:azure;
