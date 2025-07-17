@@ -35,6 +35,23 @@ main {
     display: block;
 }
 
+section h2 {
+    position: absolute;
+    left: -1rem;
+    bottom: 1.5rem;
+    justify-self: start;
+    text-align: end;
+    color: var(--main-bg);
+    font-weight: 900;
+    position: relative;
+    background-color: green;
+    border: 1rem solid blueviolet;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 10rem;
+    margin-bottom: 0;
+}
+
 .wether {
     position: relative;
     background-color:azure;
@@ -69,6 +86,35 @@ main {
   height: auto;
 }
 
+.weather-list {
+    list-style: none;
+    padding: 0;
+}
+
+.weather-list li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    justify-items: end;
+}
+
+.label {
+    justify-self: start;
+}
+
+
+.data-list {
+    list-style: none;
+    padding: 0;
+}
+
+.data-list li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    justify-items: end;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -86,10 +132,61 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    main {
+        display:flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .weather {
+
+        position: static;
+        border-radius: 5px;
+        text-align: center;
+
+    }
+     
+    .about {
+        position: static;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    section h2 {
+        position: static;
+        left: auto;
+        bottom: auto;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        height: auto;
+        width: auto;
+        text-align: center;
+        margin-bottom: 1rem;
+        justify-self: center;
+    }
+
+    }
     .weather-icon-mobile {
         display: inline;
     }
     .weather h2 .icon::after {
         content: "";
     }
-}
+
+    .icon-mobile {
+        display: block;
+    }
+
+    .icon-mobile img {
+        width: 100%;
+        height: auto;
+    }
+    .weather-list li {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .weather h2 .icon::after {
+        display: none;
+    }
+
