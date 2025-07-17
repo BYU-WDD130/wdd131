@@ -46,7 +46,7 @@ section h2 {
     bottom: 1.5rem;
     justify-self: start;
     text-align: center;
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-weight: 900;
     position: relative;
     background-color: blueviolet;
