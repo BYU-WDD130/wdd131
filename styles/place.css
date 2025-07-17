@@ -57,7 +57,7 @@ section h2 {
     margin-bottom: 0;
 }
 
-.wether {
+.weather {
     position:absolute;
 
     bottom: 2rem;
@@ -87,11 +87,11 @@ section h2 {
 }
 
 
-.wether h2 {
+.weather h2 {
     position: relative;
 }
 
-.wether h2 .icon::after {
+.weather h2 .icon::after {
     content: "🌤️";
     margin-left: 0.5rem;
 }
