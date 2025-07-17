@@ -53,8 +53,6 @@ main {
 }
 
 
-
-
 .wether h2 {
     position: relative;
 }
@@ -62,6 +60,22 @@ main {
 .wether h2 .icon::after {
     content: "🌤️";
     margin-left: 0.5rem;
+}
+
+.icon-mobile {
+  width: 38px;
+  margin: 0 auto;
+  display: none;
+  height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.2rem 0;
 }
 
 footer {
