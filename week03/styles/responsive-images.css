@@ -1,4 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root {
+    --main-font: "Roboto", sans-serif;
+
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f9;
+    color:#333;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #35424a;
+    color: orange;
+}
 
 
 .hero img {
