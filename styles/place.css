@@ -97,9 +97,8 @@ section h2 {
 }
 
 .icon-mobile {
-
+  width: 40px;
   margin: 0 auto;
-  display: none;
   height: auto;
 }
 
