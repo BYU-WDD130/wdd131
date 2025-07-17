@@ -10,7 +10,7 @@
 }
 body {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
     background-color: #f4f4f9;
@@ -42,7 +42,7 @@ header {
 main {
     display: block;
     position: inherit;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 1rem;
