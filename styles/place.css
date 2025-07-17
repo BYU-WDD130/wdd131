@@ -11,6 +11,7 @@
 }
 
 body {
+    max-width: 1200px;
     font-family: var(--font-main);
     margin: 0;
     padding: 0;
