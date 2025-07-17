@@ -38,9 +38,12 @@ header {
 
 main {
     display: grid;
+    position: inherit;
+    max-width: 1500px;
+    margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 1rem;
+ 
 }
 
 
