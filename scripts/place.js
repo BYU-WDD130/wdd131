@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () =>{
  }
      else {
         windChillElem.textContent = "N/A";
-    }
 
+    }
+});
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
-});
