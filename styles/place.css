@@ -37,10 +37,9 @@ main {
 
 section h2 {
     position: absolute;
-    left: -1rem;
     bottom: 1.5rem;
     justify-self: start;
-    text-align: end;
+    text-align: center;
     color: var(--main-bg);
     font-weight: 900;
     position: relative;
@@ -54,25 +53,25 @@ section h2 {
 
 .wether {
     position:absolute;
-
     top: 2rem;
     left: 1.5rem;
     background-color:azure;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 1rem 1rem 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8);
     font-weight: 900;
 }
 
 .about {
     position:absolute;
-
     top: 2rem;
     left: 1.5rem;
     background-color:azure;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 1rem 1rem 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8);
     font-weight: 900;
 }
 
