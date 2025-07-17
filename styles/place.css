@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #003366; 
+    --primary-color: #f3f3f3; 
     --accent-color: rgb(0,0,0);
     --font-main: "Roboto", sans-serif;
 }
@@ -13,7 +13,7 @@ body {
     font-family: var(--font-main);
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
 }
 
 header {
