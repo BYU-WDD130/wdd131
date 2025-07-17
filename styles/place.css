@@ -44,7 +44,7 @@ main {
 section h2 {
     position: absolute;
     left: 0.5rem;
-    top: 1px;
+    top: 0.2px;
     bottom: 1.5rem;
     justify-self: start;
     text-align: center;
