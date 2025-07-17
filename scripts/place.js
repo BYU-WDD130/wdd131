@@ -8,14 +8,12 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     if (tempF <= 50 && speedMph > 3) {
         const shill = calculateWindChill(tempF, speedMph);
-        windChillElem.textContent = `${windChillElem} °F`;
+        windChillElem.textContent = `${chill} °F`;
  }
      else {
         windChillElem.textContent = "N/A";
 
      }
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
     document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
 });
