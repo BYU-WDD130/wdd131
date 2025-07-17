@@ -59,10 +59,10 @@ section h2 {
 
 .wether {
     position:absolute;
-    
-    bottom: 2rem;
-    left: 1.5rem;
 
+
+    top: 2rem;
+    right: 1.5rem;
 
     background-color:azure;
     border: 1px solid #ccc;
@@ -75,8 +75,8 @@ section h2 {
 .about {
     position:absolute;
 
-    top: 2rem;
-    right: 1.5rem;
+    bottom: 2rem;
+    left: 1.5rem;
 
     background-color:azure;
     border: 1px solid #ccc;
