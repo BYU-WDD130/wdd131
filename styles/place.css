@@ -17,14 +17,11 @@ body {
     background-color: var(--primary-color);
 }
 
-header
-main
-footer {
-    max-width: 1200px;
-    margin: 0 auto;
+
 }
 
 header {
+    max-width: 1200px;
     background-color: var(--accent1-color);
     color: white;
     padding: 1rem;
@@ -32,6 +29,8 @@ header {
 }
 main {
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 
@@ -137,6 +136,7 @@ li {
 }
 
 footer {
+    max-width: 1200px;
     background-color: var(--accent1-color);
     text-align: center;
     font-size: 0.9rem;
