@@ -43,9 +43,7 @@ main {
 
 section h2 {
     position: absolute;
-    left: 0.5rem;
-    top: 0.01px;
-    bottom: 1.5rem;
+    justify-content: center;
     justify-self: start;
     text-align: center;
     color: var(--primary-color);
