@@ -5,14 +5,17 @@ document.addEventListener("DOMContentLoaded", () =>{
     const tempF = parseFloat(document.getElementById("temp").textContent);
     const speedMph = parseFloat(document.getElementById("wind").textContent);
     const windChillElem = document.getElementById("windchill");
-    if (temp <= 50 && wind > 3) {
-        const shill = calculateWindChill(temp, speed);
+
+    if (tempF <= 50 && speedMph > 3) {
+        const shill = calculateWindChill(tempF, speedMph);
         windChillElem.textContent = `${chill}°F`;
  }
      else {
         windChillElem.textContent = "N/A";
 
-    }
-});
+     }
+
     document.getElementById("year").textContent = new Date().getFullYear();
+
     document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+});
