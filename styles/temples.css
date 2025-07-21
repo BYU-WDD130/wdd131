@@ -70,6 +70,29 @@ nav a:hover {
     cursor: pointer; 
 }
 
+.mobile-nav {  
+
+    display: none; 
+    position: absolute;  
+    top: 60px; 
+    right: 0;  
+    background-color: #fff;  
+    width: 100%;   
+    z-index: 1000;   
+    padding: 1rem;  
+} 
+
+.mobile-nav.active {  
+    display: block;  
+} 
+
+.close-menu {  
+    background: none;  
+    border: none; 
+    font-size: 2rem;  
+    float: right;  
+    cursor: pointer; 
+ }  
 
 .mobile-nav {
     position: fixed;
@@ -92,9 +115,9 @@ nav a:hover {
 .mobile-nav.show {
     transform: translateX(0);
     visibility: visible;
-    pointer-events: auto; }
+    pointer-events: auto; 
 
-
+}
 
 .nav-links {
     list-style: none;
