@@ -97,9 +97,7 @@ section h2 {
 }
 
 .icon-mobile {
-  width: 40px;
-  margin: 0 auto;
-  height: auto;
+  display: none;
 }
 
 .weather-list {
@@ -188,11 +186,10 @@ footer {
     }
 
     }
-    .icon {
-        display: none;}
+
     
     .icon-mobile {
-        display: block;
+        display: inline;
     }
 
     
@@ -204,3 +201,21 @@ footer {
         content: "🌤️";
         margin-left: 0.5rem;
     }
+
+
+
+
+    /*
+      width: 40px;
+  margin: 0 auto;
+  height: auto;
+}
+
+
+    .icon {
+        display: none;}
+    
+    .icon-mobile {
+        display: block;
+    }
+*/
