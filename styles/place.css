@@ -95,9 +95,11 @@ section h2 {
 }
 
 .icon-mobile {
-  width: 40px;
-  margin: 0 auto;
-  height: auto;
+
+    display: none;
+    width: 40px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .weather-list {
