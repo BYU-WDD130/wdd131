@@ -97,6 +97,9 @@ section h2 {
 .icon-mobile {
 
     display: none;
+    width: 40px;
+    margin: 0 auto;
+    height: auto;
 
 }
 
