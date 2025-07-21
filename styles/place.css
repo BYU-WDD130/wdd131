@@ -188,7 +188,9 @@ footer {
     }
 
     }
-
+    .icon {
+        display: none;
+    
     .icon-mobile {
         display: block;
     }
