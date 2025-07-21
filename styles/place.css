@@ -97,9 +97,7 @@ section h2 {
 .icon-mobile {
 
     display: none;
-    width: 40px;
-    height: auto;
-    margin: 0 auto;
+
 }
 
 .weather-list {
@@ -186,7 +184,7 @@ footer {
         justify-self: center;
         color: var(--accent1-color);
     }
-    .icon {
+    .icon-mobile {
         display: inline;
     }
 }
