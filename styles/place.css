@@ -157,7 +157,7 @@ footer {
     }
 
     .weather {
-        position: static;
+        position: absolute;
         border-radius: 5px;
         text-align: center;
         padding: 1rem;
