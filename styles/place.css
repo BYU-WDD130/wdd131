@@ -73,11 +73,9 @@ section h2 {
 }
 
 .about {
-    position:absolute;
-
+    position: absolute;
     top: 2rem;
     left: 1.5rem;
-
     background-color:azure;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -187,7 +185,7 @@ footer {
         color: var(--accent1-color);
     }
 
-    }
+ 
 
     
     .icon-mobile {
@@ -203,7 +201,7 @@ footer {
         margin-left: 0.5rem;
     }
 
-
+   }
 
 
     /*
