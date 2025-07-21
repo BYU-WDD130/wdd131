@@ -184,7 +184,9 @@ footer {
         justify-self: center;
         color: var(--accent1-color);
     }
-
+    .icon {
+        display: none;
+    }
 }
 
     
