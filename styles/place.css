@@ -189,7 +189,7 @@ footer {
 
     }
     .icon {
-        display: none;
+        display: none;}
     
     .icon-mobile {
         display: block;
@@ -200,3 +200,7 @@ footer {
         display: none;
     }
 
+    .weather h2 .icon-mobile::after {
+        content: "🌤️";
+        margin-left: 0.5rem;
+    }
