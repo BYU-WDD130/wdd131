@@ -193,10 +193,6 @@ footer {
 }
 
     
-    .icon-mobile {
-        display: block;
-    }
-    
     .weather h2 .icon::after {
         display: none;
     }
