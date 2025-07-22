@@ -87,6 +87,12 @@ nav a:hover {
     pointer-events: auto;
     visibility: visible;
 } 
+.menu::before {
+    content: "☰";
+}
+.menu.show::before {
+    content: "✖";
+}
 
 .close-menu {  
     background: none;  
