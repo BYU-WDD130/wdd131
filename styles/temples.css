@@ -251,6 +251,7 @@ footer p {
     }
 
     .mobile-nav {
+        color: white;
         display: flex;
         flex-direction: row;
         gap: 1.2rem;
