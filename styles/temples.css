@@ -84,6 +84,8 @@ nav a:hover {
 
 .mobile-nav.active {  
     display: block;  
+    pointer-events: all;
+    visibility: visible;
 } 
 
 .close-menu {  
