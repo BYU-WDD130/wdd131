@@ -251,7 +251,11 @@ footer p {
     }
 
     .mobile-nav {
-        position: static;
+        display: flex;
+        flex-direction: row;
+        gap: 1.2rem;
+        align-items: center;
+
         transform: none;
         visibility: visible;
         pointer-events: auto;
