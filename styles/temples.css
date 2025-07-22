@@ -256,7 +256,7 @@ footer p {
         display: flex;
         flex-direction: row;
         gap: 1.2rem;
-        align-items: center;
+        justify-content: center;
         position: static;
         transform: none;
         visibility: visible;
