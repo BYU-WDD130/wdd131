@@ -88,24 +88,27 @@ nav a:hover {
     visibility: visible;
 } 
 
-.open-menu {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
+#open-menu {
+    width: 35px;
+    height: 35px;
 }
-.menu::before {
+
+#open-menu.open {
+    align-self: flex-start;
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+
+}
+
+.open-menu::before {
     content: "☰";
 }
-.menu.show::before {
+.open-menu.show::before {
     content: "✖";
 }
 
-.close-menu {  
+.close-open-menu {  
     background: none;  
     border: none; 
     font-size: 2rem;  
