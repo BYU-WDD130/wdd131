@@ -89,12 +89,13 @@ nav a:hover {
     visibility: visible;
 } 
 
-#open-menu {
+.menu {
     width: 35px;
     height: 35px;
+    
 }
 
-#open-menu.open {
+.menu.open {
     align-self: flex-start;
     margin-top: 10px;
     width: 35px;
@@ -102,10 +103,10 @@ nav a:hover {
 
 }
 
-.open-menu::before {
+.menu::before {
     content: "☰";
 }
-.open-menu.show::before {
+.menu.open::before {
     content: "✖";
 }
 
@@ -238,7 +239,10 @@ footer p {
         display: flex;
         gap: 30px;
     }
-
+    .menu {
+        display: none;
+    }
+    
     .menu-toggle,
     .close-menu {
         display: none;
