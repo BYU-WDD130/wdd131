@@ -255,7 +255,7 @@ footer p {
         flex-direction: row;
         gap: 1.2rem;
         align-items: center;
-
+        position: static;
         transform: none;
         visibility: visible;
         pointer-events: auto;
