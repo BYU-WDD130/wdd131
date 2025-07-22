@@ -119,6 +119,8 @@ nav a:hover {
  }  
 
 .mobile-nav {
+    display: flex;
+    flex-direction: row;
     position: fixed;
     top: 0;
     left: 0;
@@ -242,7 +244,7 @@ footer p {
     .menu {
         display: none;
     }
-    
+
     .menu-toggle,
     .close-menu {
         display: none;
