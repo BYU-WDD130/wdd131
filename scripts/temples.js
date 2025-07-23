@@ -6,23 +6,25 @@ document.getElementById("LastModified").textContent = "Last Modified: " + docume
 
 document.addEventListener("DOMContentLoaded", function () { 
 //elementos del menu movil
-  const openMenuBtn = document.getElementById("open-menu"); 
-
-  const closeMenuBtn = document.getElementById("close-menu"); 
-
+  const menuButton = document.getElementById("menu"); 
   const mobileMenu = document.getElementById("mobile-menu"); 
 
   
 //abrir menu
-  openMenuBtn.addEventListener("click", () => { 
-
-    mobileMenu.classList.add("active"); 
+  menuButton.addEventListener("click", () => { 
+  mobileMenu.classList.add("active"); 
   });
 
 //cerrar menu
+const navLinks = mobileMenu.querySelectorAll("a");
+navLinks.forEach(link =>{
+link.addEventListener("click" , () => {
   closeMenuBtn.addEventListener("click", () => { 
     mobileMenu.classList.remove("active"); 
      });
+   });
+ });
+ 
 
 //menu hamburgueza (para navegacion principal)
 
