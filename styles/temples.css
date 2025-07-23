@@ -62,9 +62,12 @@ nav a:hover {
 } 
 
 .mobile-nav.active {  
-    display: block;  
-    pointer-events: auto;
-    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    gap: 1rem;  
+
 } 
 
 #menu {
