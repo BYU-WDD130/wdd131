@@ -4,28 +4,19 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
 
 
-document.addEventListener("DOMContentLoaded", function () { 
-//elementos del menu movil
-  const menuButton = document.getElementById("menu"); 
-  const mobileMenu = document.getElementById("mobile-menu"); 
+const menuButton = document.getElementById("menu");
+const mobileMenu = document.getElementById("mobileMenu");
 
+menuButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
   
-//abrir menu
-  menuButton.addEventListener("click", () => { 
-  mobileMenu.classList.add("active"); 
-  });
 
-//cerrar menu
-const navLinks = mobileMenu.querySelectorAll("a");
-navLinks.forEach(link =>{
-link.addEventListener("click" , () => {
-  closeMenuBtn.addEventListener("click", () => { 
-    mobileMenu.classList.remove("active"); 
-     });
-   });
- });
-})
-
+  if (mobileMenu.classList.contains("active")) {
+    menuButton.textContent = "✖";
+  } else {
+    menuButton.textContent = "☰";
+  }
+});
 
 //menu hamburgueza (para navegacion principal)
 
@@ -40,5 +31,5 @@ link.addEventListener("click" , () => {
    header.classList.toggle("open");
    title.classList.toggle('hide');
   });
-});
+
 

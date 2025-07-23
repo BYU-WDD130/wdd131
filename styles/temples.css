@@ -71,8 +71,17 @@ nav a:hover {
     width: 35px;
     height: 35px;
     margin-right: 6px;
-    
+    background: none;       
+    border: none;           
+    font-size: 35px;         
+    color: white;            
+    cursor: pointer;         
+    position: relative;      
+    z-index: 10;             
+    display: inline-block;   
 }
+    
+
 
 #menu.open {
     align-self: flex-start;
@@ -82,14 +91,7 @@ nav a:hover {
 
 }
 
-#menu::before {
-    content: "☰";
-}
 
-
-#menu.open::before {
-    content: "✖";
-}
 
 #close-open-menu {  
     background: none;  
@@ -253,7 +255,6 @@ footer p {
         font-size: 20px;
         gap: 1rem;
         color: white;
-
         justify-content: center;
         position: static;
         transform: none;
