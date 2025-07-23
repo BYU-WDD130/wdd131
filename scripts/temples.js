@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }); 
 
-  
+  hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+    header.classList.toggle("open");
+    title.classList.toggle('hide');
 
   closeMenuBtn.addEventListener("click", () => { 
 
