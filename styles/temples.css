@@ -55,7 +55,10 @@ nav a:hover {
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    background-color: #fff;  
+    background-color: #fff;
+    position: fixed;
+    justify-content: right;
+    visibility: hidden;  
 
 } 
 
@@ -97,16 +100,7 @@ nav a:hover {
     cursor: pointer; 
  }  
 
-.mobile-nav {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    justify-content: right;
-    visibility: hidden;
 
- 
-}
 
 .mobile-nav.open {
     display: flex;
