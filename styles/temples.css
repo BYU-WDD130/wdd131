@@ -239,7 +239,7 @@ footer p {
     color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
     header {
         display: flex;
         flex-direction: row;
