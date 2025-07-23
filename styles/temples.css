@@ -269,18 +269,13 @@ footer p {
     .mobile-nav {
    
         display: flex;
+        flex-direction: row;        
         text-decoration: none;
+        font-size: 20px;
         gap: 1rem;
         color: white;
-        flex-direction: row;
-        gap: 1.2rem;
-        justify-content: center;
-        position: static;
-        transform: none;
-        visibility: visible;
-        pointer-events: auto;
-        height: auto;
-        background: none;
+
+
 
     }
 
