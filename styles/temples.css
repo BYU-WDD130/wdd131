@@ -245,7 +245,6 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 30px;
         background-color:  #35424a;
         color: white;
     }
