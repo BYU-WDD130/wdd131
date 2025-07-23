@@ -30,7 +30,7 @@ header {
   
 }
 
-
+/*
 .nav-container {
     display: flex;
     width: 100%;
@@ -49,7 +49,7 @@ nav ul {
     font-family: "Roboto", sans-serif;;
     font-weight: 250;
 }
-
+*/
 nav a:hover {
     border-radius: 5px;
     border: 1px solid #fff;
@@ -125,6 +125,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     position: fixed;
+    /*
     top: 0;
     left: 0;
     width: 100%;
@@ -139,6 +140,7 @@ nav a:hover {
     z-index: 9;
     visibility: hidden;
     pointer-events: none;
+    */
 }
 
 .mobile-nav.show {
