@@ -275,7 +275,13 @@ footer p {
         gap: 1rem;
         color: white;
 
-
+        justify-content: center;
+        position: static;
+        transform: none;
+        visibility: visible;
+        pointer-events: auto;
+        height: auto;
+        background: none;
 
     }
 
