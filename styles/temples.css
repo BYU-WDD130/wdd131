@@ -21,15 +21,15 @@ h1 {
 }
 
 header {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #35424a;
-    color: #fff;
-
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #35424a;
+  padding: 1rem;
+  color: white;
+  z-index: 1000;
 }
-
 
 nav a:hover {
     border-radius: 5px;
