@@ -1,6 +1,6 @@
 * {
-    margin: ;
-    padding: 
+    margin: 0;
+    padding:0;
     box-sizing: border-box;
 }
 
@@ -27,7 +27,6 @@ header {
     background-color: #35424a;
     color: #fff;
 
-  
 }
 
 
@@ -242,26 +241,22 @@ footer p {
         margin-left: 1rem;
     }
     #menu {
-        display: none;
+        display: block;
     }
 
 
     .mobile-nav {
    
-        display: flex;
-        flex-direction: row;        
-        text-decoration: none;
-        font-size: 20px;
-        gap: 1rem;
-        color: white;
 
-        justify-content: center;
         position: static;
-        transform: none;
-        visibility: visible;
-        pointer-events: auto;
-        height: auto;
-        background: none;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+
+
 
     }
 
