@@ -30,26 +30,7 @@ header {
   
 }
 
-/*
-.nav-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
 
-.nav-container p {
-    font-size: 35px;
-    font-family: "Roboto", sans-serif;;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-nav ul {
-    font-family: "Roboto", sans-serif;;
-    font-weight: 250;
-}
-*/
 nav a:hover {
     border-radius: 5px;
     border: 1px solid #fff;
@@ -122,6 +103,7 @@ nav a:hover {
     flex-direction: row;
     position: fixed;
     justify-content: right;
+    visibility: hidden;
 
  
 }
