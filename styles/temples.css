@@ -245,10 +245,6 @@ footer p {
         display: none;
     }
 
-    #menu-toggle,
-    #close-menu {
-        display: none;
-    }
 
     .mobile-nav {
    
@@ -280,7 +276,7 @@ footer p {
     .mobile-nav.active {
         display: flex;
     }
-    
+
     .open a {
         color: white;
         display: block;
