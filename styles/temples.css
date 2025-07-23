@@ -270,6 +270,16 @@ footer p {
         text-decoration: none;
         padding: 1rem;
         color: white;
+        flex-direction: row;
+        gap: 1.2rem;
+        justify-content: center;
+        position: static;
+        transform: none;
+        visibility: visible;
+        pointer-events: auto;
+        height: auto;
+        background: none;
+
     }
 
     .mobile-nav a {
