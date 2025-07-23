@@ -89,13 +89,13 @@ nav a:hover {
     visibility: visible;
 } 
 
-.menu {
+#menu {
     width: 35px;
     height: 35px;
     
 }
 
-.menu.open {
+#menu.open {
     align-self: flex-start;
     margin-top: 10px;
     width: 35px;
@@ -103,14 +103,14 @@ nav a:hover {
 
 }
 
-.menu::before {
+#menu::before {
     content: "☰";
 }
-.menu.open::before {
+#menu.open::before {
     content: "✖";
 }
 
-.close-open-menu {  
+#close-open-menu {  
     background: none;  
     border: none; 
     font-size: 2rem;  
