@@ -266,11 +266,11 @@ footer p {
 
     .mobile-nav {
    
-        display: flex;
+        display: block;
         flex-direction: row;
         gap: 1.2rem;
         justify-content: center;
-        position: static;
+        position: stati;
         transform: none;
         visibility: visible;
         pointer-events: auto;
