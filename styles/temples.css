@@ -247,7 +247,7 @@ footer p {
 
     .mobile-nav {
    
-
+        display: flex;
         position: static;
         top: 60px;
         left: 0;
