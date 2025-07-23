@@ -125,7 +125,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     position: fixed;
-    /*
+
     top: 0;
     left: 0;
     width: 100%;
@@ -140,7 +140,7 @@ nav a:hover {
     z-index: 9;
     visibility: hidden;
     pointer-events: none;
-    */
+ 
 }
 
 .mobile-nav.show {
