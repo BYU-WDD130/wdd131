@@ -267,7 +267,7 @@ footer p {
     }
 
     .mobile-nav {
-        color: white;
+   
         display: flex;
         flex-direction: row;
         gap: 1.2rem;
@@ -278,7 +278,7 @@ footer p {
         pointer-events: auto;
         height: auto;
         background: none;
-        display: block;
+        color: white;
     }
 
     .mobile-nav a {
