@@ -267,15 +267,8 @@ footer p {
     .mobile-nav {
    
         display: block;
-        flex-direction: row;
-        gap: 1.2rem;
-        justify-content: center;
-        position: stati;
-        transform: none;
-        visibility: visible;
-        pointer-events: auto;
-        height: auto;
-        background: none;
+        text-decoration: none;
+        padding: 1rem;
         color: white;
     }
 
@@ -283,6 +276,7 @@ footer p {
         color: white;
         padding: 16px;
         text-decoration: none;
+        font-size: 22px;
 
     }
 
