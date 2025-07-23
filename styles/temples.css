@@ -104,9 +104,7 @@ nav a:hover {
 
 }
 
-#menu::before {
-    content: "☰";
-}
+
 #menu.open::before {
     content: "✖";
 }
@@ -249,18 +247,18 @@ footer p {
         color: white;
     }
 
-    .logo {
+    #logo {
         font-size: 28px;
         font-weight: bold;
         margin: auto;
         margin-left: 1rem;
     }
-    .menu {
+    #menu {
         display: none;
     }
 
-    .menu-toggle,
-    .close-menu {
+    #menu-toggle,
+    #close-menu {
         display: none;
     }
 
