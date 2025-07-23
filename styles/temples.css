@@ -268,9 +268,9 @@ footer p {
 
     .mobile-nav {
    
-        display: block;
+        display: flex;
         text-decoration: none;
-        padding: 1rem;
+        gap: 1rem;
         color: white;
         flex-direction: row;
         gap: 1.2rem;
@@ -285,10 +285,11 @@ footer p {
     }
 
     .mobile-nav a {
+        display: block;
         color: white;
         padding: 16px;
         text-decoration: none;
-        font-size: 22px;
+        font-size: 20px;
 
     }
 
