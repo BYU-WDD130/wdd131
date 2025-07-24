@@ -72,10 +72,15 @@ nav a:hover {
   overflow-y: auto;
 }
 
+.mobile-nav.active {  
+    transform: translateX(0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    gap: 1rem;  
 
-
-
-
+} 
 
 #menu {
   font-size: 2rem;
@@ -263,16 +268,7 @@ footer p {
     color: white;
 
     }
-    
-.mobile-nav.active {  
-    transform: translateX(0%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem auto;
-    gap: 1rem;  
 
-} 
 
     .open a {
         color: white;
