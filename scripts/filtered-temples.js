@@ -1,16 +1,4 @@
 
-createTempleCard(temples);
-
-const alllink = document.querySelector("all")
-
-alllink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => !temple.location.includes("Utah"))); 
-    ; 
-
-});
-function createTempleCard(filteredTemples) {
-}
-
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -71,4 +59,3 @@ const temples = [
   // Add more temple objects here...
 ];
 
-window.onload = () => filterTemples('home');
