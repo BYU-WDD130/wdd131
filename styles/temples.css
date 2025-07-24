@@ -253,7 +253,7 @@ footer p {
         color: white;
     }
 
-    .mobileMenu.mobile-nav {
+    .mobileMenu.mobile-nav.active {
         display: flex;
         color: white;
         flex-direction: block;
