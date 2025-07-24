@@ -57,6 +57,7 @@ nav a:hover {
 
 .mobile-nav {
   position: absolute;
+  text-decoration: none;
   top: 0;
   right: 0;
   width: 250px;
