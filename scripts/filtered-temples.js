@@ -59,3 +59,8 @@ const temples = [
   // Add more temple objects here...
 ];
 
+
+//actual year
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+//last modification
+document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
