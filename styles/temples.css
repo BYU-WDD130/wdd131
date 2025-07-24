@@ -22,6 +22,8 @@ body {
 .open a {
     text-decoration: none;
     color: white;
+    font-size: 18px;
+    padding: 1rem;
 }
 
 
