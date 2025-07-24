@@ -1,3 +1,6 @@
+
+
+
 //actual year
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 //last modification
