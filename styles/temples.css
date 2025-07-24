@@ -256,7 +256,7 @@ footer p {
 
 
     #logo {
-        display: none;
+        display: block;
     }
     #menu {
         display: none;
