@@ -16,6 +16,13 @@ body {
     line-height: 1.6;
 }
 
+.mobile-nav a,
+.mobile-nav.open a,
+.nav-links a,
+.open a {
+    text-decoration: none;
+}
+
 h1 {
     font-family:"Roboto", sans-serif;
 }
