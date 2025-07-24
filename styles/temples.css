@@ -21,6 +21,7 @@ body {
 .nav-links a,
 .open a {
     text-decoration: none;
+    color: white;
 }
 
 
@@ -75,7 +76,6 @@ nav a:hover {
   top: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
   background-color: #35424a;
   display: flex;
   flex-direction: column;
