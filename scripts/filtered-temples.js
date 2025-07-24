@@ -70,3 +70,5 @@ const temples = [
   },
   // Add more temple objects here...
 ];
+
+window.onload = () => filterTemples('home');
