@@ -23,6 +23,13 @@ body {
     text-decoration: none;
 }
 
+
+.mobileMenu.mobile-nav.active {
+        display: flex;
+        color: white;
+        flex-direction: block;
+    }
+
 h1 {
     font-family:"Roboto", sans-serif;
 }
@@ -253,11 +260,7 @@ footer p {
         color: white;
     }
 
-    .mobileMenu.mobile-nav.active {
-        display: flex;
-        color: white;
-        flex-direction: block;
-    }
+
 
     #logo {
         display: block;
