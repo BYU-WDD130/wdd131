@@ -253,7 +253,11 @@ footer p {
         color: white;
     }
 
-
+    .mobileMenu.mobile-nav {
+        display: flex;
+        color: white;
+        flex-direction: block;
+    }
 
     #logo {
         display: block;
