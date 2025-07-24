@@ -254,7 +254,7 @@ footer p {
     }
 
 
-    .mobileMenu {
+    .mobile-nav.active {
         text-decoration: none;
         color: white;
         font-family: "Roboto", sans-serif;
