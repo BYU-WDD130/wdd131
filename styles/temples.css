@@ -270,6 +270,7 @@ footer p {
     }
 
   .mobile-nav {
+    display: flex;
     position: static;
     transform: none;
     height: auto;
