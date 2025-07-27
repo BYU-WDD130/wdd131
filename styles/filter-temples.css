@@ -189,7 +189,7 @@ nav a:hover {
 .mobile-nav.show {
     transform: translateX(0);
     visibility: visible;
-    pointer-events: auto; 
+
 
 }
 
