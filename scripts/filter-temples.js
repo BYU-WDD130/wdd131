@@ -135,3 +135,4 @@ menuButton.addEventListener("click", () => {
   menuButton.textContent = mobileMenu.classList.contains("active") ? "✖" : "☰";
 });
 
+displayTemples(temples);
