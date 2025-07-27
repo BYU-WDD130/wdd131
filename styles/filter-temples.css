@@ -30,7 +30,7 @@ body {
 .mobileMenu.mobile-nav.active {
         display: flex;
         color: white;
-        flex-direction: block;
+
     }
 
 h1 {
