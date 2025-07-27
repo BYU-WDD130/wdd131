@@ -67,7 +67,7 @@ const temples = [
     location: "Le Chesnay, France",
     dedicated: "2017, May, 21",
     area: 44000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2055.jpg"
   }
 ];
 
@@ -119,7 +119,7 @@ document.getElementById("my").addEventListener("click", () => {
   const smallTemples = temples.filter(t => t.area < 10000);
   displayTemples(smallTemples);
 
-  
+
 });
 
 // Año actual y última modificación
