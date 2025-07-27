@@ -118,6 +118,8 @@ document.getElementById("only").addEventListener("click", () => {
 document.getElementById("my").addEventListener("click", () => {
   const smallTemples = temples.filter(t => t.area < 10000);
   displayTemples(smallTemples);
+
+  
 });
 
 // Año actual y última modificación
