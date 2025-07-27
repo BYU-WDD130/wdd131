@@ -53,7 +53,7 @@ const temples = [
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 40000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-temple-daylight.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-3550.jpg"
   },
   {
     templeName: "Laie Hawaii",
