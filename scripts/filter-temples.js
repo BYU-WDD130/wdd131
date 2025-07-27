@@ -60,7 +60,7 @@ const temples = [
     location: "Laie, Hawaii, United States",
     dedicated: "1919, November, 27",
     area: 42000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/400x250/laie-temple-exterior.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-3838.jpg"
   },
   {
     templeName: "Paris France",
