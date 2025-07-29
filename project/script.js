@@ -3,13 +3,13 @@ const featuredItems = [
         name: "Rose must",
         price: "$45.50",
         description: "Delicate strawberry must",
-        image: "images/cooldcake.jpg"
+        image: "images/cooldcake.webp"
     },
     {
         name: "Red frute cake",
         price: "$5.00",
         description: "Classic delitefull frute cake",
-        image: "images/frutecake1.webp"
+        image: "images/frutecake3.webp"
     }
 ];
 
