@@ -15,11 +15,12 @@ body {
 
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #c2185b;
+    color: white;
 }
 
 .logo {
@@ -89,11 +90,10 @@ nav a {
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 1rem 0;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-  margin-top: 2rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #c2185b;
+    color: white;
 }
 
 /* Responsive tweaks */
