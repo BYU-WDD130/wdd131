@@ -2,14 +2,14 @@ const featuredItems = [
     {
         name: "Rose Macarons",
         price: "$3.50",
-        description: "Delicate rose-flavored almond cookies",
-        image: "images/macarons.jpg"
+        description: "Delicate strawberry must",
+        image: "images/cooldcake.jpg"
     },
     {
         name: "Red Velvet Slice",
         price: "$5.00",
-        description: "Classic red velvet cake with cream cheese frosting",
-        image: "images/redvelvet.jpg"
+        description: "Classic delitefull frute cake",
+        image: "images/frutecake.jpg"
     }
 ];
 
