@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive photo album showcasing beautiful temples worldwide with captions and interactive navigation.">
+    <meta name="author" content="Dery Henriquez">
+    <title>Red Rose Dessert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <img src="images/logo.png" alt="Red Rose Dessert Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Custom Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h1>Our Menu</h1>
+            <p>Explore our selection of handcrafted desserts. Use the filters to find your favorites.</p>
+
+            <div class="filters">
+                <button onclick="filterMenu('all')">All</button>
+                <button onclick="filterMenu('cake')">Cakes</button>
+                <button onclick="filterMenu('cookie')">Cookies</button>
+                <button onclick="filterMenu('macaron')">Macarons</button>
+            </div>
+
+            <div id="menu-items" class="items-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Red Rose Dessert. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
