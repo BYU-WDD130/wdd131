@@ -1,27 +1,27 @@
 // Dessert data
 const menuItems = [
   {
-    name: "Red Velvet Cake",
+    name: "Choco flan",
     type: "cake",
-    image: "images/redvelvet.jpg",
-    price: 20
+    image: "images/chocoflan1.webp",
+    price: 45
   },
   {
-    name: "Classic Chocolate Chip Cookies",
+    name: "Rose must",
+    type: "cold cake",
+    image: "images/coldcake.webp",
+    price: 45
+  },
+  {
+    name: "Semita",
     type: "cookie",
-    image: "images/cookies.jpg",
-    price: 12
+    image: "images/semita.webp",
+    price: 2
   },
   {
-    name: "Raspberry Macarons",
-    type: "macaron",
-    image: "images/macarons.jpg",
-    price: 18
-  },
-  {
-    name: "Strawberry Shortcake",
+    name: "Strawberry cake",
     type: "cake",
-    image: "images/strawberryshortcake.jpg",
+    image: "images/frutecake3.webp",
     price: 22
   }
 ];
