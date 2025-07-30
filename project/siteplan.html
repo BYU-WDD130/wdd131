@@ -1,57 +1,112 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Red Rose Desserts offers handmade 3D gelatin cakes, cupcakes, and mousse. Browse our menu, order custom treats, and explore client favorites.">
-	<meta name="author" content="Dery Henriquez">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-  <title>Red Rose Desserts</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Red Rose Desserts – Site Plan</title>
+  <link rel="stylesheet" href="siteplan.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <img src="images/logo.webp" alt="Red Rose Dessert Logo" class="logo">
-    <nav>
+  <h1>Red Rose Desserts – Website Plan</h1>
+
+  <h2> Subject/Entity of Website</h2>
+  <p><strong>Red Rose Desserts</strong> – A local artisan bakery specializing in elegant, handmade desserts such as 3D gelatin cakes, cupcakes, mousse, and seasonal treats.</p>
+
+  <h2> Purpose of the Website</h2>
+  <ul>
+    <li>Promote Red Rose Desserts to a wider audience.</li>
+    <li>Display a menu of available dessert products.</li>
+    <li>Allow customers to place custom orders through a contact form.</li>
+    <li>Share testimonials and images from happy clients.</li>
+    <li>Provide store hours, location, and contact details.</li>
+  </ul>
+
+  <h2> Target Audience</h2>
+  <ul>
+    <li>Local customers looking for custom desserts.</li>
+    <li>Event planners for weddings, birthdays, holidays.</li>
+    <li>Dessert lovers who appreciate artistic treats.</li>
+    <li>Users browsing on both desktop and mobile devices.</li>
+  </ul>
+
+  <h2> Scenarios</h2>
+  <ul>
+    <li>“I need to find a unique cake for my daughter’s quinceañera.”</li>
+    <li>“I’m planning a baby shower and want to see dessert options and pricing.”</li>
+  </ul>
+
+  <h2> Main Goals</h2>
+  <ul>
+    <li>Create a mobile-friendly, accessible website using responsive design.</li>
+    <li>Show a visually appealing gallery of desserts using optimized images.</li>
+    <li>Use JavaScript features (e.g., menu filter, form validation, localStorage).</li>
+    <li>Allow users to place inquiries via a form.</li>
+  </ul>
+
+  <h2> Page Structure</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Page</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Home</td>
+        <td>Welcome message, featured product image, intro to bakery.</td>
+      </tr>
+      <tr>
+        <td>Menu</td>
+        <td>Display a categorized list of desserts with filtering.</td>
+      </tr>
+      <tr>
+        <td>Order/Contact</td>
+        <td>Custom order form and contact information.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>✅ Design Considerations</h2>
+  <ul>
+    <li>Mobile-first layout using flexbox and grid.</li>
+    <li>Simple navigation bar on all pages.</li>
+    <li>Color scheme:
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="order.html">Custom Order</a></li>
+        <li>Primary: <span class="color-box" style="background-color:#c2185b;"></span> #c2185b (Rose Pink)</li>
+        <li>Accent: <span class="color-box" style="background-color:#ffffff;"></span> #ffffff (White)</li>
+        <li>Background: <span class="color-box" style="background-color:#fff8f5;"></span> #fff8f5 (Light Cream)</li>
+        <li>Accent1: <span class="color-box" style="background-color:#5d4037;"></span> #5d4037 (Deep Brown)</li>
       </ul>
-    </nav>
-  </header>
+    </li>
+    <li>Typography:
+      <ul>
+        <li><strong>Headers:</strong> Handwritten-style (future use: 'Dancing Script' or similar)</li>
+        <li><strong>Body:</strong> 'Open Sans', sans-serif</li>
+      </ul>
+    </li>
+  </ul>
 
-  <main class="home">
-    <section class="hero">
-      <h1>Welcome to Red Rose Desserts</h1>
-      <p>Artisan 3D gelatin cakes, cupcakes, mousse & more – made with love for your special moments.</p>
-      <img src="images/image.webp" alt="Featured Dessert" class="hero-img" loading="lazy">
-    </section>
+  <h2> Wireframes</h2>
+  <ul>
+    <li><strong>Mobile View:</strong> <a href="images/wireframe-mobile.png">View Mobile Wireframe</a></li>
+    <li><strong>Desktop View:</strong> <a href="images/wireframe-desktop.png">View Desktop Wireframe</a></li>
+  </ul>
 
-    <section class="intro">
-      <h2>About Us</h2>
-      <p>We are a local bakery crafting elegant, handmade desserts for all occasions. From artistic gelatin cakes to seasonal treats, we bring sweet joy to your events.</p>
-    </section>
+  <h2> Naming Conventions</h2>
+  <ul>
+    <li>Folder: <code>project/</code></li>
+    <li>HTML files: <code>index.html</code>, <code>menu.html</code>, <code>order.html</code></li>
+    <li>CSS file: <code>style.css</code></li>
+    <li>JavaScript: <code>script.js</code></li>
+    <li>Images folder: <code>images/</code></li>
+  </ul>
 
-    <section class="testimonials">
-      <h2>Happy Clients</h2>
-      <div class="testimonial">
-        <p>“The 3D gelatin cake was the highlight of our wedding – absolutely stunning!”</p>
-        <span>- Emily R.</span>
-      </div>
-      <div class="testimonial">
-        <p>“Red Rose’s mousse cups are perfect for baby showers – delicious and elegant!”</p>
-        <span>- Luis D.</span>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Red Rose Dessert. All rights reserved.</p>
-    <p>Visit us at 123 Sweet Lane, Dessertville | Open: Tue–Sun 10am–6pm | Call: (123) 456-7890</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <h2> Validation</h2>
+  <ul>
+    <li>HTML validated via <a href="https://validator.w3.org/nu" target="_blank">W3C Validator</a> – No errors.</li>
+    <li>CSS validated via <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a> – No errors.</li>
+  </ul>
 </body>
 </html>
