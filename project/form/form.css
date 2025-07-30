@@ -35,6 +35,14 @@ form {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.rating {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
 label, legend {
   display: block;
   margin-top: 1rem;
