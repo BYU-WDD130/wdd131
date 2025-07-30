@@ -33,6 +33,14 @@ background-color: #c2185b;
 color: white;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
 .header-container {
   display: flex;
   justify-content: space-between;
