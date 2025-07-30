@@ -10,7 +10,28 @@ const featuredItems = [
         price: "$5.00",
         description: "Classic delitefull frute cake",
         image: "images/frutecake3.webp"
-    }
+    },
+
+    {
+        name: "Red frute cake",
+        price: "$5.00",
+        description: "Classic delitefull frute cake",
+        image: "images/frutecake3.webp"
+    },
+    {
+        name: "Red frute cake",
+        price: "$5.00",
+        description: "Classic delitefull frute cake",
+        image: "images/frutecake3.webp"
+    },
+
+    {
+        name: "Red frute cake",
+        price: "$5.00",
+        description: "Classic delitefull frute cake",
+        image: "images/frutecake3.webp"
+    }    
+    
 ];
 
 function renderFeaturedItems(items) {
