@@ -40,9 +40,10 @@ nav ul {
 
 
 nav a {
-  font-weight: bold;
-
+    color: white;
+    text-decoration: none;
 }
+
 
 .hero {
     text-align: center;
