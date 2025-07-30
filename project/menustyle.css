@@ -183,7 +183,10 @@ footer {
     justify-content: space-between;
     text-align: left;
   }
-
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
   .about-contact {
     flex-direction: row;
   }
