@@ -52,12 +52,10 @@ nav ul {
   gap: 1.5rem;
 }
 
-li {
-  color: white;
-}
+
 nav a {
   font-weight: bold;
-  color: #d6336c;
+
 }
 
 /* Hero section */
