@@ -33,14 +33,14 @@ header {
     color: white;
 }
 
-.container {
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
-  background-color: #f0f0f0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: auto;
 }
-
-
 
 
 .logo {
