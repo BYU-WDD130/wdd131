@@ -1,65 +1,57 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name= "description" content="A responsive photo album showcasing my proyect about the nature lens and interactive navigation.">
-    <meta name="author" content="Dery Henriquez">
-    <title>Site Plan - Nature Lens</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css">
-
-</head> 
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Red Rose Desserts offers handmade 3D gelatin cakes, cupcakes, and mousse. Browse our menu, order custom treats, and explore client favorites.">
+	<meta name="author" content="Dery Henriquez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <title>Red Rose Desserts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header>
-        <img src="project\images\logo.png" alt="Nature Lens Logo" class="logo">
-    <h1> Nature Lens - Site plan </h1>
-    </header>
+  <header>
+    <img src="images/logo.png" alt="Red Rose Dessert Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Custom Order</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-        <h2> Site Purpose</h2>
-        <p> This site is a porfolio and resource hub for nature photography enthusuasts. it offers tips for beginners, showcases galleries organized by themes (landscapes, wildlife, macro), and provides gear recomendations. The goal is to inspire appreciation for nature through visual storytelling</p>
+  <main class="home">
+    <section class="hero">
+      <h1>Welcome to Red Rose Desserts</h1>
+      <p>Artisan 3D gelatin cakes, cupcakes, mousse & more – made with love for your special moments.</p>
+      <img src="images/featured-dessert.jpg" alt="Featured Dessert" class="hero-img" loading="lazy">
     </section>
 
-    <section>
-        <h2> Scenarios</h2>
-        <ul>
-            <li> what camera gear is recomended for beginners interested in bird photography?</li>
-            <li> hnere can I see examples of macro photography taken in my local area?</li>
-        </ul>
+    <section class="intro">
+      <h2>About Us</h2>
+      <p>We are a local bakery crafting elegant, handmade desserts for all occasions. From artistic gelatin cakes to seasonal treats, we bring sweet joy to your events.</p>
     </section>
 
-    <section>
-        <h2> Color Scheme</h2>
-        <p> The chosen color reflect a natural, calming aesthetic suitable for phography-based site focused on the outdoors.</p>
-        <ul>
-            <li><span class="color-block forest-green"></span><strong>Forest Green (#2a5934)</strong></li>
-            <li><span class="color-block sky-blue"></span><strong>Sky Blue (#87ceeb)</strong></li>
-        </ul>
+    <section class="testimonials">
+      <h2>Happy Clients</h2>
+      <div class="testimonial">
+        <p>“The 3D gelatin cake was the highlight of our wedding – absolutely stunning!”</p>
+        <span>- Emily R.</span>
+      </div>
+      <div class="testimonial">
+        <p>“Red Rose’s mousse cups are perfect for baby showers – delicious and elegant!”</p>
+        <span>- Luis D.</span>
+      </div>
     </section>
+  </main>
 
+  <footer>
+    <p>&copy; 2025 Red Rose Dessert. All rights reserved.</p>
+    <p>Visit us at 123 Sweet Lane, Dessertville | Open: Tue–Sun 10am–6pm | Call: (123) 456-7890</p>
+  </footer>
 
-    <section>
-        <h2> Typography</h2>
-        <ul>
-            <li><strong>Playfair Display</strong> - Used for headings to give an elegant, classic feel.</li>
-            <li><strong>Roboto</strong> - Used for body text for readability and modern look.</li>
-        </ul>
-
-
- <footer> 
-     <p> &copy; <span id="currentyear"></span> Dery Henriquez. New Jersey. </p> 
-   <p id="LastModified"></p>
-   <script src="scripts/getdates.js"></script> 
-
-
-
-        <ul>
-            <li><a href="project\wireframes\homepage-wireframe.png">Wireframe</a></li>
-        </ul>  
-
-  </footer>       
+  <script src="script.js"></script>
 </body>
 </html>
