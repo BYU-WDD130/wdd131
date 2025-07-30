@@ -38,9 +38,10 @@ nav ul {
     color: white;
 }
 
+
 nav a {
-    color: white;
-    text-decoration: none;
+  font-weight: bold;
+
 }
 
 .hero {
