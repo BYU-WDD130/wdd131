@@ -1,67 +1,56 @@
-// Dessert data
-const menuItems = [
+
+
+
+const featuredItems = [
   {
-    name: "Choco flan",
-    type: "cake",
-    image: "images/chocoflan1.webp",
-    price: 45
+    name: "3D Rose Gelatin Cake",
+    image: "images/item1.jpg",
+    description: "Handcrafted gelatin flower art",
   },
   {
-    name: "Rose must",
-    type: "cold cake",
-    image: "images/coldcake.webp",
-    price: 45
+    name: "Strawberry Mousse",
+    image: "images/item2.jpg",
+    description: "Light and fruity delight",
   },
   {
-    name: "Semita",
-    type: "cookie",
-    image: "images/semita.webp",
-    price: 2
-  },
-  {
-    name: "Strawberry cake",
-    type: "cake",
-    image: "images/frutecake3.webp",
-    price: 22
+    name: "Mini Cupcake Box",
+    image: "images/item3.jpg",
+    description: "Perfect for parties & gifts",
   }
 ];
 
-// Render items based on filter
-function renderMenuItems(items) {
-  const container = document.getElementById("menu-items");
-  container.innerHTML = "";
+function renderFeaturedItems() {
+  const container = document.getElementById("featured-items");
+  container.innerHTML = ""; // Clear before rendering
 
-  if (items.length === 0) {
-    container.innerHTML = "<p>No items match your filter.</p>";
-    return;
-  }
-
-  items.forEach(item => {
+  featuredItems.forEach((item) => {
     const card = document.createElement("div");
     card.className = "item-card";
-
     card.innerHTML = `
       <img src="${item.image}" alt="${item.name}" loading="lazy">
       <h3>${item.name}</h3>
-      <p>$${item.price.toFixed(2)}</p>
+      <p>${item.description}</p>
     `;
-
     container.appendChild(card);
   });
 }
 
-// Filter function with conditional logic
-function filterMenu(type) {
-  const filtered = type === "all"
-    ? menuItems
-    : menuItems.filter(item => item.type === type);
+// Save and retrieve user visit info
+function saveVisitCount() {
+  const key = "visitCount";
+  let count = localStorage.getItem(key);
+  count = count ? parseInt(count) + 1 : 1;
+  localStorage.setItem(key, count);
 
-  renderMenuItems(filtered);
-  localStorage.setItem("lastFilter", type); // store last filter
+  if (count === 1) {
+    console.log(`Welcome! This is your first visit.`);
+  } else {
+    console.log(`Welcome back! You've visited ${count} times.`);
+  }
 }
 
-// Load last used filter on page load
-window.addEventListener("DOMContentLoaded", () => {
-  const savedFilter = localStorage.getItem("lastFilter") || "all";
-  filterMenu(savedFilter);
+// Run features on load
+document.addEventListener("DOMContentLoaded", () => {
+  renderFeaturedItems();
+  saveVisitCount();
 });
