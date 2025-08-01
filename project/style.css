@@ -57,17 +57,19 @@ nav a {
 
 }
 
-.featured {
-    padding: 20px;
-    background-color: #fdeef2;
-}
-
-.items-grid {
+#div.product-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
+
+.featured {
+    padding: 20px;
+    background-color: #fdeef2;
+}
+
+
 
 footer {
     text-align: center;
