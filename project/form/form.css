@@ -76,7 +76,7 @@ input[type="submit"] {
   margin-right: 0.5rem;
 }
 
-input.submit:hover {
+input:hover {
   transform: scale(1.1);
 
 }
