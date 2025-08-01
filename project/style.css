@@ -51,7 +51,7 @@ nav a {
 }
 
 .hero img {
-    width: 1200px;
+    width: auto;
     height: auto;
     border-radius: 10px;
 }
