@@ -1,3 +1,8 @@
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+
+
 // Product data array
 const products = [
   { id: "cake", name: "3D Gelatin Cake" },
