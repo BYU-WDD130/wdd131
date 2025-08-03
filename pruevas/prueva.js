@@ -1,4 +1,4 @@
-// Animación de entrada para el overlay
+// Animación simple para el hero overlay
 document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.querySelector('.overlay');
   overlay.style.opacity = 0;

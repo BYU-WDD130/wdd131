@@ -1,26 +1,51 @@
-/* HERO SECTION */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo claro semitransparente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.site-header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #c2185b;
+}
+
+/* HERO base */
 .hero {
   position: relative;
   height: 100vh;
-  background-color: #000;
   overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-/* Imagen de fondo */
 .hero-img {
   position: absolute;
   top: 0;
@@ -31,46 +56,16 @@
   z-index: 1;
 }
 
-/* Header dentro del hero */
-.hero-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 3;
-  position: relative;
-  padding: 0 2rem;
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.hero-header nav ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.hero-header nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Overlay del texto hero */
 .overlay {
   position: relative;
   z-index: 2;
   background-color: rgba(194, 24, 91, 0.5);
   padding: 2rem;
   border-radius: 1rem;
-  max-width: 700px;
-  margin: 0 auto;
   color: white;
-  text-align: center;
   backdrop-filter: blur(3px);
+  max-width: 700px;
+  text-align: center;
 }
 
 .hero-text h1 {
@@ -88,10 +83,9 @@
   background-color: white;
   color: #c2185b;
   padding: 0.75rem 1.5rem;
-  border: none;
   border-radius: 25px;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
   transition: background 0.3s;
 }
 
@@ -99,7 +93,7 @@
   background-color: #f8bbd0;
 }
 
-/* Otros estilos base */
+/* Cuerpo */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
