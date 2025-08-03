@@ -1,3 +1,7 @@
+
+
+
+
 const featuredItems = [
     {
         name: "Rose must",
