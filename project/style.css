@@ -153,6 +153,30 @@ footer {
     color: white;
 }
 
+.footer-content{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.social-iocns{
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3;
+}
+
+.social-icons img:hover {
+   transform: scale(1.1);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     nav ul {
