@@ -164,7 +164,7 @@ footer {
 .social-iocns{
   display: flex;
   justify-content: right;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .social-icons img {
