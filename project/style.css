@@ -62,7 +62,15 @@ nav a {
 }
 
 */
-
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  overflow: hidden;
+}
 
 .hero-content {
   position: relative;
