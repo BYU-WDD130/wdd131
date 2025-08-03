@@ -1,3 +1,9 @@
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+
+
+
 // Parse query string and display data
 function getQueryData() {
   const params = new URLSearchParams(window.location.search);
