@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="project/css/style.css">
+  <link rel="stylesheet" href="project/styles/style.css">
 </head>
 
 
@@ -47,10 +47,10 @@
       <!-- Useful Features -->
       <fieldset>
         <legend>Useful Features</legend>
-        <label><input type="checkbox" id="feature1" name="features" value="Texture"> Texture</label>
-        <label><input type="checkbox" id="feature2" name="features" value="Flavor"> Flavor</label>
-        <label><input type="checkbox" id="feature3" name="features" value="Design"> Design</label>
-        <label><input type="checkbox" id="feature4" name="features" value="Size"> Size</label>        
+        <label><input type="checkbox" id="feature1" name="features[]" value="Texture"> Texture</label>
+        <label><input type="checkbox" id="feature2" name="features[]" value="Flavor"> Flavor</label>
+        <label><input type="checkbox" id="feature3" name="features[]" value="Design"> Design</label>
+        <label><input type="checkbox" id="feature4" name="features[]" value="Size"> Size</label>        
       </fieldset>
 
       <!-- Written Review -->
@@ -62,7 +62,7 @@
       <input type="text" id="username" name="username" placeholder="Optional">
 
       <!-- Submit -->
-      <input type="submit" value="Submit Review">
+      <input type="submit" value="Submit">
     </form>
   </main>
 
