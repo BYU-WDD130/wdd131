@@ -131,9 +131,9 @@ nav a {
 
 .seasonal-specials {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #fff8f5;
     max-width: 1200px;
     margin: 0 auto;
@@ -153,7 +153,7 @@ nav a {
   transform: translateY(-5px);
 }
 .item-card img {
-  width: 100%;
+  width: 150px;
   max-height: 200px;
   object-fit: cover;
   border-radius: 8px;
