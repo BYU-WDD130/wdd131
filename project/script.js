@@ -60,3 +60,4 @@ function renderFeaturedItems(items) {
 renderFeaturedItems(featuredItems);
 
 console.log("Red Rose Dessert site loaded successfully");
+
