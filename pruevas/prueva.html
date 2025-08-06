@@ -2,90 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Red Rose Desserts</title>
-  <link rel="stylesheet" href="prueva.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <main class="home">
-      <section class="hero">
-        <div class="hero-content">
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="form.html">Order</a>
+    </nav>
+  </header>
 
-          <!-- Header integrado -->
-             <header class="site-header">
-      <img src="images/logo.jpg" alt="Red Rose Dessert Logo" class="logo" />
-
-
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Custom Order</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="home">
-      <section class="hero">
-        <div class="hero-content">
-          <div class="overlay">
-            <div class="hero-text">
-              <h1>Welcome to Red Rose Desserts</h1>
-              <p>Artisan 3D gelatin cakes, cupcakes, mousse & more – made with love for your special moments.</p>
-              <a href="menu.html" class="btn">View Menu</a>
-            </div>
-          </div>
-          <img src="images/jellycake.webp" alt="Featured Dessert" class="hero-img" loading="lazy" />
-        </div>
-      </section>
-
-      <!-- Resto del contenido -->
-      <section class="featured-products">
-        <h2>Customer Favorites</h2>
-        <div class="product-grid" id="featured-items">
-          <!-- Dynamic content from JS -->
-        </div>
-      </section>
-
-      <section class="seasonal-specials">
-        <h2>Seasonal Specials</h2>
-        <div class="product-grid">
-          <div class="item-card">
-            <img src="images/coldcake.webp" alt="Seasonal Item" loading="lazy" />
-            <h3>Holiday Gelatin Cake</h3>
-          </div>
-          <div class="item-card">
-            <img src="images/ejemplo.jpg" alt="Seasonal Item" loading="lazy" />
-            <h3>Valentine's Mousse Cups</h3>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-contact">
-        <div class="about">
-          <h2>About Us</h2>
-          <p>We are a local bakery crafting elegant, handmade desserts for all occasions. From artistic gelatin cakes to seasonal treats, we bring sweet joy to your events.</p>
-        </div>
-        <div class="contact">
-          <h2>Contact</h2>
-          <p>123 Sweet Lane, Dessertville</p>
-          <p>Tue–Sun 10am–6pm</p>
-          <p>(123) 456-7890</p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Red Rose Dessert. All rights reserved.</p>
-      <div class="footer-icons">
-        <a href="#"><img src="images/icon-fb.svg" alt="Facebook"></a>
-        <a href="#"><img src="images/icon-ig.svg" alt="Instagram"></a>
-        <a href="#"><img src="images/icon-map.svg" alt="Map"></a>
+  <main>
+    <section class="hero">
+      <img src="images/hero-cake.jpg" alt="Featured Cake" class="hero-img">
+      <div class="intro-text">
+        <h1>Welcome to Red Rose Desserts</h1>
+        <p>Handcrafted cakes and sweets made with love.</p>
       </div>
-    </footer>
-  </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section class="featured-products">
+      <h2>Customer Favorites</h2>
+      <div class="product-grid" id="customer-favorites">
+        <!-- Items inserted by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Red Rose Desserts. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
