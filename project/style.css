@@ -129,6 +129,11 @@ nav a {
   background-color: #f8bbd0;
 }
 
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .seasonal-specials {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
