@@ -6,21 +6,21 @@ const featuredItems = [
     image: "images/coldcake.webp"
   },
   {
-    name: "Fruit Cake",
+    name: "Frute Cake",
     price: "$5.00",
     description: "Classic delightful fruit cake",
-    image: "images/frutecake3.webp"
+    image: "images/fruitcake.webp"
   },
   {
-    name: "Vanilla Cupcake",
+    name: "Pasion Mousse",
     price: "$3.50",
-    description: "Soft vanilla cupcake with buttercream",
-    image: "images/cupcake.webp"
+    description: "Soft and creamy passion fruit mousse",
+    image: "images/principal.webp"
   },
   {
-    name: "Mango Mousse",
+    name: "Choco flan",
     price: "$4.25",
-    description: "Creamy mango mousse in a cup",
+    description: "Rich chocolate flan dessert",
     image: "images/mango-mousse.webp"
   }
 ];
