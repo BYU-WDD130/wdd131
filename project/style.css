@@ -130,9 +130,11 @@ nav a {
 }
 
 .featured-products {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: top-center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+
+
 }
 
 .seasonal-specials {
