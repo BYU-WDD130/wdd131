@@ -132,14 +132,14 @@ nav a {
 .featured-products {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: top-center;
 }
 
 .seasonal-specials {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #fff8f5;
     max-width: 1200px;
     margin: 0 auto;
