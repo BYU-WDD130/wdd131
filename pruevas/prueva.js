@@ -15,7 +15,7 @@ const featuredItems = [
     name: "Pasion Mousse",
     price: "$3.50",
     description: "Soft and creamy passion fruit mousse",
-    image: "images/principal-small.webp"
+    image: "images/principal-large.webp"
   },
   {
     name: "Choco flan",
