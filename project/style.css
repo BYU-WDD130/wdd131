@@ -129,9 +129,22 @@ nav a {
   background-color: #f8bbd0;
 }
 
+.seasonal-specials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #fff8f5;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-
-
+.item-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 #product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
