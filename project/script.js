@@ -15,7 +15,7 @@ const featuredItems = [
         name: "Blueberry slice",
         price: "$5.00",
         description: "Blueberry slice with cream",
-        image: "images/blueberry-slice.web"
+        image: "images/blueberry-slice2.web"
     },
 
     {
