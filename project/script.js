@@ -12,10 +12,10 @@ const featuredItems = [
         image: "images/coldcake.webp"
     },
     {
-        name: "Red frute cake",
+        name: "Blueberry slice",
         price: "$5.00",
-        description: "Classic delitefull frute cake",
-        image: "images/frutecake3.web"
+        description: "Blueberry slice with cream",
+        image: "images/blueberry-slice.web"
     },
 
     {
