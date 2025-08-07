@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Red Rose Desserts</title>
-  <link rel="stylesheet" href="prueva.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="form.html">Order</a>
-    </nav>
-  </header>
+  <div class="container">
 
-  <main>
-    <section class="hero">
-      <img src="images/coldcake.webp" alt="Featured Cake" class="hero-img">
-      <div class="intro-text">
-        <h1>Welcome to Red Rose Desserts</h1>
-        <p>Handcrafted cakes and sweets made with love.</p>
+    <header>
+      <img src="images/logo.jpg" alt="Red Rose Dessert Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Custom Order</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="home"> 
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="overlay">
+            <div class="hero-text">
+              <h1>Welcome to Red Rose Desserts</h1>
+              <p>Artisan 3D gelatin cakes, cupcakes, mousse & more – made with love for your special moments.</p>
+              <a href="menu.html" class="btn">View Menu</a>
+            </div>
+          </div>
+          <img src="images/principal1.webp" alt="Featured Dessert" class="hero-img" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Customer Favorites -->
+      <section class="featured-products" id="featured-items">
+        <h2>Customer Favorites</h2>
+        <div class="product-grid">
+          <!-- Dynamic content from JS -->
+        </div>
+      </section>
+
+      <!-- Seasonal Specials -->
+      <section class="seasonal-specials" id="seasonal-specials">
+        <h2>Seasonal Specials</h2>
+        <div class="product-grid">
+          <div class="item-card">
+            <img src="images/coldcake.webp" 
+                 alt="Holiday gelatin cake decorated with festive colors" 
+                 loading="lazy">
+            <h3>Holiday Gelatin Cake</h3>
+          </div>
+          <div class="item-card">
+            <img src="images/mix-cake.webp" 
+                 alt="Valentine's mousse cake topped with heart decorations" 
+                 loading="lazy">
+            <h3>Valentine's Mousse Cake</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Contact -->
+      <section class="about-contact">
+        <div class="about">
+          <h2>About Us</h2>
+          <p>We are a local bakery crafting elegant, handmade desserts for all occasions. From artistic gelatin cakes to seasonal treats, we bring sweet joy to your events.</p>
+        </div>
+        <div class="contact">
+          <h2>Contact</h2>
+          <p>2000 Old Montauk Hwy, Montauk, NY 11954</p>
+          <p>Tue–Sun 10am–6pm</p>
+          <p>(123) 456-7890</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p> &copy; <span id="currentyear"></span> Red Rose Desserts. All rights reserved. </p> 
+        <p id="LastModified"></p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener">
+            <img src="images/facebook-icon.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener">
+            <img src="images/twitter-icon.png" alt="Twitter">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">
+            <img src="images/instagram-icon.png" alt="Instagram">
+          </a>
+        </div>
       </div>
-    </section>
+    </footer>
 
-    <section class="featured-products">
-      <h2>Customer Favorites</h2>
-      <div class="product-grid" id="customer-favorites">
-        <!-- Items inserted by JS -->
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="currentyear"></span> Red Rose Desserts. All rights reserved.</p>
-  </footer>
-
-  <script src="prueva.js" defer></script>
+  </div>
+  <script src="script.js" defer></script>
 </body>
 </html>
