@@ -157,8 +157,8 @@ nav a {
   transform: translateY(-5px);
 }
 .item-card img {
-  width: 300px;
-  max-height: 350px;
+  width: 150px;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 8px;
 }
