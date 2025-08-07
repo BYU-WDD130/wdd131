@@ -27,7 +27,7 @@ const featuredItems = [
     {
         name: "Vanilla cake",
         price: "$5.00",
-        description: "Classic delitefull frute cake",
+        description: "Classic delitefull vanilla cake",
         image: "images/vanilla-slice.webp"
     },
 
