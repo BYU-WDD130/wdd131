@@ -15,20 +15,20 @@ const featuredItems = [
         name: "Blueberry slice",
         price: "$5.00",
         description: "Blueberry slice with cream",
-        image: "images/blueberry-slice2.web"
+        image: "images/blueberry-slice2.webp"
     },
 
     {
         name: "Personal gelly",
         price: "$5.00",
         description: "Personal gelly with fruits",
-        image: "images/minigelly.web"
+        image: "images/minigelly.webp"
     },
     {
-        name: "Red frute cake",
+        name: "Vanilla cake",
         price: "$5.00",
         description: "Classic delitefull frute cake",
-        image: "images/frutecake3.web"
+        image: "images/vanilla-slice.webp"
     },
 
     {
