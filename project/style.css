@@ -170,6 +170,15 @@ nav a {
   height: 300px;
 }
 
+.items-card {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
 
 .item-card h3 {
   margin-top: 0.75rem;
