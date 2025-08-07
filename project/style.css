@@ -5,6 +5,14 @@ body {
     color: #5d4037;
 }
 
+h1 {
+  font-family: 'Dancing Script', cursive;
+}
+h2, h3 {
+  font-family: 'Dancing Script', cursive;
+  color: #c2185b;
+}
+
 header {
     display: flex;
     justify-content: space-between;
