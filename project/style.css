@@ -148,7 +148,7 @@ nav a {
     text-align: center;
 }
 
-#item-card {
+.item-card {
   background-color: white;
   border: 1px solid #eee;
   border-radius: 12px;
