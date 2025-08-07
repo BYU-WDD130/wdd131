@@ -157,7 +157,7 @@ nav a {
   transform: translateY(-5px);
 }
 
-.product-grid item-card {
+.product-grid item-card img {
   width: 300px;
   height: 350px;
 }
