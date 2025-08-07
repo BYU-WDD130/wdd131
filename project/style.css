@@ -165,6 +165,12 @@ nav a {
   border-radius: 8px;
 }
 
+.items-card {
+  width: 300px;
+  height: 350px;
+}
+
+
 .item-card h3 {
   margin-top: 0.75rem;
   color: #c2185b;
