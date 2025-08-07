@@ -19,10 +19,10 @@ const featuredItems = [
     },
 
     {
-        name: "Red frute cake",
+        name: "Personal gelly",
         price: "$5.00",
-        description: "Classic delitefull frute cake",
-        image: "images/frutecake3.web"
+        description: "Personal gelly with fruits",
+        image: "images/minigelly.web"
     },
     {
         name: "Red frute cake",
