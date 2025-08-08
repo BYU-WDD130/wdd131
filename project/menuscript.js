@@ -1,65 +1,84 @@
-
-
-
 const featuredItems = [
   {
     name: "3D Rose Gelatin Cake",
-    image: "images/item1.jpg",
+    category: "3DJelly",
+    price: "$35",
+    image: "images/3djelly.webp",
     description: "Handcrafted gelatin flower art",
   },
   {
     name: "Strawberry Mousse",
-    image: "images/item2.jpg",
+    category: "cake",
+    price: "$25",
+    image: "images/coldcake.webp",  
     description: "Light and fruity delight",
   },
   {
-    name: "Mini Cupcake Box",
-    image: "images/item3.jpg",
+    name: "Special dad cake",
+    category: "cake",
+    price: "$30",
+    image: "images/dadcake2.webp",
     description: "Perfect for parties & gifts",
   },
   {
-    name: "Strawberry Shortcake",
+    name: "Blueberry Shortcake",
     category: "cake",
     price: "$25",
-    image: "images/strawberry-shortcake.webp"
+    image: "images/blueberry2.webp",
   },
   {
     name: "Chocolate Mousse Cake",
     category: "cake",
     price: "$28",
-    image: "images/chocolate-mousse.webp"
+    image: "images/chocoflan2.webp",
   },
   {
-    name: "Classic Chocolate Chip Cookies",
+    name: "Classic Semita Cookies",
     category: "cookie",
     price: "$10/dozen",
-    image: "images/choc-chip-cookie.webp"
+    image: "images/semita2.webp",
   },
   {
-    name: "Red Velvet Cookies",
-    category: "cookie",
-    price: "$12/dozen",
-    image: "images/red-velvet-cookie.webp"
+    name: "Pineapple jelly",
+    category: "cake",
+    price: "$35",
+    image: "images/pineaplecake.webp",
   },
 ];
 
-function renderFeaturedItems() {
-  const container = document.getElementById("featured-items");
-  container.innerHTML = ""; // Clear before rendering
+function filterMenu(category) {
+  let itemsToShow = [];
 
-  featuredItems.forEach((item) => {
+  if (category === "all") {
+    itemsToShow = featuredItems;
+  } else {
+    itemsToShow = featuredItems.filter(item => item.category === category);
+  }
+
+  displayMenuItems(itemsToShow);
+}
+
+function displayMenuItems(items) {
+  const container = document.getElementById("menu-items");
+  container.innerHTML = "";
+
+  if (items.length === 0) {
+    container.innerHTML = "<p>No items found.</p>";
+    return;
+  }
+
+  items.forEach(item => {
     const card = document.createElement("div");
     card.className = "item-card";
     card.innerHTML = `
       <img src="${item.image}" alt="${item.name}" loading="lazy">
       <h3>${item.name}</h3>
-      <p>${item.description}</p>
+      <p>${item.description || item.price || ''}</p>
     `;
     container.appendChild(card);
   });
 }
 
-// Save and retrieve user visit info
 function saveVisitCount() {
   const key = "visitCount";
   let count = localStorage.getItem(key);
@@ -73,8 +92,7 @@ function saveVisitCount() {
   }
 }
 
-// Run features on load
 document.addEventListener("DOMContentLoaded", () => {
-  renderFeaturedItems();
+  displayMenuItems(featuredItems);
   saveVisitCount();
 });
