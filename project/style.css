@@ -230,6 +230,9 @@ footer {
     padding: 20px;
     background-color: #c2185b;
     color: white;
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
 }
 
 .footer-content{
