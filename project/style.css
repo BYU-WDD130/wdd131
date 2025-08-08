@@ -174,7 +174,7 @@ nav a {
 
 .about-contact {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 2rem 1rem;
 }
