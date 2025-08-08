@@ -143,6 +143,7 @@ h2 {
   padding: 1rem;
   background: #fff;
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
 /* About and Contact */
