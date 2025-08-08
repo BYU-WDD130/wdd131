@@ -17,7 +17,7 @@ const featuredItems = [
     name: "Special dad cake",
     category: "cake",
     price: "$30",
-    image: "images/dadcake.jpg",
+    image: "images/dadcake2.jpg",
     description: "Perfect for parties & gifts",
   },
   {
@@ -30,13 +30,13 @@ const featuredItems = [
     name: "Chocolate Mousse Cake",
     category: "cake",
     price: "$28",
-    image: "images/chocoflan1.webp",
+    image: "images/chocoflan2.webp",
   },
   {
     name: "Classic Semita Cookies",
     category: "cookie",
     price: "$10/dozen",
-    image: "images/semita.webp",
+    image: "images/semita2.webp",
   },
   {
     name: "Pineapple jelly",
