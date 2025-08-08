@@ -8,29 +8,29 @@ const featuredItems = [
   },
   {
     name: "Strawberry Mousse",
-    category: "cake",
-    price: "$25",
+    category: "Mousse",
+    price: "$35",
     image: "images/coldcake.webp",  
     description: "Light and fruity delight",
   },
   {
     name: "Special dad cake",
     category: "cake",
-    price: "$30",
+    price: "$50",
     image: "images/dadcake2.webp",
     description: "Perfect for parties & gifts",
   },
   {
-    name: "Blueberry Shortcake",
+    name: "Vanilla cake",
     category: "cake",
-    price: "$25",
-    image: "images/blueberry2.webp",
+    price: "$45",
+    image: "images/vanilla-slice.webp",
   },
   {
-    name: "Chocolate Mousse Cake",
+    name: "Chocolate and flan Cake",
     category: "cake",
-    price: "$28",
-    image: "images/chocoflan2.webp",
+    price: "$35",
+    image: "images/chocoflan5.webp",
   },
   {
     name: "Classic Semita Cookies",
@@ -44,6 +44,37 @@ const featuredItems = [
     price: "$35",
     image: "images/pineaplecake.webp",
   },
+  {
+    name: "Passion Fruit Mousse",
+    category: "Mousse",
+    price: "$35",
+    image: "images/pineaplecake.webp",
+  },
+    {
+    name: "Jelly with fruits",
+    category: "3dJelly",
+    price: "$55",
+    image: "images/jellycake4.webp",
+  },
+      {
+    name: "Jelly customized",
+    category: "3dJelly",
+    price: "$55",
+    image: "images/jellycake3.webp",
+  },
+      {
+    name: "Jelly garden",
+    category: "3dJelly",
+    price: "$55",
+    image: "images/jellycake5.webp",
+  },
+      {
+    name: "Mini Jelly",
+    category: "3dJelly",
+    price: "$8",
+    image: "images/jellycake6.webp",
+  },
+
 ];
 
 function filterMenu(category) {
