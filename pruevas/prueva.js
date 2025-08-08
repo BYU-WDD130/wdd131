@@ -1,50 +1,80 @@
+
+
+
 const featuredItems = [
   {
-    name: "Rose Must",
-    price: "$45.50",
-    description: "Delicate strawberry gelatin mousse",
-    image: "images/coldcake.webp"
+    name: "3D Rose Gelatin Cake",
+    image: "images/item1.jpg",
+    description: "Handcrafted gelatin flower art",
   },
   {
-    name: "Frute Cake",
-    price: "$5.00",
-    description: "Classic delightful fruit cake",
-    image: "images/fruitcake.webp"
+    name: "Strawberry Mousse",
+    image: "images/item2.jpg",
+    description: "Light and fruity delight",
   },
   {
-    name: "Pasion Mousse",
-    price: "$3.50",
-    description: "Soft and creamy passion fruit mousse",
-    image: "images/principal-large.webp"
+    name: "Mini Cupcake Box",
+    image: "images/item3.jpg",
+    description: "Perfect for parties & gifts",
   },
   {
-    name: "Choco flan",
-    price: "$4.25",
-    description: "Rich chocolate flan dessert",
-    image: "images/mango-mousse.webp"
-  }
+    name: "Strawberry Shortcake",
+    category: "cake",
+    price: "$25",
+    image: "images/strawberry-shortcake.webp"
+  },
+  {
+    name: "Chocolate Mousse Cake",
+    category: "cake",
+    price: "$28",
+    image: "images/chocolate-mousse.webp"
+  },
+  {
+    name: "Classic Chocolate Chip Cookies",
+    category: "cookie",
+    price: "$10/dozen",
+    image: "images/choc-chip-cookie.webp"
+  },
+  {
+    name: "Red Velvet Cookies",
+    category: "cookie",
+    price: "$12/dozen",
+    image: "images/red-velvet-cookie.webp"
+  },
 ];
 
-function renderFeaturedItems(items) {
-  const container = document.getElementById("customer-favorites");
-  if (!container) return;
+function renderFeaturedItems() {
+  const container = document.getElementById("featured-items");
+  container.innerHTML = ""; // Clear before rendering
 
-  container.innerHTML = "";
-  items.forEach(item => {
+  featuredItems.forEach((item) => {
     const card = document.createElement("div");
     card.className = "item-card";
     card.innerHTML = `
       <img src="${item.image}" alt="${item.name}" loading="lazy">
       <h3>${item.name}</h3>
       <p>${item.description}</p>
-      <strong>${item.price}</strong>
     `;
     container.appendChild(card);
   });
-
-  localStorage.setItem("featured", JSON.stringify(items));
 }
 
-renderFeaturedItems(featuredItems);
+// Save and retrieve user visit info
+function saveVisitCount() {
+  const key = "visitCount";
+  let count = localStorage.getItem(key);
+  count = count ? parseInt(count) + 1 : 1;
+  localStorage.setItem(key, count);
 
-document.getElementById("currentyear").textContent = new Date().getFullYear();
+  if (count === 1) {
+    console.log(`Welcome! This is your first visit.`);
+  } else {
+    console.log(`Welcome back! You've visited ${count} times.`);
+  }
+}
+
+// Run features on load
+document.addEventListener("DOMContentLoaded", () => {
+  renderFeaturedItems();
+  saveVisitCount();
+});

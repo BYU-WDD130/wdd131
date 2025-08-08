@@ -16,7 +16,31 @@ const featuredItems = [
     name: "Mini Cupcake Box",
     image: "images/item3.jpg",
     description: "Perfect for parties & gifts",
-  }
+  },
+  {
+    name: "Strawberry Shortcake",
+    category: "cake",
+    price: "$25",
+    image: "images/strawberry-shortcake.webp"
+  },
+  {
+    name: "Chocolate Mousse Cake",
+    category: "cake",
+    price: "$28",
+    image: "images/chocolate-mousse.webp"
+  },
+  {
+    name: "Classic Chocolate Chip Cookies",
+    category: "cookie",
+    price: "$10/dozen",
+    image: "images/choc-chip-cookie.webp"
+  },
+  {
+    name: "Red Velvet Cookies",
+    category: "cookie",
+    price: "$12/dozen",
+    image: "images/red-velvet-cookie.webp"
+  },
 ];
 
 function renderFeaturedItems() {
