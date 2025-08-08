@@ -172,7 +172,16 @@ nav a {
   border-radius: 8px; 
 }
 
-
+.about-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.about-contact h2 {
+  color: #c2185b;
+  font-size: 1.8rem;
+}
 
 .item-card h3 {
   margin-top: 0.75rem;
