@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Order | Red Rose Desserts</title>
+  <link rel="stylesheet" href="order.css" />
+</head>
+<body>
+
+  <h1>Place a Custom Order</h1>
+
+  <form id="orderForm" novalidate>
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" />
+
+    <label for="date">Desired Pickup/Delivery Date *</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="dessert">Choose Your Dessert *</label>
+    <select id="dessert" name="dessert" required>
+      <option value="">-- Select --</option>
+      <option value="3D Rose Gelatin Cake">3D Rose Gelatin Cake</option>
+      <option value="Strawberry Mousse">Strawberry Mousse</option>
+      <option value="Special dad cake">Special dad cake</option>
+      <option value="Blueberry Shortcake">Blueberry Shortcake</option>
+      <option value="Chocolate Mousse Cake">Chocolate Mousse Cake</option>
+      <option value="Classic Semita Cookies">Classic Semita Cookies</option>
+      <option value="Pineapple jelly">Pineapple jelly</option>
+      <option value="Other">Other / Custom Request</option>
+    </select>
+
+    <label for="message">Order Details</label>
+    <textarea id="message" name="message" rows="5" placeholder="Include flavors, quantity, colors, allergies, etc."></textarea>
+
+    <button type="submit">Submit Order</button>
+
+    <p id="feedback" class="success" style="display:none;">Your order has been submitted!</p>
+  </form>
+
+  <script src="order.js"></script>
+</body>
+</html>
