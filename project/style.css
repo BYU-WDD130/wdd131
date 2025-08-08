@@ -187,6 +187,7 @@ nav a {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 2rem 1rem;
+  background-color: #fff8f5;
 }
 .about-contact h2 {
   color: #c2185b;
