@@ -225,11 +225,17 @@ nav a {
 
 
 footer {
-    text-align: center;
-    padding: 20px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 3fr 1fr;
+    justify-items: end;
+    height: auto;
     background-color: #c2185b;
     color: white;
+
 }
+
+
 
 .footer-content{
 
