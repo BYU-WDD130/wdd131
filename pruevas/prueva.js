@@ -8,7 +8,7 @@ const featuredItems = [
   {
     name: "Strawberry Mousse",
     category: "cake",
-    image: "project/images/3djelly.webp",  
+    image: "images/3djelly.webp",  
     description: "Light and fruity delight",
   },
   {
