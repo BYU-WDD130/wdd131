@@ -1,7 +1,7 @@
 const featuredItems = [
   {
     name: "3D Rose Gelatin Cake",
-    category: "Jelly",
+    category: "jelly",
     price: "$35",
     image: "images/3djelly.webp",
     description: "Handcrafted gelatin flower art",
@@ -40,7 +40,7 @@ const featuredItems = [
   },
   {
     name: "Pineapple jelly",
-    category: "Jelly",
+    category: "jelly",
     price: "$35",
     image: "images/pineaplecake.webp",
   },
@@ -52,25 +52,25 @@ const featuredItems = [
   },
     {
     name: "Jelly with fruits",
-    category: "Jelly",
+    category: "jelly",
     price: "$55",
     image: "images/jellycake4.webp",
   },
       {
     name: "Jelly customized",
-    category: "Jelly",
+    category: "jelly",
     price: "$55",
     image: "images/jellycake3.webp",
   },
       {
     name: "Jelly garden",
-    category: "Jelly",
+    category: "jelly",
     price: "$55",
     image: "images/jellycake5.webp",
   },
       {
     name: "Mini Jelly",
-    category: "Jelly",
+    category: "jelly",
     price: "$8",
     image: "images/jellycake6.webp",
   },
