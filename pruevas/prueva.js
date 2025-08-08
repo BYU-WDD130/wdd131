@@ -1,19 +1,19 @@
-
-
-
 const featuredItems = [
   {
     name: "3D Rose Gelatin Cake",
+    category: "3DJelly",
     image: "images/item1.jpg",
     description: "Handcrafted gelatin flower art",
   },
   {
     name: "Strawberry Mousse",
+    category: "cake",
     image: "images/item2.jpg",
     description: "Light and fruity delight",
   },
   {
     name: "Mini Cupcake Box",
+    category: "cake",
     image: "images/item3.jpg",
     description: "Perfect for parties & gifts",
   },
@@ -21,45 +21,61 @@ const featuredItems = [
     name: "Strawberry Shortcake",
     category: "cake",
     price: "$25",
-    image: "images/strawberry-shortcake.webp"
+    image: "images/strawberry-shortcake.webp",
   },
   {
     name: "Chocolate Mousse Cake",
     category: "cake",
     price: "$28",
-    image: "images/chocolate-mousse.webp"
+    image: "images/chocolate-mousse.webp",
   },
   {
     name: "Classic Chocolate Chip Cookies",
     category: "cookie",
     price: "$10/dozen",
-    image: "images/choc-chip-cookie.webp"
+    image: "images/choc-chip-cookie.webp",
   },
   {
     name: "Red Velvet Cookies",
     category: "cookie",
     price: "$12/dozen",
-    image: "images/red-velvet-cookie.webp"
+    image: "images/red-velvet-cookie.webp",
   },
 ];
 
-function renderFeaturedItems() {
-  const container = document.getElementById("featured-items");
-  container.innerHTML = ""; // Clear before rendering
+function filterMenu(category) {
+  let itemsToShow = [];
 
-  featuredItems.forEach((item) => {
+  if (category === "all") {
+    itemsToShow = featuredItems;
+  } else {
+    itemsToShow = featuredItems.filter(item => item.category === category);
+  }
+
+  displayMenuItems(itemsToShow);
+}
+
+function displayMenuItems(items) {
+  const container = document.getElementById("menu-items");
+  container.innerHTML = "";
+
+  if (items.length === 0) {
+    container.innerHTML = "<p>No items found.</p>";
+    return;
+  }
+
+  items.forEach(item => {
     const card = document.createElement("div");
     card.className = "item-card";
     card.innerHTML = `
       <img src="${item.image}" alt="${item.name}" loading="lazy">
       <h3>${item.name}</h3>
-      <p>${item.description}</p>
+      <p>${item.description || item.price || ''}</p>
     `;
     container.appendChild(card);
   });
 }
 
-// Save and retrieve user visit info
 function saveVisitCount() {
   const key = "visitCount";
   let count = localStorage.getItem(key);
@@ -73,8 +89,7 @@ function saveVisitCount() {
   }
 }
 
-// Run features on load
 document.addEventListener("DOMContentLoaded", () => {
-  renderFeaturedItems();
+  displayMenuItems(featuredItems);
   saveVisitCount();
 });
