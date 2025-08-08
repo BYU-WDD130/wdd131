@@ -17,7 +17,7 @@ const featuredItems = [
     name: "Special dad cake",
     category: "cake",
     price: "$30",
-    image: "images/dadcake2.jpg",
+    image: "images/dadcake2.webp",
     description: "Perfect for parties & gifts",
   },
   {
