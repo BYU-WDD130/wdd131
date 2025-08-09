@@ -227,14 +227,9 @@ nav a:hover {
     background-color: #fdeef2;
 }
 
-.about {
-    border: solid 1px #ccc;  
-    padding: 20px;
-    background-color: #fff8f5;
-    text-align: center;
-}
 
-.contact {
+
+.about, .contact {
     border: solid 1px #ccc;
     border-radius: 5px;
     border-style:outset;
