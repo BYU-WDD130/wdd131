@@ -78,6 +78,14 @@ nav a:hover {
   padding: 20px;
   
 }
+button {
+  background-color: #c2185b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /* Hero section */
 .hero {
