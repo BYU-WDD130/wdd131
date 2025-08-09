@@ -228,12 +228,14 @@ nav a:hover {
 }
 
 .about {
+    border: solid 1px #ccc;  
     padding: 20px;
     background-color: #fff8f5;
     text-align: center;
 }
 
 .contact {
+    border: solid 1px #ccc;
     padding: 20px;
     background-color: #fff8f5;
     text-align: center;
