@@ -8,29 +8,35 @@ const featuredItems = [
     {
         name: "Rose must",
         description: "Delicate strawberry must",
-        image: "images/coldcake.webp"
+        image: "images/coldcake.webp",
+        price: "$35"
+       
     },
     {
         name: "Blueberry slice",
         description: "Blueberry slice with cream",
-        image: "images/blueberry-slice2.webp"
+        image: "images/blueberry-slice2.webp",
+        price: "$25"        
     },
 
     {
         name: "Personal gelly",
         description: "Personal gelly with fruits",
-        image: "images/minigelly.webp"
+        image: "images/minigelly.webp",
+        price: "$15"       
     },
     {
         name: "Vanilla cake",
         description: "Classic delitefull vanilla cake",
-        image: "images/vanilla-slice.webp"
+        image: "images/vanilla-slice.webp",
+         price: "$25"       
     },
 
     {
         name: "Red frute cake",
         description: "Classic delitefull frute cake",
-        image: "images/frutecake3.webp"
+        image: "images/frutecake3.webp",
+        price: "$30"        
     }    
     
 ];
