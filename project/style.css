@@ -237,7 +237,7 @@ footer {
 
 
 .footer-content{
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   max-width: 1000px;
