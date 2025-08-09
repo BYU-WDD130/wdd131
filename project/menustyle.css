@@ -60,7 +60,11 @@ nav ul {
   gap: 1.5rem;
 }
 
-
+nav a:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 /* Hero section */
 .hero {
