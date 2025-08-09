@@ -39,6 +39,7 @@ header {
   margin: 0 auto;
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border: #333;
 }
 
 .logo {
@@ -117,6 +118,12 @@ nav a:hover {
   margin: auto;
 }
 
+h1 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 1.5rem;
+}
+
 h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -136,11 +143,7 @@ h2 {
   gap: 20px;
   margin-top: 20px;
 }
-h1 {
-  text-align: center;
-  color: #c2185b;
-  margin-bottom: 1.5rem;
-}
+
 
 p {
   text-align: center;
