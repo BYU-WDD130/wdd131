@@ -78,6 +78,7 @@ nav a:hover {
   padding: 20px;
   
 }
+
 button {
   background-color: #c2185b;
   color: white;
@@ -90,7 +91,10 @@ button {
 button:hover {
      transform: scale(1.1);
 }
-  
+
+ul {
+  size: 1.1rem;
+}
 /* Hero section */
 .hero {
   background: #fff5f8;
