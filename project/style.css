@@ -21,7 +21,6 @@ header {
     padding: 10px 20px;
     background-color: #c2185b;
     color: white;
-    backdrop-filter: blur(5px);
 }
 
 .container {
@@ -40,11 +39,7 @@ header {
   margin: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -56,12 +51,6 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-nav a:hover {
-    border-radius: 5px;
-    border: 2px solid white;
 }
 
 
@@ -237,18 +226,17 @@ nav a:hover {
 
 
 footer {
-    align-items: center;
-   justify-content: space-between;
     text-align: center;
     padding: 20px;
     background-color: #c2185b;
     color: white;
+
+ 
+
 }
 
-
-
 .footer-content{
-  display: grid;
+
   grid-template-columns: 1fr auto;
   align-items: center;
   max-width: 1000px;
@@ -256,12 +244,9 @@ footer {
 }
 
 .social-icons{
-  width: 160px;
   display: flex;
-  justify-content: end;
+  justify-content: right;
   gap: 2rem;
-
-
 }
 
 .social-icons img {
