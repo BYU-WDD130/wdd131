@@ -21,6 +21,7 @@ header {
     padding: 10px 20px;
     background-color: #c2185b;
     color: white;
+    backdrop-filter: blur(5px);
 }
 
 .container {
