@@ -1,98 +1,65 @@
+
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+
+
 const featuredItems = [
-  {
-    name: "3D Rose Gelatin Cake",
-    category: "3DJelly",
-    price: "$35",
-    image: "images/3djelly.webp",
-    description: "Handcrafted gelatin flower art",
-  },
-  {
-    name: "Strawberry Mousse",
-    category: "cake",
-    price: "$25",
-    image: "images/coldcake.webp",  
-    description: "Light and fruity delight",
-  },
-  {
-    name: "Special dad cake",
-    category: "cake",
-    price: "$30",
-    image: "images/dadcake2.webp",
-    description: "Perfect for parties & gifts",
-  },
-  {
-    name: "Blueberry Shortcake",
-    category: "cake",
-    price: "$25",
-    image: "images/blueberry2.webp",
-  },
-  {
-    name: "Chocolate Mousse Cake",
-    category: "cake",
-    price: "$28",
-    image: "images/chocoflan2.webp",
-  },
-  {
-    name: "Classic Semita Cookies",
-    category: "cookie",
-    price: "$10/dozen",
-    image: "images/semita2.webp",
-  },
-  {
-    name: "Pineapple jelly",
-    category: "cake",
-    price: "$35",
-    image: "images/pineaplecake.webp",
-  },
+    {
+        name: "Rose must",
+        description: "Delicate strawberry must",
+        image: "images/coldcake.webp",
+        price: "$35"
+       
+    },
+    {
+        name: "Blueberry slice",
+        description: "Blueberry slice with cream",
+        image: "images/blueberry-slice2.webp",
+        price: "$25"        
+    },
+
+    {
+        name: "Personal gelly",
+        description: "Personal gelly with fruits",
+        image: "images/minigelly.webp",
+        price: "$15"       
+    },
+    {
+        name: "Vanilla cake",
+        description: "Classic delitefull vanilla cake",
+        image: "images/vanilla-slice.webp",
+         price: "$25"       
+    },
+
+    {
+        name: "Red frute cake",
+        description: "Classic delitefull frute cake",
+        image: "images/frutecake3.webp",
+        price: "$30"        
+    }    
+    
 ];
 
-function filterMenu(category) {
-  let itemsToShow = [];
-
-  if (category === "all") {
-    itemsToShow = featuredItems;
-  } else {
-    itemsToShow = featuredItems.filter(item => item.category === category);
-  }
-
-  displayMenuItems(itemsToShow);
+function renderFeaturedItems(items) {
+    const container = document.getElementById("featured-items");
+    container.innerHTML = "";
+    items.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "item-card";
+        card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" loading="lazy">
+            <h3>${item.name}</h3>
+            <p>${item.description}</p>
+            <strong>${item.price}</strong>
+        `;
+        container.appendChild(card);
+    });
+    localStorage.setItem("featured", JSON.stringify(items));
 }
 
-function displayMenuItems(items) {
-  const container = document.getElementById("menu-items");
-  container.innerHTML = "";
+renderFeaturedItems(featuredItems);
 
-  if (items.length === 0) {
-    container.innerHTML = "<p>No items found.</p>";
-    return;
-  }
+console.log("Red Rose Dessert site loaded successfully");
 
-  items.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "item-card";
-    card.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" loading="lazy">
-      <h3>${item.name}</h3>
-      <p>${item.description || item.price || ''}</p>
-    `;
-    container.appendChild(card);
-  });
-}
 
-function saveVisitCount() {
-  const key = "visitCount";
-  let count = localStorage.getItem(key);
-  count = count ? parseInt(count) + 1 : 1;
-  localStorage.setItem(key, count);
-
-  if (count === 1) {
-    console.log(`Welcome! This is your first visit.`);
-  } else {
-    console.log(`Welcome back! You've visited ${count} times.`);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  displayMenuItems(featuredItems);
-  saveVisitCount();
-});
