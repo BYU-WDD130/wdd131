@@ -74,6 +74,7 @@ nav a:hover {
   border-radius: 5px;
   border-style:outset;
   background-color: #fff8f5;
+  
 }
 
 /* Hero section */
@@ -129,6 +130,7 @@ h1 {
   text-align: center;
   color: #c2185b;
   margin-bottom: 1.5rem;
+  text-decoration: wavy underline;
 }
 
 h2 {
