@@ -245,7 +245,7 @@ footer {
 .social-icons{
   width: 160px;
   display: flex;
-  justify-content: right;
+  justify-content: end;
   gap: 2rem;
 
 
