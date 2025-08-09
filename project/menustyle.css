@@ -131,8 +131,10 @@ h2 {
   gap: 20px;
   margin-top: 20px;
 }
-.menu {
-  justify-content: center;
+h1 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 1.5rem;
 }
 
 .item-card {
