@@ -63,6 +63,11 @@ nav a:hover {
     padding: 5px;
 }
 
+.menu {
+  border-radius: 5px;
+    border-style:outset;
+}
+
 /* Hero section */
 .hero {
   background: #fff5f8;
