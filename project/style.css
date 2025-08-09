@@ -226,6 +226,7 @@ nav a {
 
 
 footer {
+    align-items: center;
    justify-content: space-between;
     text-align: center;
     padding: 20px;
