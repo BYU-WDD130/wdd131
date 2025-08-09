@@ -54,6 +54,9 @@ nav a {
     font-weight: bold;
     cursor: pointer;
 }
+nav a:hover {
+    text-decoration: underline;
+}
 
 
 .hero {
