@@ -237,7 +237,7 @@ nav a:hover {
 .contact {
     border: solid 1px #ccc;
     border-radius: 5px;
-    border-style:double
+    border-style:double;
     padding: 20px;
     background-color: #fff8f5;
     text-align: center;
