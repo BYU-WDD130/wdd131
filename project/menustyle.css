@@ -132,7 +132,7 @@ h2 {
   margin-top: 20px;
 }
 .menu {
-  align-items: center;
+  justify-content: center;
 }
 
 .item-card {
