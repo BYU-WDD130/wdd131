@@ -7,33 +7,28 @@ document.getElementById("LastModified").textContent = "Last Modified: " + docume
 const featuredItems = [
     {
         name: "Rose must",
-        price: "",
         description: "Delicate strawberry must",
         image: "images/coldcake.webp"
     },
     {
         name: "Blueberry slice",
-        price: "",
         description: "Blueberry slice with cream",
         image: "images/blueberry-slice2.webp"
     },
 
     {
         name: "Personal gelly",
-        price: "",
         description: "Personal gelly with fruits",
         image: "images/minigelly.webp"
     },
     {
         name: "Vanilla cake",
-        price: "",
         description: "Classic delitefull vanilla cake",
         image: "images/vanilla-slice.webp"
     },
 
     {
         name: "Red frute cake",
-        price: "",
         description: "Classic delitefull frute cake",
         image: "images/frutecake3.webp"
     }    
