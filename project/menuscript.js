@@ -1,3 +1,8 @@
+
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+
+
 const featuredItems = [
   {
     name: "3D Rose Gelatin Cake",
