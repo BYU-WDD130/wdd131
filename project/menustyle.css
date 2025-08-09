@@ -72,7 +72,8 @@ nav a:hover {
 
 .menu {
   border-radius: 5px;
-    border-style:outset;
+  border-style:outset;
+  background-color: #fff8f5;
 }
 
 /* Hero section */
