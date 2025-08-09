@@ -42,7 +42,7 @@ const featuredItems = [
 ];
 
 function renderFeaturedItems(items) {
-    const container = document.getElementById("featured-products");
+    const container = document.getElementById("featured-items");
     container.innerHTML = "";
     items.forEach(item => {
         const card = document.createElement("div");
