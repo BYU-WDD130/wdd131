@@ -9,10 +9,13 @@ h1 {
   font-family: 'Dancing Script', cursive;
 }
 
+h2{
+    text-decoration: underline;
+}
 h2, h3 {
   font-family: 'Dancing Script', cursive;
   color: #c2185b;
-  text-decoration: underline;
+
 }
 
 header {
