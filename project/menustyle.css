@@ -137,6 +137,11 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+p {
+  font-size: 1rem;
+  color: #5d4037;
+}
+
 .item-card {
   border: 1px solid #ddd;
   border-radius: 10px;
