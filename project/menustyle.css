@@ -181,22 +181,35 @@ p {
 
 /* Footer */
 footer {
-  background: #d6336c;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: #c2185b;
+    color: white;
+
 }
 
-.footer-icons {
+.footer-content{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.social-icons{
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 0.5rem;
+  justify-content: right;
+  gap: 2rem;
 }
 
-.footer-icons img {
-  width: 24px;
+.social-icons img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+   transform: scale(1.1);
 }
 
 /* Responsive layout */
