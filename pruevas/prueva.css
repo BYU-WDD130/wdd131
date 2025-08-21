@@ -236,7 +236,7 @@ nav a:hover {
 }
 
 aside {
-  width: 100%;
+  width: 35%;
   background-color: var(--accent-color);
   align-items: center;
 }
