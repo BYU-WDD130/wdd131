@@ -55,6 +55,7 @@ nav li {
     background-color: #38212a;
     border-radius: 25px;
     font-weight: bold;
+    padding: auto 10px;
 }
 
 .box{
