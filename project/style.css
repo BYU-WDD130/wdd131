@@ -249,6 +249,12 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+aside {
+
+    width: 35%;
+    background-color: var(--accent-color);
+    align-items: center;
+    }
 
 .video-container {
   position: relative;
