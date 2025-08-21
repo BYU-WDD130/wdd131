@@ -51,6 +51,13 @@ nav ul {
     color: white;
 }
 
+.box{
+    justify-items: center;
+    display: flex;
+    width: 1200px;
+ 
+}
+ 
 
 nav a {
     color: white;
