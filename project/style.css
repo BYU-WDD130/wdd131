@@ -264,10 +264,10 @@ aside {
     }
 
 .video-container {
-  height: 800px;
+ 
   position: relative;
   padding-bottom: 56.25%; 
-  height: 0;
+  height: 800px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
