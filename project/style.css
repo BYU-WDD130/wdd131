@@ -274,7 +274,7 @@ aside {
   margin-bottom: 2rem;
 }
 
-.video-container iframe {
+.video-container video {
   position: absolute;
   top: 0;
   left: 0;
