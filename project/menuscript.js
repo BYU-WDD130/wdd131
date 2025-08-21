@@ -9,21 +9,20 @@ const featuredItems = [
     category: "jelly",
     price: "$35",
     image: "images/3djelly.webp",
-    description: "Handcrafted gelatin flower art",
-  },
+   },
   {
     name: "Strawberry Mousse",
     category: "mousse",
     price: "$35",
     image: "images/coldcake.webp",  
-    description: "Light and fruity delight",
+
   },
   {
     name: "Special dad cake",
     category: "cake",
     price: "$50",
     image: "images/dadcake2.webp",
-    description: "Perfect for parties & gifts",
+
   },
   {
     name: "Vanilla cake",
