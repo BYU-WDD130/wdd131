@@ -102,10 +102,10 @@ nav a:hover {
 .overlay {
   position: relative;
   z-index: 2;
-  background-color: rgba(194, 24, 91, 0.5); /* tu color primario con opacidad */
+ 
   padding: 2rem;
   border-radius: 16px;
-  backdrop-filter: blur(3px); /* efecto suave de desenfoque */
+
   max-width: 700px;
   color: white;
   text-align: center;
