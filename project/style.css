@@ -167,10 +167,9 @@ nav a:hover {
 
 .seasonal-specials {
     display: grid;
-
     gap: 1.5rem;
     padding: 1.5rem;
-    background-color: #fff8f5;
+    background-color: #076d57;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
