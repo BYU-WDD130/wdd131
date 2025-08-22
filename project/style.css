@@ -327,13 +327,7 @@ aside {
   font-size: 1rem;
 }
 
-    .subscribe-section::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.65); /* Aumentamos de 0.5 a 0.65 */
-      z-index: 1;
-    }
+
 
     .privacy-note {
       font-size: 0.9em;
