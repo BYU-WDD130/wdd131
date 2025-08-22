@@ -305,9 +305,19 @@ aside {
 
 .subscribe-section {
   background-image: url('images/semita2.webp');  
-  background-color: #f0f0f0;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
   border: 1px solid #cce3f2;
-  padding: 2rem;
+  padding: 20px;
   text-align: center;
 }
 
@@ -316,6 +326,46 @@ aside {
   color: #333;
   font-size: 1rem;
 }
+
+    .subscribe-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.65); /* Aumentamos de 0.5 a 0.65 */
+      z-index: 1;
+    }
+
+    .privacy-note {
+      font-size: 0.9em;
+      margin-top: 15px;
+      opacity: 0.8;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      font-size: 1em;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      width: 250px;
+      max-width: 90%;
+    }
+
+        .subscribe-section * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-title {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p, label {
+      font-size: 1.2em;
+    }
+
 
 .subscribe-form {
   display: flex;
@@ -339,7 +389,7 @@ aside {
 }
 
 .submit-button:hover {
-  background-color: rgb(86, 86, 153);
+  background-color: #ff1493;
 }
 
 
