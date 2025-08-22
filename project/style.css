@@ -166,13 +166,17 @@ nav a:hover {
 
 .seasonal-specials {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     padding: 1.5rem;
     background-color: #fff8f5;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+}
+
+a:focus, button:focus, input:focus {
+  outline: 2px dashed #c2185b;
+  outline-offset: 2px;
 }
 
 .item-card{
