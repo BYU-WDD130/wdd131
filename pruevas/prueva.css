@@ -296,6 +296,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+      .hero img {
+        border-radius: 0;
+    
+}
   .hero-text h1 {
     font-size: 1.5rem;
   }
@@ -308,3 +313,4 @@ footer {
     padding: 0.5rem 1rem;
   }
 }
+
