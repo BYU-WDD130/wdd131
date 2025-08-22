@@ -307,7 +307,7 @@ aside {
   background-image: url('images/semita2.webp');  
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 50vh;
   color: white;
   display: flex;
   flex-direction: column;
