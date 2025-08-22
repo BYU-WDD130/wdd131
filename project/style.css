@@ -392,7 +392,8 @@ aside {
 }
 
 .submit-button:hover {
-  background-color: #ff1493;
+  background-color: #1c9653;
+  color: white;
 }
 
 
