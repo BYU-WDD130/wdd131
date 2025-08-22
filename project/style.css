@@ -18,6 +18,15 @@ h2, h3 {
 
 }
 
+h3.section-title {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 2rem;
+  color: #c2185b;
+  margin-bottom: 1rem;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
