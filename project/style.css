@@ -98,7 +98,7 @@ nav a:hover {
   justify-content: center;
   background-color: #000;
   overflow: hidden;
-  margin-top: auto;
+  margin-top: 1rem;
 }
 
 .hero-content {
