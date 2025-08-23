@@ -64,6 +64,13 @@ nav ul {
   gap: 1.5rem;
 }
 
+nav li {
+    background-color: #38212a;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+
 nav a:hover {
     border: 1px solid white;
     border-radius: 5px;
