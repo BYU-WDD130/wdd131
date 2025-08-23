@@ -397,6 +397,12 @@ aside {
 }
 
 
+.map {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
 footer {
     text-align: center;
     padding: 20px;
