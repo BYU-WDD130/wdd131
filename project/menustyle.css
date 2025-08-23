@@ -26,6 +26,7 @@ img {
 
 /* Header */
 header {
+  background-image: url('images/prueva.webp');
     display: flex;
     justify-content: space-between;
     align-items: center;
