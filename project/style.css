@@ -35,6 +35,7 @@ header {
     padding: 10px 20px;
     background-color: #c2185b;
     color: white;
+    border-style:ridge;
 }
 
 .container {
