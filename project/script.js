@@ -6,7 +6,7 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 const featuredItems = [
     {
-        name: "Rose must",
+        name: "Rose Mousse",
         description: "Delicate strawberry must",
         image: "images/coldcake.webp",
         price: ""
