@@ -7,7 +7,7 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 const featuredItems = [
     {
         name: "Rose Mousse",
-        description: "Delicate strawberry must",
+        description: "Delicate strawberry mousse",
         image: "images/coldcake.webp",
         price: ""
        
@@ -21,7 +21,7 @@ const featuredItems = [
 
     {
         name: "Personal gelly",
-        description: "Personal gelly with fruits",
+        description: "Personal jelly with fruits",
         image: "images/minigelly.webp",
         price: ""       
     },
@@ -33,8 +33,8 @@ const featuredItems = [
     },
 
     {
-        name: "Red frute cake",
-        description: "Classic delitefull frute cake",
+        name: "Jelly fruit cake",
+        description: "Classic delightful fruit cake",
         image: "images/frutecake3.webp",
         price: ""        
     }    
