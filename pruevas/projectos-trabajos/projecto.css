@@ -302,7 +302,7 @@ display: grid;
 }
 
 .videos-row {
-    display: felx;
+    display: flex;
     gap: 5px;
     justify-content: center;
     flex-wrap: wrap;
