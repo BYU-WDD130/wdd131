@@ -294,14 +294,9 @@ a:focus, button:focus, input:focus {
   margin-bottom: 1rem;
 }
 
-aside {
 
-    width: 100%;
-    background-color: var(--accent-color);
-    align-items: center;
-    }
 
-.video-container {
+#video-container {
  
   position: relative;
   padding-bottom: 56.25%; 
@@ -311,7 +306,7 @@ aside {
 
 }
 
-.video-container video {
+#video-container video {
   position: absolute;
   top: 0;
   left: 0;
