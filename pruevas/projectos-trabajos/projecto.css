@@ -303,7 +303,7 @@ display: grid;
 
 .videos-row {
     display: flex;
-    gap: 5px;
+    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
 }
