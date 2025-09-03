@@ -295,7 +295,7 @@ a:focus, button:focus, input:focus {
 }
 
 .experience-section {
-display: wrap;
+display: grid;
   padding: 2rem 1rem;
   background-color: #fff8f5;
   text-align: center;
