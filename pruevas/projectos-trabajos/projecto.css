@@ -294,16 +294,18 @@ a:focus, button:focus, input:focus {
   margin-bottom: 1rem;
 }
 
+.experience-section {
+  padding: 2rem 1rem;
+  background-color: #fff8f5;
+  text-align: center;
+}
 
 
 .video-container {
- 
   position: relative;
   padding-bottom: 56.25%; 
   height: 500px;
   overflow: hidden;
-
-
 }
 
 .video-container video {
