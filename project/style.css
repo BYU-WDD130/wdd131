@@ -39,7 +39,7 @@ header {
 }
 
 .container {
-
+  max-width: 1300px;
   margin: 0 auto;
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -436,7 +436,137 @@ footer {
    transform: scale(1.1);
 }
 
-/* Responsive */
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container, .seasonal-specials {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .about-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .video-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .overlay {
+    padding: 1rem;
+  }
+
+  .item-card img, .items-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .subscribe-section {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .subscribe-form input[type="email"] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .videos-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2, h3, h4.section-title {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .item-card {
+    padding: 0.75rem;
+  }
+
+  .social-icons {
+    gap: 1rem;
+  }
+}
+
+/*
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -506,3 +636,4 @@ footer {
   }
 }
 
+*/
