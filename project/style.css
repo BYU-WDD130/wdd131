@@ -73,6 +73,7 @@ nav li {
 .box{
     justify-items: center;
     display: flex;
+    background-color: #fff8f5;
   
 }
 
