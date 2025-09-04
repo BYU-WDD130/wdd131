@@ -105,7 +105,7 @@ const featuredItems = [
          {
     name: "vintage cake",
     category: "cake",
-    price: "$50",
+    price: "$60",
     size: "6 inch",
     image: "images/vintagecake.webp",
   },
