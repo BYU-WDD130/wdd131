@@ -102,6 +102,14 @@ const featuredItems = [
     image: "images/whitecake.webp",
   },
 
+         {
+    name: "vintage cake",
+    category: "cake",
+    price: "$50",
+    size: "6 inch",
+    image: "images/vintagecake.webp",
+  },
+
 ];
 
 function filterMenu(category) {
