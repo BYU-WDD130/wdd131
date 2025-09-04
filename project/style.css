@@ -550,6 +550,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+  .ul {
+   font-size: 0.9rem;
+  }
+  
   h1 {
     font-size: 1.8rem;
   }
