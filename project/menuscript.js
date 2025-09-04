@@ -82,6 +82,7 @@ const featuredItems = [
     name: "Chocolate cake",
     category: "cake",
     price: "$60",
+    size: "6 inch",
     image: "images/chocolatecake.webp",
   },
 
@@ -89,9 +90,17 @@ const featuredItems = [
     name: "Birthday cake",
     category: "cake",
     price: "$75",
+    size: "8 inch",
     image: "images/birthdaycake.webp",
   },
 
+       {
+    name: "Strawberry and cream cake",
+    category: "cake",
+    price: "$50",
+    size: "6 inch",
+    image: "images/whitecake.webp",
+  },
 
 ];
 
