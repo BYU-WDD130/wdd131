@@ -457,7 +457,7 @@ footer {
   }
 
   nav ul {
-
+    font-size: 0.9rem;
     align-items: center;
     gap: 0.75rem;
     padding: 1rem 0;
@@ -554,7 +554,7 @@ footer {
   .ul {
    font-size: 0.9rem;
   }
-  
+
   h1 {
     font-size: 1.8rem;
   }
