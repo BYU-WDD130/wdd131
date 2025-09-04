@@ -399,7 +399,7 @@ a:focus, button:focus, input:focus {
   background-color: #38212a;
   display: flex;
   justify-content: center;
-
+ margin-top: 10px;
 
 }
 
