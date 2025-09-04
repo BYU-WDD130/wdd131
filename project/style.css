@@ -474,8 +474,8 @@ footer {
   }
 
   .video-container {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 50%;
+    max-width: 50%;
   }
 
   .hero-text h1 {
