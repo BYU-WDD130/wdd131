@@ -394,7 +394,9 @@ a:focus, button:focus, input:focus {
   color: white;
 }
 
-
+.experience-section{
+  background-color: #080808c9;
+}
 .map {
   background-color: #38212a;
   display: flex;
