@@ -78,6 +78,19 @@ const featuredItems = [
     price: "$8",
     image: "images/jellycake6.webp",
   },
+     {
+    name: "Chocolate cake",
+    category: "cake",
+    price: "$60",
+    image: "images/chocolatecake.webp",
+  },
+
+     {
+    name: "Birthday cake",
+    category: "cake",
+    price: "$75",
+    image: "images/birthdaycake.webp",
+  },
 
 
 ];
