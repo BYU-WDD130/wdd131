@@ -108,3 +108,10 @@ console.log("Red Rose Dessert site loaded successfully");
       modal.style.display = "none";
     }
   });
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("nav");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });

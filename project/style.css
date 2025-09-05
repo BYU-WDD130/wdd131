@@ -55,6 +55,14 @@ header {
   margin: 0;
 }
 
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #c2185b;
+  }
 
 nav ul {
 
@@ -82,6 +90,7 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -437,6 +446,37 @@ footer {
 .social-icons img:hover {
    transform: scale(1.1);
 }
+
+
+
+ @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* mostrar hamburguesa */
+    }
+
+    nav {
+      display: none; /* ocultar menú */
+      width: 100%;
+      background: #fff8f5;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 2px solid #c2185b;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    nav.show {
+      display: block; /* mostrar menú al hacer clic */
+    }
+  }
+
+
 
 
 
