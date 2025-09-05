@@ -77,6 +77,7 @@ console.log("Red Rose Dessert site loaded successfully");
     nav.classList.toggle("show");
   });
 
+// Menú hamburguesa
 const menuButton = document.getElementById("menu");
 const mobileMenu = document.getElementById("mobileMenu");
 
