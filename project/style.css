@@ -619,9 +619,7 @@ footer {
         color: white;
       }
     }
-  #menu {
-    display: none; /* ocultar botón hamburguesa en desktop */
-  }
+
 
 @media (min-width: 700px) {
   header {
