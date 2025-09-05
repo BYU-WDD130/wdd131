@@ -595,28 +595,6 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-
-
-      #mobileMenu {
-        display: block;
-        position: static;
-        background: none;
-      }
-
-      #mobileMenu ul {
-        display: flex;
-        gap: 20px;
-      }
-
-      #mobileMenu ul li {
-        margin: 0;
-      }
-
-      #mobileMenu ul li a {
-        color: white;
-      }
-    }
 
 
 @media (min-width: 700px) {
@@ -632,7 +610,9 @@ footer {
     display: block;
   }
 
-
+    #menu {
+        display: none;
+    }
 
   .mobile-nav {
     display: flex;
