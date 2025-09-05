@@ -1,3 +1,4 @@
+================================ */
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,6 @@
 }
 
 body {
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: #452796;
   color: #5d4037;
@@ -19,19 +19,9 @@ a:focus, button:focus, input:focus {
 /* ================================
    TYPOGRAPHY
 ================================ */
-h1 {
-  font-family: 'Dancing Script', cursive;
-}
-
-h2 {
-  text-decoration: underline;
-}
-
-h2, h3 {
-  font-family: 'Dancing Script', cursive;
-  color: #c2185b;
-}
-
+h1 { font-family: 'Dancing Script', cursive; }
+h2, h3 { font-family: 'Dancing Script', cursive; color: #c2185b; }
+h2 { text-decoration: underline; }
 h4.section-title {
   font-family: 'Dancing Script', cursive;
   text-align: center;
@@ -39,7 +29,6 @@ h4.section-title {
   color: white;
   margin-bottom: 1rem;
 }
-
 .section-title {
   text-align: center;
   font-size: 3.5rem;
@@ -94,8 +83,30 @@ nav a:hover {
 }
 
 /* ================================
-   MENU HAMBURGUESA
+   MOBILE NAVIGATION
 ================================ */
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.mobile-nav.active {
+  transform: translateX(0%);
+  gap: 1rem;
+}
+
+#mobileMenu.active { display: block; }
+
 #menu {
   font-size: 2rem;
   background: none;
@@ -103,44 +114,13 @@ nav a:hover {
   color: #c2185b;
   cursor: pointer;
   z-index: 1001;
-  position: relative;
 }
 
-.mobile-nav {
-  position: absolute;
-  top: 60px; /* justo debajo del header */
-  right: 0;
-  width: 100%;
-  background-color: #38212a;
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mobile-nav ul {
-  list-style: none;
-  width: 100%;
-  text-align: center;
-  padding: 0;
-}
-
-.mobile-nav ul li {
-  margin: 10px 0;
-}
-
-.mobile-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.mobile-nav.active {
-  transform: translateX(0%);
+#menu.open {
+  align-self: flex-start;
+  margin-top: 10px;
+  width: 35px;
+  height: 35px;
 }
 
 /* ================================
@@ -259,9 +239,7 @@ nav a:hover {
   background-color: #fff8f5;
 }
 
-.about-contact h2 {
-  color: #c2185b;
-}
+.about-contact h2 { color: #c2185b; }
 
 .about, .contact {
   border: solid 1px #ccc;
@@ -270,6 +248,14 @@ nav a:hover {
   padding: 20px;
   background-color: #fff8f5;
   text-align: center;
+}
+
+.experience-section { background-color: #080808; }
+
+.map {
+  background-color: #38212a;
+  display: flex;
+  justify-content: center;
 }
 
 /* ================================
@@ -285,9 +271,7 @@ nav a:hover {
   transition: transform 0.3s ease;
 }
 
-.item-card:hover {
-  transform: translateY(-5px);
-}
+.item-card:hover { transform: translateY(-5px); }
 
 .item-card img {
   width: 150px;
@@ -303,22 +287,9 @@ nav a:hover {
   border-radius: 8px;
 }
 
-.item-card h3 {
-  margin-top: 0.75rem;
-  color: #c2185b;
-}
-
-.item-card p {
-  font-size: 0.95rem;
-  color: #5d4037;
-}
-
-.item-card strong {
-  display: block;
-  margin-top: 0.5rem;
-  color: #c2185b;
-  font-size: 1.1rem;
-}
+.item-card h3 { margin-top: 0.75rem; color: #c2185b; }
+.item-card p { font-size: 0.95rem; color: #5d4037; }
+.item-card strong { display: block; margin-top: 0.5rem; color: #c2185b; font-size: 1.1rem; }
 
 .product-grid {
   display: grid;
@@ -328,27 +299,167 @@ nav a:hover {
 }
 
 /* ================================
+   VIDEO SECTION
+================================ */
+.videos-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-container {
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   SUBSCRIBE SECTION
+================================ */
+.subscribe-section {
+  background-image: url('images/semita2.webp');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #cce3f2;
+}
+
+.subscribe-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(83, 83, 83, 0.65);
+  z-index: 1;
+}
+
+.subscribe-section * { position: relative; z-index: 2; }
+
+.subscribe-section p { margin-bottom: 1rem; font-size: 1rem; }
+
+.privacy-note { font-size: 0.9em; margin-top: 15px; }
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #1c9653;
+  color: white;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #38212a;
+  color: white;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+}
+
+.social-icons img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover { transform: scale(1.1); }
+
+/* ================================
    MEDIA QUERIES
 ================================ */
+
+/* Large screens */
 @media (min-width: 700px) {
-  #menu {
-    display: none;
-  }
+  header { flex-direction: row; justify-content: space-between; align-items: center; background-color: #35424a; }
+  #logo { display: block; }
+  #menu { display: none; }
+  .mobile-nav { display: flex; position: static; transform: none; height: auto; flex-direction: row; background: none; width: auto; justify-content: flex-end; }
+  .mobile-nav ul { display: flex; gap: 2rem; }
+  .mobile-nav ul li { margin: 0; }
+}
 
-  .mobile-nav {
-    position: static;
-    transform: none;
-    flex-direction: row;
-    width: auto;
-    background: none;
-  }
+/* Medium screens */
+@media (max-width: 1200px) {
+  .container, .seasonal-specials { padding: 0 1rem; }
+}
 
-  .mobile-nav ul {
-    display: flex;
-    gap: 2rem;
-  }
+@media (max-width: 992px) {
+  header { justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #c2185b; border-style: groove; }
+  nav ul { font-size: 0.9rem; align-items: center; gap: 0.75rem; padding: 1rem 0; }
+  .logo { width: 120px; height: 120px; margin-bottom: 1rem; }
+  .about-contact { grid-template-columns: 1fr; }
+  .video-container { flex: 1 1 50%; max-width: 50%; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-text p { font-size: 1rem; }
+  .overlay { padding: 1rem; }
+  .item-card img, .items-card img { width: 100%; height: auto; }
+  .product-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  .footer-content { text-align: center; }
+  .social-icons { justify-content: center; margin-top: 1rem; }
+}
 
-  .mobile-nav ul li {
-    margin: 0;
-  }
+@media (max-width: 768px) {
+  .hero { height: auto; padding: 2rem 1rem; flex-direction: column; }
+  .hero-text h1 { font-size: 1.8rem; }
+  .hero-text p { font-size: 1rem; }
+  .subscribe-section { height: auto; padding: 2rem 1rem; }
+  .subscribe-form input[type="email"] { width: 100%; max-width: 100%; }
+  .box { flex-direction: column; align-items: center; }
+  .nav li { width: 100%; }
+  .videos-row { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.8rem; }
+  h2, h3, h4.section-title { font-size: 1.4rem; }
+  .btn { padding: 0.5rem 1rem; font-size: 1rem; }
+  .item-card { padding: 0.75rem; }
+  .social-icons { gap: 1rem; }
 }
