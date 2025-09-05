@@ -166,55 +166,6 @@ nav a:hover {
     margin: 1rem auto;
 }
 
-.hide {
-    display: none;
-}
-
-.open a {
-    display: block;
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-}
-
-.mobile-nav.open a {
-    text-decoration: none;
-    font-size: 20px;
-
-}
-
-.mobile-nav.show {
-    transform: translateX(0);
-    visibility: visible;
-
-
-}
-
-.nav-links {
-    list-style: none;
-    text-align: center;
-}
-
-.nav-links li {
-    margin: 30px 0;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-}
-
-.close-menu {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    font-size: 30px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
 
 
