@@ -598,9 +598,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-      #menu {
-        display: none; /* ocultar botón hamburguesa */
-      }
+
 
       #mobileMenu {
         display: block;
@@ -625,4 +623,29 @@ footer {
     display: none; /* ocultar botón hamburguesa en desktop */
   }
 
+@media (min-width: 700px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35424a;
 
+  }
+
+  #logo {
+    display: block;
+  }
+
+
+
+  .mobile-nav {
+    display: flex;
+    position: static;
+    transform: none;
+    height: auto;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    justify-content: flex-end;
+  }
+}
