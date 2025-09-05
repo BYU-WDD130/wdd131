@@ -73,10 +73,10 @@ console.log("Red Rose Dessert site loaded successfully");
 
 
 // Menú hamburguesa
-const menuButton = document.getElementById("menu");
-const mobileMenu = document.getElementById("mobileMenu");
+const menuBtn = document.getElementById('menu');
+const mobileNav = document.getElementById('mobileMenu');
 
-menuButton.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
-  menuButton.textContent = mobileMenu.classList.contains("active") ? "✖" : "☰";
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('open');
+  mobileNav.classList.toggle('active');
 });
