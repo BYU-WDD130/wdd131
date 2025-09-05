@@ -70,13 +70,14 @@ console.log("Red Rose Dessert site loaded successfully");
   });
 
 
+const nav = document.querySelector('#nav');
+const abrir = document.querySelector('#abrir');
+const cerrar = document.querySelector('#cerrar');
 
+abrir.addEventListener('click', () => {
+    nav.classList.add('visible');
+});
 
-// Menú hamburguesa
-const menuBtn = document.getElementById('menu');
-const mobileNav = document.getElementById('mobileMenu');
-
-menuBtn.addEventListener('click', () => {
-  menuBtn.classList.toggle('open');
-  mobileNav.classList.toggle('active');
+cerrar.addEventListener('click', () => {
+    nav.classList.remove('visible');
 });
