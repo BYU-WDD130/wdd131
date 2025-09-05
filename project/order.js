@@ -1,4 +1,4 @@
-const $form = document.querySelector('#form');
+const $form = document.querySelector('#form')
 
 $form.addEventListener('sbmit', handleSubmit)
 
@@ -13,7 +13,7 @@ async function handleSubmit(event) {
     }
   })
   if (response.ok) {
-    this.reset()
+    form.reset()
     alert('Thanks for your order, we going contact you soon!')
   }
 }
