@@ -143,35 +143,6 @@ nav a:hover {
   height: 35px;
 }
 
-    #mobileMenu {
-      display: none;
-      background-color: #fff8f5;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    #mobileMenu ul {
-      list-style: none;
-    }
-
-    #mobileMenu ul li {
-      margin: 10px 0;
-    }
-
-    #mobileMenu ul li a {
-      text-decoration: none;
-      color: #c2185b;
-      font-weight: bold;
-    }
-
-    /* Cuando el menú está activo */
-    #mobileMenu.active {
-      display: block;
-    }
 
 
 
@@ -626,33 +597,6 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-      #menu {
-        display: none; /* ocultar botón hamburguesa */
-      }
-
-      #mobileMenu {
-        display: block;
-        position: static;
-        background: none;
-      }
-
-      #mobileMenu ul {
-        display: flex;
-        gap: 20px;
-      }
-
-      #mobileMenu ul li {
-        margin: 0;
-      }
-
-      #mobileMenu ul li a {
-        color: white;
-      }
-    }
-  #menu {
-    display: none; /* ocultar botón hamburguesa en desktop */
-  }
 
 
 @media (min-width: 700px) {
