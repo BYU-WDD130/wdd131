@@ -597,33 +597,32 @@ footer {
   }
 }
 
+@media (min-width: 768px) {
+      #menu {
+        display: none; /* ocultar botón hamburguesa */
+      }
 
+      #mobileMenu {
+        display: block;
+        position: static;
+        background: none;
+      }
 
-@media (min-width: 700px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #35424a;
+      #mobileMenu ul {
+        display: flex;
+        gap: 20px;
+      }
 
-  }
+      #mobileMenu ul li {
+        margin: 0;
+      }
 
-  #logo {
-    display: block;
-  }
-
+      #mobileMenu ul li a {
+        color: white;
+      }
+    }
   #menu {
-    display: none;
+    display: none; /* ocultar botón hamburguesa en desktop */
   }
 
-  .mobile-nav {
-    display: flex;
-    position: static;
-    transform: none;
-    height: auto;
-    flex-direction: row;
-    background: none;
-    width: auto;
-    justify-content: flex-end;
-  }
-}
+
