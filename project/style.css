@@ -37,12 +37,12 @@ h4.section-title {
 header {
     background-image: url('images/prueva.webp');
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #c2185b;
-    color: white;
-    border-style:groove;
+    padding: 1rem;
+ 
+
 }
 
 .container {
@@ -512,7 +512,6 @@ footer {
     align-items: center;
     padding: 10px 20px;
     background-color: #c2185b;
-    color: white;
     border-style:groove;
   }
 
