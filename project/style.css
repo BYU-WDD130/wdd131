@@ -99,7 +99,7 @@ header {
   font-size: 2rem;
   background: none;
   border: none;
-  color: white;
+  color: #c2185b;
   cursor: pointer;
   z-index: 1001;
 }
