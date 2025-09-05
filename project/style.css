@@ -121,25 +121,6 @@ nav a:hover {
 
 
 /* Cuando está activo se muestra */
-#mobileMenu.active {
-  display: block;
-}
-
-#menu {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: #c2185b;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-#menu.open {
-  align-self: flex-start;
-  margin-top: 10px;
-  width: 35px;
-  height: 35px;
-}
 
 
 
@@ -624,4 +605,13 @@ footer {
     width: auto;
     justify-content: flex-end;
   }
-}
+        .mobile-nav ul {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .mobile-nav ul li {
+        margin: 0;
+      }
+  }
+
