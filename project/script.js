@@ -70,12 +70,12 @@ console.log("Red Rose Dessert site loaded successfully");
   });
 
 
-  
   const form = document.getElementById("subscribe-form");
-  const message = document.getElementById("form-message");
+  const modal = document.getElementById("confirmation-modal");
+  const closeBtn = document.querySelector(".close-btn");
 
   form.addEventListener("submit", async function (event) {
-    event.preventDefault(); // Evita el refresh de la página
+    event.preventDefault();
 
     const formData = new FormData(form);
 
@@ -87,12 +87,24 @@ console.log("Red Rose Dessert site loaded successfully");
       });
 
       if (response.ok) {
-        form.reset(); // Limpia el formulario
-        message.style.display = "block"; // Muestra el mensaje
+        form.reset();
+        modal.style.display = "block"; // Mostrar modal
       } else {
         alert("❌ Hubo un error. Intenta nuevamente.");
       }
     } catch (error) {
       alert("⚠️ Error de conexión. Intenta más tarde.");
+    }
+  });
+
+  // Cerrar modal al hacer clic en la X
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Cerrar modal si el usuario hace clic fuera del contenido
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
     }
   });
