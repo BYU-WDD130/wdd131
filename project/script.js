@@ -70,45 +70,6 @@ console.log("Red Rose Dessert site loaded successfully");
   });
 
 
-  const form = document.getElementById("subscribe-form");
-  const modal = document.getElementById("confirmation-modal");
-  const closeBtn = document.querySelector(".close-btn");
-
-  form.addEventListener("submit", async function (event) {
-    event.preventDefault();
-
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        form.reset();
-        modal.style.display = "block"; // Mostrar modal
-      } else {
-        alert("❌ Hubo un error. Intenta nuevamente.");
-      }
-    } catch (error) {
-      alert("⚠️ Error de conexión. Intenta más tarde.");
-    }
-  });
-
-  // Cerrar modal al hacer clic en la X
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  // Cerrar modal si el usuario hace clic fuera del contenido
-  window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-
   const menuToggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector("nav");
 
@@ -116,7 +77,7 @@ console.log("Red Rose Dessert site loaded successfully");
     nav.classList.toggle("show");
   });
 
-  const menuButton = document.getElementById("menu");
+const menuButton = document.getElementById("menu");
 const mobileMenu = document.getElementById("mobileMenu");
 
 menuButton.addEventListener("click", () => {
