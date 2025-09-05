@@ -13,7 +13,7 @@ async function handleSubmit(event) {
     }
   })
   if (response.ok) {
-    form.reset()
+    this.reset()
     alert('Thanks for your order, we going contact you soon!')
   }
 }
