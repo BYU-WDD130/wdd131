@@ -115,3 +115,11 @@ console.log("Red Rose Dessert site loaded successfully");
   menuToggle.addEventListener("click", () => {
     nav.classList.toggle("show");
   });
+
+  const menuButton = document.getElementById("menu");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  menuButton.textContent = mobileMenu.classList.contains("active") ? "✖" : "☰";
+});
