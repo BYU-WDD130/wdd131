@@ -1,4 +1,4 @@
-const $form = document.querySelector('#Form');
+const $form = document.querySelector('#form');
 
 $form.addEventListener('sbmit', handleSubmit)
 
