@@ -118,9 +118,7 @@ nav a:hover {
   gap: 1rem;
 }
 
-#mobileMenu {
-  display: none;
-}
+
 
 /* Cuando está activo se muestra */
 #mobileMenu.active {
