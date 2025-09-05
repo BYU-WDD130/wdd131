@@ -70,7 +70,7 @@ console.log("Red Rose Dessert site loaded successfully");
   });
 
 
-    const form = document.getElementById("subscribe-form");
+  const form = document.getElementById("subscribe-form");
   const modal = document.getElementById("confirmation-modal");
   const closeBtn = document.querySelector(".close-btn");
 
