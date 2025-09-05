@@ -70,12 +70,7 @@ console.log("Red Rose Dessert site loaded successfully");
   });
 
 
-  const menuToggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector("nav");
 
-  menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("show");
-  });
 
 // Menú hamburguesa
 const menuButton = document.getElementById("menu");
