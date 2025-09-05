@@ -109,6 +109,12 @@ nav a:hover {
   overflow-y: auto;
 }
 
+#mobileMenu {
+  display: none;
+}
+#mobileMenu.active {
+  display: block;
+}
 .mobile-nav.active {
   display: flex;
   transform: translateX(0%);
