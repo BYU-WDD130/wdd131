@@ -68,3 +68,31 @@ console.log("Red Rose Dessert site loaded successfully");
   btn.addEventListener('click', () => {
     video.play();
   });
+
+
+  
+  const form = document.getElementById("subscribe-form");
+  const message = document.getElementById("form-message");
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault(); // Evita el refresh de la página
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset(); // Limpia el formulario
+        message.style.display = "block"; // Muestra el mensaje
+      } else {
+        alert("❌ Hubo un error. Intenta nuevamente.");
+      }
+    } catch (error) {
+      alert("⚠️ Error de conexión. Intenta más tarde.");
+    }
+  });
