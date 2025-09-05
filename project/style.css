@@ -216,13 +216,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-nav {
-  display: none;
-}
 
-.mobile-nav.show {
-  display: block;
-}
 
 /* ================================
    HERO SECTION
