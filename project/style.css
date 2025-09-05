@@ -118,13 +118,13 @@ nav a:hover {
   gap: 1rem;
 }
 
-.menu-toggle {
+#mobileMenu {
   display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #c2185b;
+}
+
+/* Cuando está activo se muestra */
+#mobileMenu.active {
+  display: block;
 }
 
 #menu {
@@ -612,6 +612,15 @@ footer {
 
   .social-icons {
     gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #mobileMenu {
+    display: block;
+  }
+  #menu {
+    display: none; /* ocultar botón hamburguesa en desktop */
   }
 }
 
