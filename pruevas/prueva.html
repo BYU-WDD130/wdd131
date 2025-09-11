@@ -1,133 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Red Rose Desserts</title>
-  <meta name="description" content="Red Rose Desserts - Artisan 3D gelatin cakes, traditional cakes, mousse & more – made with love for your special moments." />
-  <meta name="author" content="Dery Henriquez" />
-  <!-- SEO: Open Graph -->
-  <meta property="og:title" content="Red Rose Desserts" />
-  <meta property="og:description" content="Artisan 3D gelatin cakes, cupcakes, mousse & more – made with love for your special moments." />
-  <meta property="og:image" content="images/principal1.webp" />
-  <meta property="og:url" content="https://yourdomain.com/" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Red Rose Desserts - Artisan 3D gelatin cakes, traditional cakes, mousse & more – made with love for your special moments.">
+  <meta name="author" content="Dery Henriquez">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="prueva.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="prueva.css">
 </head>
 <body>
-  <div class="container">
+ 	<div class="container">
     <header>
-      <h1>Welcome to Red Rose Desserts</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="custom-order.html">Custom Order</a></li>
-        </ul>
-      </nav>
-    </header>
+      <img class="logo" src="images/logo.jpg" alt="Red Rose Dessert Logo" >
 
-    <div class="box">
-      <main>
-        <!-- Hero Section -->
-        <div class="hero">
-         <picture>
-          <source media ="(min-width: 800px)" srcset="images/principal1.webp" />
-          <source media="(min-width: 600px)" srcset="images/principal1.webp" />
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="custom-order.html">Custom Order</a></li>
 
-            <img src="images/principal1.webp" alt="Featured Dessert" class="hero-img" loading="lazy" />
-            </picture>
-          </div>
-      
+    </ul>
+  </nav>
+</header>
 
-        <!-- Featured Products -->
-        <section class="featured-products">
-          <h2>Customer Favorites</h2>
-          <div class="product-grid" id="featured-items">
-            <!-- Dynamic content from JS -->
-          </div>
-        </section>
+<div class="box">
+  <main class="home"> 
+    <section class="hero">
+      <div class="hero-content">
 
-        <!-- Seasonal Specials -->
-        <section class="seasonal-specials" id="seasonal-specials">
-          <h2>Seasonal Specials</h2>
-          <div class="product-grid">
-            <div class="items-card">
-              <img src="images/cooldcake2.webp" alt="Holiday Gelatin Cake" loading="lazy" />
-              <h3>Holiday Gelatin Cake</h3>
-            </div>
-            <div class="items-card">
-              <img src="images/mix-cake2.webp" alt="Valentine's Mousse Cake" loading="lazy" />
-              <h3>Valentine's Mousse Cake</h3>
-            </div>
-          </div>
-        </section>
 
-        <!-- About & Contact -->
-        <section class="about-contact">
-          <div class="about">
-            <h2>About Us</h2>
-            <p>We are a local bakery crafting elegant, handmade desserts for all occasions. From artistic gelatin cakes to seasonal treats, we bring sweet joy to your events.</p>
-          </div>
-          <div class="contact">
-            <h2>Contact</h2>
-            <p>Send us a mail or call us today</p>
-            <p>Tue–Sun 10am–6pm</p>
-            <p>Email: <a href="mailto:redrosedesserts25@gmail.com">redrosedesserts25@gmail.com</a></p>
-            <p>Phone: <a href="tel:+18628424405">(862) 842-4405</a></p>
-          </div>
-        </section>
-     
+        <img src="images/principal1.webp" alt="Featured Dessert" class="hero-img" loading="lazy">
+      </div>
+    </section>
 
-      <!-- Videos -->
-     
-        <section class="experience-section">
-          <h3 class="section-title">This is how we do it!</h3>
+    <section class="featured-products">
+      <h2>Customer Favorites</h2>
+      <div class="product-grid" id="featured-items">
+        <!-- Dynamic content from JS -->
+      </div>
+    </section>
 
-          <div class="video-container">
-            <video controls width="100%" aria-label="Jelly Cake Preparation">
-              <source src="images/video-tiktok.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div class="video-container">
-            <video controls width="100%" aria-label="ChocoFlan Dessert Making">
-              <source src="images/video-chocoflan.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </section>
-      
-    </div>
- </main>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <p>&copy; <span id="currentyear"></span> Red Rose Desserts. All rights reserved.</p>
-
-        <div class="social-icons">
-          <a href="https://www.facebook.com/share/154QjFnBKrG" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
-            <img src="images/facebook-icon.png" alt="Facebook" />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter profile">
-            <img src="images/twitter-icon.png" alt="Twitter" />
-          </a>
-          <a href="https://www.instagram.com/red.rosedesserts25/" target="_blank" rel="noopener" aria-label="Visit our Instagram profile">
-            <img src="images/instagram-icon.png" alt="Instagram" />
-          </a>
+    <section class="seasonal-specials" id="seasonal-specials">
+      <h2>Seasonal Specials</h2>
+      <div class="product-grid">
+        <div class="items-card">
+          <img src="images/cooldcake2.webp" alt="Seasonal Item" loading="lazy">
+          <h3>Holiday Gelatin Cake</h3>
+        </div>
+        <div class="items-card">
+          <img src="images/mix-cake3.webp" alt="Seasonal Item" loading="lazy">
+          <h3>Valentine's Mousse cake</h3>
         </div>
       </div>
-    </footer>
-  </div>
+    </section>
 
+<section class="subscribe-section">
+  <h4 class="section-title">Be the first to know!</h4>
+  <p>
+    Sign up to receive discounts, special offers, event updates and a 
+    <strong>Free 3D personal cake!</strong>
+  </p>
+
+  <!-- Formulario conectado a Formspree -->
+  <form id="subscribe-form" action="https://formspree.io/f/mgvlpnlg" method="POST">
+    <label for="email">Your Email</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="you@example.com" 
+      required 
+    />
+    <button type="submit" class="submit-button">Subscribe</button>
+  </form>
+</section>
+
+
+    <section class="about-contact">
+      <div class="about">
+        <h2>About Us</h2>
+        <p>We are a local bakery crafting elegant, handmade desserts for all occasions. From artistic gelatin cakes to seasonal treats, we bring sweet joy to your events.</p>
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Send us a mail or call us today</p>
+        <p>Tue–Sun 10am–6pm</p>
+        <p>Email: redrosedesserts25@gmail.com</p>
+        <p>Phone: (862) 842-4405</p>
+        
+      </div>
+    </section>
+ 
+
+
+<section class="experience-section">
+  <h3 class="section-title">This is how we do it!</h3>
+  
+  <div class="videos-row">
+    <div class="video-container">
+      <video autoplay muted loop title="video con audio" aria-label="Jelly Cake Preparation">
+        <source src="images/jely-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="video-container">
+      <video autoplay muted loop title="Jelly Cake Preparation">
+        <source src="images/chocoflan.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+   
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47830.69834091987!2d-74.19826465324252!3d40.727831561576174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25370329a0e1d%3A0xe1bcdc2adcfee473!2sNewark%2C%20NJ!5e1!3m2!1sen!2sus!4v1755918664905!5m2!1sen!2sus" 
+width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+ </main>
+
+</div>
+
+  <footer>
+    <div class="footer-content">
+   <p> &copy; <span id="currentyear"></span> Red Rose Desserts. All rights reserved.  </p> 
+
+
+     <div class="social-icons">
+  <a href="https://www.facebook.com/share/154QjFnBKrG" target="_blank" rel="noopener">
+    <img src="images/facebook-icon.png" alt="Facebook">
+  </a>
+  <a href="https://twitter.com" target="_blank" rel="noopener">
+    <img src="images/twitter-icon.png" alt="Twitter">
+  </a>
+  <a href="https://www.instagram.com/red.rosedesserts25/" target="_blank" rel="noopener">
+    <img src="images/instagram-icon.png" alt="Instagram">
+  </a>
+</div>
+   
+    </div>
+  </footer>
+</div> 
   <script src="prueva.js" defer></script>
 </body>
 </html>
