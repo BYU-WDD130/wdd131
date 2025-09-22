@@ -48,7 +48,7 @@ def test_pressure_loss_from_pipe_reduction():
     assert pressure_loss_from_pipe_reduction(0.28687, 1.65, 471729, 0.048692) == approx(-163.744, abs=0.001)
     assert pressure_loss_from_pipe_reduction(0.28687, 1.75, 500318, 0.048692) == approx(-184.182, abs=0.001)
 
-# Optional: test kPa to psi conversion
+# Test 7: kPa to psi conversion
 def test_kpa_to_psi():
     assert kpa_to_psi(0) == approx(0, abs=0.001)
     assert kpa_to_psi(100) == approx(14.5038, abs=0.001)
