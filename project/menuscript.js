@@ -170,6 +170,13 @@ const featuredItems = [
     image: "images/dasilva.webp",
   },  
 
+                 {
+    name: "personalized jelly",
+    category: "jelly",
+    price: "",
+    image: "images/3djelly2.webp",
+  }, 
+
 ];
 
 function filterMenu(category) {
