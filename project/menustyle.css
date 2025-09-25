@@ -93,7 +93,7 @@ nav a:hover {
 }
 
 button {
-  display: none;
+ 
   background-color: #c2185b;
   color: white;
   padding: 5px 10px;
@@ -231,6 +231,7 @@ p {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
+
 }
 
 .item-card {
@@ -302,10 +303,10 @@ footer {
     justify-content: space-between;
     text-align: left;
   }
-#abrir.abrir-menu {
+#abrir {
   display: none;
 }
-#cerrar.cerrar-menu {
+#cerrar {
   display: none;}
 
   .mobile-nav {

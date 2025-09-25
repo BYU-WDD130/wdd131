@@ -7,7 +7,7 @@ const featuredItems = [
   {
     name: "3D Rose Gelatin Cake",
     category: "jelly",
-    price: "$35",
+    price: "$65",
     image: "images/3djelly.webp",
    },
   {
@@ -97,7 +97,7 @@ const featuredItems = [
        {
     name: "Strawberry and cream cake",
     category: "cake",
-    price: "$50",
+    price: "6 inch $50",
     size: "6 inch",
     image: "images/whitecake.webp",
   },
@@ -112,13 +112,13 @@ const featuredItems = [
 
 ];
 
-function filterMenu(category) {
+function filtersMenu(category) {
   let itemsToShow = [];
 
   if (category === "all") {
     itemsToShow = featuredItems;
   } else {
-    itemsToShow = featuredItems.filter(item => item.category === category);
+    itemsToShow = featuredItems.filters(item => item.category === category);
   }
 
   displayMenuItems(itemsToShow);
