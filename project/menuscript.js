@@ -119,8 +119,8 @@ const featuredItems = [
   },  
 
            {
-    name: "Cop cake",
-    category: "cake",
+    name: "Cupcake",
+    category: "cupcake",
     price: "",
     size: "6 inch",
     image: "images/copcake.webp",
@@ -135,8 +135,8 @@ const featuredItems = [
   },
 
              {
-    name: "Cop cake",
-    category: "cake",
+    name: "Cupcake",
+    category: "cupcake",
     price: "",
     size: "6 inch",
     image: "images/chocopcake.webp",
