@@ -112,13 +112,13 @@ const featuredItems = [
 
 ];
 
-function filtersMenu(category) {
+function filterMenu(category) {
   let itemsToShow = [];
 
   if (category === "all") {
     itemsToShow = featuredItems;
   } else {
-    itemsToShow = featuredItems.filters(item => item.category === category);
+    itemsToShow = featuredItems.filter(item => item.category === category);
   }
 
   displayMenuItems(itemsToShow);
