@@ -87,6 +87,7 @@ nav a:hover {
 }
 
 button {
+  display: none;
   background-color: #c2185b;
   color: white;
   padding: 10px 20px;
@@ -252,12 +253,43 @@ footer {
 }
 
 /* Responsive layout */
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .hero-content {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
   }
+#abrir.abrir-menu {
+  display: none;
+}
+
+  .mobile-nav {
+    display: flex;
+    position: static;
+    transform: none;
+    height: auto;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    justify-content: flex-end;
+  }
+  
+  button {
+  display: none;
+  background-color: #c2185b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav li {
+    background-color: #38212a;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
 
   .about-contact {
     flex-direction: row;
