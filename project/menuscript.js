@@ -127,7 +127,7 @@ const featuredItems = [
   },  
 
            {
-    name: "chocofan frutal",
+    name: "chocofan with fruits",
     category: "cake",
     price: "",
     size: "6 inch",
@@ -150,7 +150,7 @@ const featuredItems = [
   },
 
                  {
-    name: "choflan frutal",
+    name: "chocoflan with fruits",
     category: "cake",
     price: "",
     image: "images/chocoflanfrute.webp",
