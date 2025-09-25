@@ -7,81 +7,81 @@ const featuredItems = [
   {
     name: "3D Rose Gelatin Cake",
     category: "jelly",
-    price: "$65",
+    price: "",
     image: "images/3djelly.webp",
    },
   {
     name: "Strawberry Mousse",
     category: "mousse",
-    price: "$35",
+    price: "",
     image: "images/coldcake.webp",  
 
   },
   {
     name: "Special dad cake",
     category: "cake",
-    price: "$50",
+    price: "",
     image: "images/dadcake2.webp",
 
   },
   {
     name: "Vanilla cake",
     category: "cake",
-    price: "$45",
+    price: "",
     image: "images/vanilla-slice.webp",
   },
   {
     name: "Chocolate and flan Cake",
     category: "cake",
-    price: "$35",
+    price: "",
     image: "images/chocoflan5.webp",
   },
   {
     name: "Classic Semita Cookies",
     category: "cookie",
-    price: "$10/dozen",
+    price: "",
     image: "images/semita2.webp",
   },
   {
     name: "Pineapple jelly",
     category: "jelly",
-    price: "$35",
+    price: "",
     image: "images/pineaplecake.webp",
   },
   {
     name: "Passion Fruit Mousse",
     category: "mousse",
-    price: "$35",
+    price: "",
     image: "images/passionfrute.webp",
   },
     {
     name: "Jelly with fruits",
     category: "jelly",
-    price: "$55",
+    price: "",
     image: "images/jellycake4.webp",
   },
       {
     name: "Jelly customized",
     category: "jelly",
-    price: "$55",
+    price: "",
     image: "images/jellycake3.webp",
   },
       {
     name: "Jelly garden",
     category: "jelly",
-    price: "$55",
+    price: "",
     image: "images/jellycake5.webp",
   },
       {
     name: "Mini Jelly",
     category: "jelly",
-    price: "$8",
+    price: "",
     image: "images/jellycake6.webp",
   },
      {
     name: "Chocolate cake",
     category: "cake",
-    price: "$60",
+    price: "",
     size: "6 inch",
     image: "images/chocolatecake.webp",
   },
@@ -89,7 +89,7 @@ const featuredItems = [
      {
     name: "Birthday cake",
     category: "cake",
-    price: "$75",
+    price: "",
     size: "8 inch",
     image: "images/birthdaycake.webp",
   },
@@ -97,7 +97,7 @@ const featuredItems = [
        {
     name: "Strawberry and cream cake",
     category: "cake",
-    price: "6 inch $50",
+    price: "",
     size: "6 inch",
     image: "images/whitecake.webp",
   },
@@ -105,9 +105,55 @@ const featuredItems = [
          {
     name: "vintage cake",
     category: "cake",
-    price: "$60",
+    price: "",
     size: "6 inch",
     image: "images/vintagecake.webp",
+  },
+
+         {
+    name: "Jelly with fruits",
+    category: "jelly",
+    price: "",
+    size: "6 inch",
+    image: "images/jelly1.webp",
+  },  
+
+           {
+    name: "Cop cake",
+    category: "cake",
+    price: "",
+    size: "6 inch",
+    image: "images/copcake.webp",
+  },  
+
+           {
+    name: "chocofan frutal",
+    category: "cake",
+    price: "",
+    size: "6 inch",
+    image: "images/frutal.webp",
+  },
+
+             {
+    name: "Cop cake",
+    category: "cake",
+    price: "",
+    size: "6 inch",
+    image: "images/chocopcake.webp",
+  },
+
+               {
+    name: "mini cake",
+    category: "cake",
+    price: "",
+    image: "images/bluecake.webp",
+  },
+
+                 {
+    name: "choflan frutal",
+    category: "cake",
+    price: "",
+    image: "images/chocoflanfrute.webp",
   },
 
 ];
