@@ -156,6 +156,20 @@ const featuredItems = [
     image: "images/chocoflanfrute.webp",
   },
 
+                 {
+    name: "Red velvet cake",
+    category: "cake",
+    price: "",
+    image: "images/redvelvet.webp",
+  },
+
+                 {
+    name: "vanilla and chocolate cake",
+    category: "cake",
+    price: "",
+    image: "images/dasilva.webp",
+  },  
+
 ];
 
 function filterMenu(category) {
