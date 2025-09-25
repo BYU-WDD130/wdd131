@@ -59,7 +59,7 @@ main {
 nav ul {
   color: white;
   list-style: none;
-  display: column;
+ 
   gap: 1.5rem;
    
   }
@@ -69,6 +69,8 @@ nav li {
     border-radius: 15px;
     font-weight: bold;
     padding: 10px;
+    margin: 15px;
+    text-align: center;
 }
 
 nav a:hover {
