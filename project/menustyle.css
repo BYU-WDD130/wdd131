@@ -86,6 +86,10 @@ nav a:hover {
   
 }
 
+.mobile-nav.visible {
+  right: 0;
+}
+
 button {
   display: none;
   background-color: #c2185b;
