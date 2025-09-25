@@ -177,6 +177,13 @@ const featuredItems = [
     image: "images/3djelly2.webp",
   }, 
 
+                 {
+    name: "personalized jelly",
+    category: "jelly",
+    price: "",
+    image: "images/mix-cake3.webp",
+  },   
+
 ];
 
 function filterMenu(category) {
