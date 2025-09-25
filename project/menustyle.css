@@ -304,7 +304,8 @@ footer {
 #abrir.abrir-menu {
   display: none;
 }
-
+#cerrar.cerrar-menu {
+  display: none;}
 
   .mobile-nav {
     display: flex;
