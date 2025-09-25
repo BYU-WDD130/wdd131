@@ -132,14 +132,28 @@ button:hover {
   justify-content: center;
   gap: 2rem;
   transition: right 0.3s ease-in-out;
-  z-index: 1000;
+
 }
+
 #abrir {
   display: block;
   font-size: 2rem;
   background: none;
   border: none;
   color: #c2185b;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#cerrar {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
   cursor: pointer;
   z-index: 1001;
 }
@@ -290,6 +304,7 @@ footer {
 #abrir.abrir-menu {
   display: none;
 }
+
 
   .mobile-nav {
     display: flex;
