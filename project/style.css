@@ -144,7 +144,7 @@ nav a:hover {
   z-index: 1000;
 }
 
-.mobile-nav.active { right: 0; }
+
 
 .mobile-nav ul {
   list-style: none;
@@ -410,10 +410,10 @@ nav a:hover {
   font-size: 1rem;
 }
 
-.submit-button:hover {
-  background-color: #1c9653;
-  color: white;
+button:hover {
+     transform: scale(1.1);
 }
+
 
 /* ================================
    FOOTER
