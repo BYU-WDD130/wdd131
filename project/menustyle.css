@@ -327,7 +327,7 @@ footer {
   transition: color 0.3s;
 }
 
-.mobile-nav ul li a:hover { color: #f8bbd0; }
+li a:hover { color: #f8bbd0; }
   nav ul {
   color: white;
   list-style: none;
