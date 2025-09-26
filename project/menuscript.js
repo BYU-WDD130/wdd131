@@ -12,7 +12,7 @@ const featuredItems = [
    },
   {
     name: "Strawberry Mousse",
-    category: "mousse",
+    category: "cake",
     price: "",
     image: "images/coldcake.webp",  
 
@@ -50,7 +50,7 @@ const featuredItems = [
   },
   {
     name: "Passion Fruit Mousse",
-    category: "mousse",
+    category: "cake",
     price: "",
     image: "images/passionfrute.webp",
   },
