@@ -503,6 +503,11 @@ footer {
     text-align: center;
     gap: 1rem;
   }
+#abrir {
+  display: none;
+}
+#cerrar {
+  display: none;}
 
   nav ul {
     flex-direction: column;

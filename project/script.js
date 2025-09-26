@@ -65,19 +65,19 @@ console.log("Red Rose Dessert site loaded successfully");
   const video = document.getElementById('video1');
   const btn = document.getElementById('playBtn');
 
-  btn.addEventListener('click', () => {
-    video.play();
+  btn.addEventListener('click', () => {video.play();
   });
 
 
-const nav = document.querySelector('#nav');
-const abrir = document.querySelector('#abrir');
-const cerrar = document.querySelector('#cerrar');
+document.addEventListener("DOMContentLoaded", () => {
+  displayMenuItems(featuredItems);
+  saveVisitCount();
 
-abrir.addEventListener('click', () => {
-    nav.classList.add('visible');
-});
+const nav = document.querySelector("#mobileMenu");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-cerrar.addEventListener('click', () => {
-    nav.classList.remove('visible');
+abrir.addEventListener("click", () => nav.classList.add("visible"));
+
+cerrar.addEventListener("click", () => nav.classList.remove("visible"));
 });

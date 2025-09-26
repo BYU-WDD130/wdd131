@@ -319,7 +319,15 @@ footer {
     width: auto;
     justify-content: flex-end;
   }
-  
+  .mobile-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.mobile-nav ul li a:hover { color: #f8bbd0; }
   nav ul {
   color: white;
   list-style: none;
