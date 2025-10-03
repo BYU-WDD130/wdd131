@@ -17,14 +17,19 @@ def main ():
     students = read_dictionary("students.csv", KEY_INDEX)
     inumber = input("Please enter an I-Number: ")
     inumber=inumber.replace("-","") 
-
-    if inumber in students:
-         
-         student=students[inumber]
-         name=student[NAME_INDEX]
-         print(f"The student's name is {name}")
+    if not inumber.isdigit():
+       print("Invalid I-Number!")
+    elif len(inumber) !=9:
+          print("An I=number must be 9 digits long") 
+          
     else:
-         print("No such student!")
+         if inumber in students:
+         
+             student=students[inumber]
+             name=student[NAME_INDEX]
+             print(f"The student's name is {name}")
+         else:
+            print("No such student!")
 
 
 
