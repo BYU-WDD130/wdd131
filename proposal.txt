@@ -1,0 +1,60 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+
+Bakery Inventory & Order Manager
+
+2. What real-world problem will your program address or help to solve?
+ My program will help small bakery owners manage their daily operations by tracking their inventory, customer orders, and ingredient usage. 
+ It will allow the user to add new bakery items, record customer orders, calculate order totals with sales tax, and automatically update the ingredient inventory.
+ This tool will make it easier to prevent ingredient shortages and ensure accurate pricing for each order.
+
+3. What will you learn from developing this program?
+ I will learn how to design and organize a larger Python program that solves a real business problem. 
+ Specifically, I will gain experience working with CSV files, dictionaries, and lists to store and manage data efficiently.
+ I will also improve my ability to separate a program into small, reusable functions that can be tested independently with pytest.
+ Additionally, I will practice handling user input, calculations, and file updates in a way that is both reliable and maintainable.
+
+4. What Python modules will your program use?
+
+   - csv → to read and write inventory and order data files.
+   - datetime → to record the date and time of each order on receipts.
+   - pytest → to write and run automated tests for key functions.
+   - os → to check for files, handle file paths, or create backups.
+   (Optional later enhancement: matplotlib → to create simple sales charts.)
+
+5. List the names of functions you will need?
+
+   - read_inventory(filename): Reads bakery inventory data from a CSV file and returns it as a dictionary.
+   - save_inventory(filename, inventory): Writes updated inventory data back to a CSV file.
+   - calculate_order_total(order_list, inventory, tax_rate): Computes subtotal, tax, and total for a customer order.
+   - update_inventory(order_list, inventory): Deducts product quantities from the inventory after a sale.
+   - display_receipt(order_list, totals): Prints or returns a formatted receipt for the order.
+   - record_order(order_list, totals): Appends each completed order with a timestamp to a sales log CSV file.
+   - get_user_order(inventory): Displays available items and records the user’s selections.
+   - main(): Coordinates the main program flow — loading data, taking orders, and saving updates.
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. List the names of the test functions you will write.
+
+   - test_calculate_order_total(): Tests that order totals are correctly computed, including sales tax.
+   - test_update_inventory(): Tests that inventory quantities are properly reduced after processing an order.
