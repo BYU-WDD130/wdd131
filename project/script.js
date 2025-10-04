@@ -65,13 +65,11 @@ console.log("Red Rose Dessert site loaded successfully");
   const video = document.getElementById('video1');
   const btn = document.getElementById('playBtn');
 
-  btn.addEventListener('click', () => {video.play();
-  });
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  displayMenuItems(featuredItems);
-  saveVisitCount();
+
 
 const nav = document.querySelector("#mobileMenu");
 const abrir = document.querySelector("#abrir");

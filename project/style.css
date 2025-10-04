@@ -74,6 +74,10 @@ nav a {
   font-weight: bold;
 }
 
+.mobile-nav.visible {
+  right: 0;
+}
+
 nav a:hover {
   border: 1px solid white;
   border-radius: 5px;
@@ -105,26 +109,11 @@ nav a:hover {
   cursor: pointer;
   z-index: 1001;
 }
-.mobile-nav.visible {
-  right: 0;
-}
-#menu span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px 0;
-  background-color: white;
-  transition: 0.3s;
-}
+
+
 
 /* Animación cuando está activo */
-#menu.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-#menu.open span:nth-child(2) { opacity: 0; }
-#menu.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
+
 
 /* Mobile nav overlay */
 .mobile-nav {
@@ -140,7 +129,7 @@ nav a:hover {
   justify-content: center;
   gap: 2rem;
   transition: right 0.3s ease-in-out;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 
@@ -266,6 +255,27 @@ nav a:hover {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+}
+
+#subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#subscribe-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#subscribe-form input[type="email"] {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .about-contact {
@@ -454,7 +464,10 @@ footer {
 @media (min-width: 700px) {
   header { flex-direction: row; justify-content: space-between; align-items: center; background-color: #35424a; }
   #logo { display: block; }
-  #menu { display: none; }
+
+#abrir {  display: none;}
+#cerrar {  display: none;}
+
   .mobile-nav {
     display: flex;
     position: static;
@@ -465,13 +478,61 @@ footer {
     width: auto;
     justify-content: flex-end;
   }
-  .mobile-nav ul { display: flex; gap: 2rem; }
-  .mobile-nav ul li { margin: 0; }
 
-#abrir {  display: none;}
-#cerrar {  display: none;}
-  
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
 }
+
+
+
+
+li a:hover { color: #f8bbd0; }
+  nav ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+button {
+ 
+  background-color: #c2185b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav li {
+    background-color: #38212a;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+  .about-contact {
+    flex-direction: row;
+  }
+  .item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+  }
+
+
+
+
+
+}
+
+
+
 
 /* Medium screens */
 @media (max-width: 1200px) {
