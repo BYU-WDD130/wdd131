@@ -1,3 +1,23 @@
+# -----------------------------------------------------------
+# Program: Red Rose Desserts Receipt Generator
+# Author: [Dery Henriquez]
+# Date: [2025-10-04]
+#
+# Description:
+# This program reads product and request data from two CSV files,
+# then prints a formatted receipt with store details, totals, and tax.
+#
+# Enhancements (Exceeds Requirements):
+# 1. Added store name and decorative header for professionalism.
+# 2. Added formatted date and time using the datetime module.
+# 3. Implemented a 6% sales tax calculation and displayed totals.
+# 4. Improved receipt readability with aligned columns and separators.
+# 5. Added exception handling for both FileNotFoundError and KeyError
+#    with clear, user-friendly messages.
+# 6. Included a thank-you message at the bottom of the receipt.
+# 7. Clean, readable code with comments for maintainability.
+# -----------------------------------------------------------
+
 import csv
 from datetime import datetime
 
