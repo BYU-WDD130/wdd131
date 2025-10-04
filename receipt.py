@@ -1,55 +1,75 @@
 import csv
+from datetime import datetime
 
 def read_dictionary(filename):
-    """
-    Reads a CSV file and returns a dictionary.
-    The first column of the CSV file is used as the key.
-    Each row is stored as a list (excluding the key column).
-    """
+    """Reads a CSV file and returns a dictionary where the first column is the key."""
     dictionary = {}
     try:
         with open(filename, 'r', newline='') as file:
             reader = csv.reader(file)
+            next(reader)  # skip header
             for row in reader:
-                # Skip empty rows
                 if row:
-                    key = row[0]  # product number as key
-                    dictionary[key] = row[1:]  # rest of the row as value
+                    key = row[0].strip()
+                    dictionary[key] = [row[1].strip(), row[2].strip()]
         return dictionary
     except FileNotFoundError:
-        print(f"Error: The file {filename} was not found.")
+        print(f"Error: The file '{filename}' was not found.")
         return {}
 
 def main():
-    # Step 1: Read products.csv into a dictionary
-    products_dict = read_dictionary('products.csv')
+    SALES_TAX_RATE = 0.06  # 6% sales tax
 
-    # Display the dictionary
-    print("Products Dictionary:")
-    for key, value in products_dict.items():
-        print(key, value)
-
-    # Step 2: Open request.csv and process requests
     try:
+        # Step 1: Load product data
+        products_dict = read_dictionary('products.csv')
+
+        # Step 2: Print store header and date
+        print("===================================")
+        print("        Red Rose Desserts")
+        print("===================================")
+        print(f"Date: {datetime.now():%A, %B %d, %Y %I:%M %p}")
+        print("-----------------------------------")
+        print("Receipt:")
+
+        # Step 3: Process customer requests
         with open('request.csv', 'r', newline='') as request_file:
             reader = csv.reader(request_file)
-            next(reader)  # Skip the header line
+            next(reader)  # Skip header
 
-            print("\nReceipt:")
+            total_items = 0
+            subtotal = 0.0
+
             for row in reader:
-                if row:  # Skip empty rows
-                    product_number = row[0]
-                    quantity = row[1]
+                if row:
+                    product_number = row[0].strip()
+                    quantity = int(row[1].strip())
 
-                    # Look up the product in the dictionary
-                    if product_number in products_dict:
+                    try:
                         product_name, product_price = products_dict[product_number]
-                        print(f"{product_name} - Quantity: {quantity} - Price: ${product_price}")
-                    else:
-                        print(f"Product number {product_number} not found in products.csv")
-    except FileNotFoundError:
-        print("Error: request.csv file not found.")
+                        price = float(product_price)
+                        line_total = price * quantity
+                        total_items += quantity
+                        subtotal += line_total
+                        print(f"{product_name:25} x{quantity:<3} @ ${price:<6.2f} = ${line_total:>6.2f}")
+                    except KeyError:
+                        print(f"Error: Product ID '{product_number}' not found in product list.")
 
-# Protect the main call
+            # Step 4: Compute totals
+            sales_tax = subtotal * SALES_TAX_RATE
+            total = subtotal + sales_tax
+
+            print("-----------------------------------")
+            print(f"Items: {total_items}")
+            print(f"Subtotal: ${subtotal:.2f}")
+            print(f"Sales Tax (6%): ${sales_tax:.2f}")
+            print(f"Total: ${total:.2f}")
+            print("-----------------------------------")
+            print("Thank you for shopping at Red Rose Desserts!")
+            print("===================================")
+
+    except FileNotFoundError:
+        print("Error: 'request.csv' file not found. Please make sure it exists in your directory.")
+
 if __name__ == "__main__":
     main()
