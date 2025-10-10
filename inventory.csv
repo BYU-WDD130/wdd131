@@ -1,0 +1,36 @@
+item_id,name,price,quantity
+B01,Chocolate Cupcake,2.5,3
+B02,Vanilla Cake Slice,3.0,15
+B03,3D Gelatin Flower Cake,25.0,5
+B04,Mango Mousse,4.5,0
+B05,Red Velvet Cake,3.5,7
+B06,Strawberry Shortcake,4.0,7
+B07,Blueberry Cheesecake,4.0,7
+B08,Lemon Tart,3.0,10
+B09,Carrot Cake,3.5,6
+B10,Chocolate Brownie,2.0,20
+B11,Macarons,1.5,25
+B12,Eclairs,2.5,10
+B13,Croissants,2.0,18
+B14,Danish Pastries,2.5,14
+B15,Cinnamon Rolls,3.0,9
+B16,Apple Pie,3.5,4
+B17,Pecan Pie,4.0,3
+B18,Cheese Danish,2.5,11
+B19,Almond Croissant,2.5,3
+B20,Chocolate Chip Cookies,1.0,30
+B21,Oatmeal Raisin Cookies,1.0,22
+B22,Sugar Cookies,1.0,28
+B23,Peanut Butter Cookies,1.0,26
+B24,Snickerdoodle Cookies,1.0,24
+B25,Whoopie Pies,2.0,15
+B26,Banana Bread,3.0,7
+B27,Zucchini Bread,3.0,5
+B28,Pumpkin Bread,3.0,6
+B29,Chocolate Mousse,4.0,0
+B30,Tiramisu,4.5,9
+B31,Cheesecake,4.5,10
+B32,Fruit Tart,4.0,12
+B33,Key Lime Pie,3.5,4
+B34,Coconut Cream Pie,3.5,0
+B35,Chocolate Fondue,5.0,0

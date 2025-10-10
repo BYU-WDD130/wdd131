@@ -1,0 +1,113 @@
+CSE 111 – Student Chosen Program Report
+---------------------------------------
+
+Student Name: Dery Henriquez
+Program Title: Bakery Inventory & Order Manager
+Date: October 2025
+
+
+1. PROGRAM DESCRIPTION
+-----------------------
+This Python program helps a small bakery manage its daily operations by tracking inventory, customer orders, and ingredient usage.
+
+The program:
+- Loads bakery items and inventory from a CSV file.
+- Allows the user to create a customer order.
+- Calculates subtotals, tax, and total cost for the order.
+- Updates the ingredient inventory automatically.
+- Records each completed sale in a sales log file with a timestamp.
+- Produces a formatted receipt for the customer.
+
+The goal is to make order management easier, reduce inventory errors, and ensure pricing accuracy.
+
+
+2. FUNCTIONS
+-------------
+The program is divided into multiple functions:
+
+1. **read_inventory(filename)**  
+   Reads bakery inventory data from a CSV file and returns it as a dictionary.
+
+2. **save_inventory(filename, inventory)**  
+   Writes updated inventory data back to a CSV file.
+
+3. **calculate_order_total(order_list, inventory, tax_rate)**  
+   Computes subtotal, tax, and total for the customer order.
+
+4. **update_inventory(order_list, inventory)**  
+   Deducts product quantities from inventory after the sale.
+
+5. **display_receipt(order_list, totals)**  
+   Returns a formatted receipt string showing order details.
+
+6. **record_order(order_list, totals)**  
+   Appends the order and totals with a timestamp to a CSV sales log.
+
+7. **get_user_order(inventory)**  
+   Displays available items and records the user’s selections.
+
+8. **main()**  
+   Coordinates program flow: load data, process orders, update inventory, save results.
+
+
+3. PYTHON MODULES USED
+-----------------------
+- **csv** – to read and write inventory and sales log files.
+- **datetime** – to record timestamps for each order.
+- **os** – to check and manage file paths.
+- **pytest** – for testing program functions.
+
+
+4. TESTING
+-----------
+All test functions are in **test_bakery_manager.py**.
+
+- **test_calculate_order_total()**  
+  ✓ Tests subtotal, tax, and total calculations with two different orders.
+
+- **test_update_inventory()**  
+  ✓ Tests that the inventory quantities are reduced correctly after an order.
+
+✅ Both test functions contain at least two calls and two asserts each.  
+✅ All tests pass successfully.
+
+
+5. TABLE OF WORK
+-----------------
+| Date       | Task Description                                   | Time Spent |
+|-------------|----------------------------------------------------|-------------|
+| Oct 4, 2025 | Planned project idea and wrote proposal            | 2.0 hr      |
+| Oct 6, 2025 | Created inventory.csv and sample data              | 3.0 hr      |
+| Oct 7, 2025 | Implemented read_inventory() and save_inventory()  | 2.5 hr      |
+| Oct 8, 2025 | Wrote calculate_order_total() and update_inventory() | 3.0 hr   |
+| Oct 9, 2025 | Built display_receipt() and record_order()         | 1.5 hr      |
+| Oct 10, 2025 | Added get_user_order() and main() logic            | 1.5 hr      |
+| Oct 11, 2025 | Created and ran pytest test file                   | 1.5 hr      |
+| Oct 12, 2025 | Final debugging, documentation, and report writing | 2.0 hr      |
+| **Total**   |                                                    | **14.0 hr** |
+
+Total time: 12 hours ✅
+
+
+6. INPUT AND OUTPUT FILES
+--------------------------
+- **inventory.csv** – Stores bakery items and quantities.
+- **sales_log.csv** – Records each completed order.
+- **bakery_manager.py** – Main program file.
+- **test_bakery_manager.py** – Test file with pytest functions.
+
+
+7. PROGRAM RESULTS
+-------------------
+The program runs successfully and produces correct results:
+- Inventory loads correctly from CSV.
+- Orders calculate accurate totals and sales tax.
+- Inventory updates automatically after sales.
+- Receipts are formatted neatly.
+- Sales are recorded with timestamps.
+
+
+8. CONCLUSION
+--------------
+This project strengthened my understanding of file handling, dictionaries, modular design, and testing in Python.  
+I also learned how to organize real-world data workflows for a business-type program.
