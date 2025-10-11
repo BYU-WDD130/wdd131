@@ -5,6 +5,16 @@
   outline: 1px solid red;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #452796;
@@ -468,6 +478,32 @@ footer {
 
 .social-icons img:hover { transform: scale(1.1); }
 
+  header, footer {
+
+  text-align: center;
+  align-items: center;
+}
+
+.container,
+.hero,
+.overlay,
+.about-contact,
+.seasonal-specials,
+.footer-content {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}  
+
+.about-contact {
+  grid-template-columns: 1fr;
+}
+
 /* ================================
    MEDIA QUERIES
 ================================ */
@@ -475,6 +511,17 @@ footer {
 /* Large screens */
 @media (min-width: 700px) {
 
+
+ header, footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 .container {
   max-width: 1300px;
@@ -486,14 +533,7 @@ footer {
 
   #logo { display: block; }
 
-header {
-  background-image: url('images/prueva.webp');
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
+
 
 #abrir {  display: none;}
 #cerrar {  display: none;}
