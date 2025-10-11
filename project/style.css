@@ -15,6 +15,16 @@ a:focus, button:focus, input:focus {
   outline-offset: 2px;
 }
 
+button {
+ 
+  background-color: #c2185b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* ================================
    TYPOGRAPHY
 ================================ */
