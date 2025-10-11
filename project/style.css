@@ -632,7 +632,7 @@ nav li {
   .subscribe-form input[type="email"] { width: 100%; max-width: 100%; }
   .box { flex-direction: column; align-items: center; }
   .nav li { width: 100%; }
-  .videos-row { flex-direction: column; }
+
 }
 
 @media (max-width: 480px) {
