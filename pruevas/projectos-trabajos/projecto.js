@@ -41,6 +41,9 @@ const featuredItems = [
     
 ];
 
+
+
+
 function renderFeaturedItems(items) {
     const container = document.getElementById("featured-items");
     container.innerHTML = "";
