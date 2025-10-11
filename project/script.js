@@ -21,7 +21,7 @@ const featuredItems = [
 
     {
         name: "Bollitos",
-        description: "Personal jelly with fruits",
+        description: "Soft and sweet bollitos",
         image: "images/bollito.webp",
         price: ""       
     },
