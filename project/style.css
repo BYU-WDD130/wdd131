@@ -345,6 +345,7 @@ nav a:hover {
   text-align: center;
   padding: 1rem;
   transition: transform 0.3s ease;
+
 }
 
 .item-card:hover { transform: translateY(-5px); }
@@ -372,6 +373,7 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   margin-top: 20px;
+  justify-items: center;
 }
 
 .products-grid {
@@ -380,6 +382,7 @@ nav a:hover {
   gap: 20px;
   margin-top: 20px;
 }
+
 
 /* ================================
    VIDEO SECTION
@@ -638,10 +641,10 @@ nav li {
   .footer-content { text-align: center; }
   .social-icons { justify-content: center; margin-top: 1rem; }
 .product-grid {
-  height: 350px;
+
   gap: 20px;}
 
-  .products-grid { height: 650px; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 20px;
+  .products-grid { gap: 20px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
 
 }
 
@@ -664,14 +667,8 @@ nav li {
   .btn { padding: 0.5rem 1rem; font-size: 1rem; }
   .item-card { padding: 1.75rem; }
   .social-icons { gap: 1rem; }
-.product-grid {
-  height: 400px;
-  gap: 20px;}
 
-  .products-grid {
-  height: 400px;
-  gap: 20px;
-}
+
 
 
 }
