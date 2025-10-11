@@ -474,6 +474,15 @@ footer {
 /* Large screens */
 @media (min-width: 700px) {
 
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
   #logo { display: block; }
 
 header {
