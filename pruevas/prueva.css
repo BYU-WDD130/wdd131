@@ -36,6 +36,62 @@ header {
     display: none;
 }
 
+
+.featured-products {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff0f5;
+  }
+
+  .featured-products h2 {
+    color: #b63a6b;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .carousel {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  .carousel-images {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 192, 203, 0.6);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .carousel button:hover {
+    background-color: rgba(255, 105, 180, 0.9);
+  }
+
+  .carousel .prev { left: 10px; }
+  .carousel .next { right: 10px; }
+
 @media screen and (max-width: 700px) {
     .abrir-menu,
     .cerrar-menu {

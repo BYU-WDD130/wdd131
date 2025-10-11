@@ -345,7 +345,6 @@ nav a:hover {
   text-align: center;
   padding: 1rem;
   transition: transform 0.3s ease;
-
 }
 
 .item-card:hover { transform: translateY(-5px); }
@@ -665,7 +664,7 @@ nav li {
   h1 { font-size: 1.8rem; }
   h2, h3, h4.section-title { font-size: 1.4rem; }
   .btn { padding: 0.5rem 1rem; font-size: 1rem; }
-  .item-card { padding: 1.75rem; }
+  .item-card {padding: 1.75rem;}
   .social-icons { gap: 1rem; }
 
 
