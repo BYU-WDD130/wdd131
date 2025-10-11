@@ -234,7 +234,7 @@ p {
 .filters {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.3rem;
   margin-bottom: 2rem;
 
 }
