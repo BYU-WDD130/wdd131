@@ -16,7 +16,7 @@ def main ():
 
     
 def setup_main(frm):
-    lbl_sides=Label(frm, text="Enter the number of sides on the dice (2-20)")
+    lbl_sides = Label(frm, text="Enter the number of sides on the dice (2-20)")
     lbl_sides.grid(row=0, column=0, padx=3, pady=3)
     ent_sides=IntEntry(frm,width=2,lower_bound=2,upper_bound=20)
     ent_sides.grid(row=0,column=1, padx=5, pady=5)
