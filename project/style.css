@@ -472,8 +472,17 @@ footer {
 
 /* Large screens */
 @media (min-width: 700px) {
-  header { flex-direction: row; justify-content: space-between; align-items: center; background-color: #35424a; }
+
   #logo { display: block; }
+
+header {
+  background-image: url('images/prueva.webp');
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
 
 #abrir {  display: none;}
 #cerrar {  display: none;}
