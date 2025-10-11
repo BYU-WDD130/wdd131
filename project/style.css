@@ -5,6 +5,12 @@
 
 }
 
+main {
+  width: 100%;
+
+}
+
+
 html, body {
   overflow-x: hidden;
 }
@@ -632,10 +638,10 @@ nav li {
   .footer-content { text-align: center; }
   .social-icons { justify-content: center; margin-top: 1rem; }
 .product-grid {
-  height: 650px;
+  height: 350px;
   gap: 20px;}
 
-  .products-grid { height: 650px; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .products-grid { height: 650px; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 20px;
 
 }
 
