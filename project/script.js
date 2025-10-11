@@ -70,7 +70,6 @@ console.log("Red Rose Dessert site loaded successfully");
 
 document.addEventListener("DOMContentLoaded", () => {
 
-
 const nav = document.querySelector("#mobileMenu");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");

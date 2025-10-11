@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+a:focus, button:focus, input:focus {
+  outline: 2px dashed #c2185b;
+  outline-offset: 2px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -143,7 +148,7 @@ button:hover {
   border: none;
   color: #c2185b;
   cursor: pointer;
-  z-index: 1001;
+
 }
 
 #cerrar {
