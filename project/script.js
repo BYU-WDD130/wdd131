@@ -20,9 +20,9 @@ const featuredItems = [
     },
 
     {
-        name: "Personal gelly",
+        name: "Bollitos",
         description: "Personal jelly with fruits",
-        image: "images/minigelly.webp",
+        image: "images/bollito.webp",
         price: ""       
     },
     {

@@ -183,6 +183,24 @@ const featuredItems = [
     price: "",
     image: "images/mix-cake3.webp",
   },   
+{
+    name: "Bollito",
+    category: "cookie",
+    price: "",
+    image: "images/bollito.webp",
+  }, 
+
+    { name: "Podking cake",
+    category: "cake",
+    price: "",
+    image: "images/calabaza.webp",
+  }, 
+
+      { name: "personalized cake",
+    category: "cake",
+    price: "",
+    image: "images/mexican.webp",
+  }, 
 
 ];
 
