@@ -190,7 +190,7 @@ const featuredItems = [
     image: "images/bollito.webp",
   }, 
 
-    { name: "Podking cake",
+    { name: "Pumpkin cake",
     category: "cake",
     price: "",
     image: "images/calabaza.webp",
