@@ -519,9 +519,65 @@ img, video {
   grid-template-columns: 1fr;
 }
 
+
+
+/* ================================
+   CARRUSEL (solo visible <700px)
+================================ */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: none; /* Oculto por defecto */
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Botones */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-5%);
+  background-color: rgba(194, 24, 91, 0.7);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(194, 24, 91, 1);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
 /* ================================
    MEDIA QUERIES
 ================================ */
+
+
+
 
 /* Large screens */
 @media (min-width: 700px) {
@@ -666,7 +722,8 @@ nav li {
   .item-card {padding: 1.75rem;}
   .social-icons { gap: 1rem; }
 
-
+  .carousel-container { display: block; }
+  .product-grid { display: none; } /* Oculta el grid normal */
 
 
 }

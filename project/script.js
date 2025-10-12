@@ -60,6 +60,38 @@ function renderFeaturedItems(items) {
 
 renderFeaturedItems(featuredItems);
 
+function initCarousel(items) {
+  const track = document.getElementById("carousel-track");
+  track.innerHTML = "";
+
+  items.forEach(item => {
+    const img = document.createElement("img");
+    img.src = item.image;
+    img.alt = item.name;
+    img.loading = "lazy";
+    track.appendChild(img);
+  });
+
+  let index = 0;
+  const total = items.length;
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+
+  function showSlide(i) {
+    index = (i + total) % total;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // Botones manuales
+  prevBtn.addEventListener("click", () => showSlide(index - 1));
+  nextBtn.addEventListener("click", () => showSlide(index + 1));
+
+  // Cambio automático cada 6 segundos
+  setInterval(() => showSlide(index + 1), 6000);
+}
+
+initCarousel(featuredItems);
+
 console.log("Red Rose Dessert site loaded successfully");
 
   const video = document.getElementById('video1');

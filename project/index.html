@@ -42,12 +42,25 @@
       </div>
     </section>
 
-    <section class="featured-products">
-      <h2>Customer Favorites</h2>
-      <div class="product-grid" id="featured-items">
-        <!-- Dynamic content from JS -->
+<section class="featured-products">
+  <h2>Customer Favorites</h2>
+
+  <!-- Carrusel para pantallas pequeñas -->
+  <div class="carousel-container">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel">
+      <div class="carousel-track" id="carousel-track">
+        <!-- Imágenes dinámicas desde JS -->
       </div>
-    </section>
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+
+  <!-- Grid normal (solo visible en pantallas grandes) -->
+  <div class="product-grid" id="featured-items">
+    <!-- Dynamic content from JS -->
+  </div>
+</section>
 
     <section class="seasonal-specials" id="seasonal-specials">
       <h2>Seasonal Specials</h2>

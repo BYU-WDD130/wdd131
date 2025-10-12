@@ -6,21 +6,24 @@
   <title>Red Rose Desserts</title>
   <meta name="description" content="Red Rose Desserts - Artisan 3D gelatin cakes, traditional cakes, mousse & more – made with love for your special moments.">
   <meta name="author" content="Dery Henriquez">
-
+  <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="prueva.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
  	<div class="container">
     <header>
-      <img class="logo" src="images/logo.jpg" alt="Red Rose Dessert Logo" >
+      <img src="images/logo.jpg" alt="Red Rose Dessert Logo" class="logo">
 
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
+    <button id="abrir">☰</button>
+
+<!-- Navegación de escritorio y móvil -->
+  <nav class="mobile-nav" id="mobileMenu">
+      <button id="cerrar">✖</button> 
+
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="custom-order.html">Custom Order</a></li>
@@ -40,29 +43,21 @@
     </section>
 
     <section class="featured-products">
-  <h2>Customer Favorites</h2>
-
-  <div class="carousel">
-    <div class="carousel-images" id="featured-items">
-      <img src="images/Blueberry2.webp" alt="Strawberry Cupcake">
-      <img src="images/chocoflan1.webp" alt="Rose Mousse">
-      <img src="images/mix-cake2.webp" alt="3D Gelatin Cake">
-      <img src="images/coldcake.webp" alt="Chocolate Delight">
-    </div>
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
+      <h2>Customer Favorites</h2>
+      <div class="product-grid" id="featured-items">
+        <!-- Dynamic content from JS -->
+      </div>
+    </section>
 
     <section class="seasonal-specials" id="seasonal-specials">
       <h2>Seasonal Specials</h2>
-      <div class="product-grid">
+      <div class="products-grid">
         <div class="items-card">
-          <img src="images/cooldcake2.webp" alt="Seasonal Item" loading="lazy">
-          <h3>Holiday Gelatin Cake</h3>
+          <img src="images/calabaza.webp" alt="Seasonal Item" loading="lazy">
+          <h3>Pumpkin cake</h3>
         </div>
         <div class="items-card">
-          <img src="images/mix-cake3.webp" alt="Seasonal Item" loading="lazy">
+          <img src="images/codcakes.webp" alt="Seasonal Item" loading="lazy">
           <h3>Valentine's Mousse cake</h3>
         </div>
       </div>
@@ -93,7 +88,10 @@
     <section class="about-contact">
       <div class="about">
         <h2>About Us</h2>
-        <p>We are a local bakery crafting elegant, handmade desserts for all occasions. From artistic gelatin cakes to seasonal treats, we bring sweet joy to your events.</p>
+        <p>We are a local bakery crafting elegant, </p>
+         <p>handmade desserts for all occasions. </p>
+         <p>From artistic gelatin cakes to seasonal treats,
+          <p></p> we bring sweet joy to your events.</p>
       </div>
       <div class="contact">
         <h2>Contact</h2>
@@ -158,6 +156,6 @@ referrerpolicy="no-referrer-when-downgrade">
     </div>
   </footer>
 </div> 
-  <script src="prueva.js" defer></script>
+
 </body>
 </html>
