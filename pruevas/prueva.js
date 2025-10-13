@@ -1,8 +1,4 @@
 
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-
-
 
 const featuredItems = [
     {

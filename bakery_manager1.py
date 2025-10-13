@@ -177,6 +177,7 @@ class BakeryApp:
             self.tree.set(row, "Qty", 0)
 
 
+
 # -------------------------
 # 8. Ejecutar programa
 # -------------------------
