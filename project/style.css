@@ -66,7 +66,7 @@ h4.section-title {
    HEADER & NAVIGATION
 ================================ */
 header {
-  background-image: url('images/prueva.webp');
+  /**background-image: url('images/prueva.webp');**/
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -206,12 +206,12 @@ nav a:hover {
 }
 
 .hero-img {
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:fill
   z-index: 1;
 }
 
@@ -221,6 +221,7 @@ nav a:hover {
   background-color: rgba(194, 24, 91, 0.5);
   padding: 2rem;
   border-radius: 16px;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   max-width: 700px;
   color: white;
@@ -681,7 +682,7 @@ nav li {
 }
 
 @media (max-width: 992px) {
-  header { justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #c2185b; border-style: groove; }
+  header { justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #c2185; border-style: groove; }
   nav ul {font-size: 0.9rem;align-items: center;gap: 0.75rem;padding: 1rem 0;}
   .logo { width: 120px; height: 120px; margin-bottom: 1rem; }
   .about-contact { grid-template-columns: 1fr; max-width: 850px; text-align: center; justify-content: center;}
