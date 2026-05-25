@@ -71,6 +71,7 @@ header {
   position: relative;
   justify-content: space-between;
   align-items: center;
+  background-color: #5a112f;
   padding: 1rem;
 
 }

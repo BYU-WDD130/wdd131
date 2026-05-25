@@ -30,12 +30,12 @@ img {
 
 /* Header */
 header {
-  background-image: url('images/prueva.webp');
+  background-image: url('images/');
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #c2185b;
+    background-color: #5a112f;
     color: white;
 
 }
