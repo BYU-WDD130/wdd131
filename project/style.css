@@ -206,14 +206,72 @@ nav a:hover {
 }
 
 .hero-img {
+max-width: 770px;
+max-height: 451px;
+overflow: hidden;
+border: 1px solid #ccc;
+margin: 0 auto;
+
+}
+
+#hero-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene la relación de aspecto y cubre todo el contenedor */
+}
+
+/* El "recuadro con ondulaciones" se crea con un pseudo-elemento */
+#hero-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Coloca el borde ondulado sobre la imagen */
+}
+
+
+.custom-shape-divider-bottom-1779736248 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1779736248 svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 98px;
+}
+
+.custom-shape-divider-bottom-1779736248 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*
+.hero-img {
   position:absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit:fill
+  object-fit:fill;
 
 }
+
+
+
+
+*/
+
+
 
 .overlay {
   position: relative;
@@ -679,6 +737,10 @@ nav li {
 /* Medium screens */
 @media (max-width: 1200px) {
   .container, .seasonal-specials { padding: 0 1rem; }
+
+
+
+
 }
 
 @media (max-width: 992px) {
@@ -701,6 +763,8 @@ nav li {
 
   .products-grid { gap: 20px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
 
+
+
 }
 
 
@@ -713,6 +777,7 @@ nav li {
   .subscribe-form input[type="email"] { width: 100%; max-width: 100%; }
   .box { flex-direction: column; align-items: center; }
   .nav li { width: 100%; }
+
 
 }
 
@@ -727,6 +792,7 @@ nav li {
   .product-grid { display: none; } /* Oculta el grid normal */
 
 
+
 }
-}
+
   
